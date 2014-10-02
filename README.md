@@ -1,10 +1,10 @@
 # Table of content
 
-* [Good templates for teaching software development](#Good-templates-for-teaching-software-development)
-** [Software Carpentry](#Software-Carpentry)
-** [Other courses on Python](#Other-courses-on-Python)
-* [Material to define the teaching objectives](#Material-to-define-the-teaching-objectives)
-** [Important concepts to teach](#Important-concepts-to-teach)
+* [Good templates for teaching software development](#good-templates-for-teaching-software-development)
+- [Software Carpentry](#software-carpentry)
+- [Other courses on Python](#other-courses-on-python)
+* [Material to define the teaching objectives](#material-to-define-the-teaching-objectives)
+- [Important concepts to teach](#important-concepts-to-teach)
 
 # Good templates for teaching software development
 

@@ -72,7 +72,7 @@ will be experienced.
 We can aim for giving the course January or February. So there is time for
 advertise it.
 If it is a PhD course (my preferred option) then it can be a three-day full day
-course. It it is aimed for master students then it should be once a week maybe
+course. If it is aimed for master students then it should be once a week maybe
 (as they have many other activities during the week).
 
 There is a Master's program at UTU on [Bioinformatics](https://nettiopsu.utu.fi/opas/tutkintoOhjelma.htm?rid=22413&uiLang=fi&lang=en&lvv=2014).

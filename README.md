@@ -1,3 +1,11 @@
+# Table of content
+
+* [Good templates for teaching software development](#Good-templates-for-teaching-software-development)
+** [Software Carpentry](#Software-Carpentry)
+** [Other courses on Python](#Other-courses-on-Python)
+* [Material to define the teaching objectives](#Material-to-define-the-teaching-objectives)
+** [Important concepts to teach](#Important-concepts-to-teach)
+
 # Good templates for teaching software development
 
 ## Software Carpentry
@@ -18,7 +26,7 @@ not for very beginners maybe.
 One option could be to teach the very basics of Python from the
 "best-practices" approach. (Pep8 and TDD).
 
-# Material to define what are the teaching objectives
+# Material to define the teaching objectives
 
 The points we want to teach will depend on the expected audience level
 (beginner, proficient user, advanced) an also of course on our own skills!

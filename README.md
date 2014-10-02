@@ -1,4 +1,4 @@
-## Table of content
+### Table of content
 
 * [Good templates for teaching software development](#good-templates-for-teaching-software-development)
   - [Software Carpentry](#software-carpentry)
@@ -42,13 +42,14 @@ There is also this site
 
 (see also the Software Carpentry materials)
 
-To complete beginners (i.e. people would never used Python or R):
-* introduction to a programming language (Python, R or even just the bash
+* To complete beginners (i.e. people would never used Python or R):
+  - introduction to a programming language (Python, R or even just the bash
   shell)
-* automation of repeated tasks by writing scripts (again, using Python, R or
+  - automation of repeated tasks by writing scripts (again, using Python, R or
 the bash)
-* version controlling of scripts
-
-To more experienced users:
-* tests and test-driven development
-* debugging (symbolic debugger)
+  - version controlling of scripts
+  - working remotely (e.g. bash shell on CSC)
+* To more experienced users:
+  - testing, coverage and test-driven development
+  - debugging (symbolic debugger)
+  - code profiling

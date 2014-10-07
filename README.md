@@ -52,8 +52,10 @@ the bash)
 * version controlling of scripts
 * integration of Git with Github/Bitbucket. Pull requests.
 * Workflows (e.g. [here](http://blog.shvetsov.com/2013/04/using-git-with-dropbox.html) and [here](http://jetheis.com/blog/2013/02/17/using-dropbox-as-a-private-github/) for non- or not-yet public scripts via Dropbox/Bitbucket
-* Git for "Single Developer" (e.g. [this](http://nvie.com/posts/a-successful-git-branching-model/) and [this](http://octodecillion.com/blog/single-developer-git-workflow/)
-
+* Git for "Single Developer" (e.g.
+  [this](http://nvie.com/posts/a-successful-git-branching-model/) and
+  [this](http://octodecillion.com/blog/single-developer-git-workflow/))
+* Or this! ![http://xkcd.com/1296/](http://imgs.xkcd.com/comics/git_commit.png)
 
 To more experienced users:
 

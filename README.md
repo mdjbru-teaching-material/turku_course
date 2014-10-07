@@ -50,7 +50,10 @@ To complete beginners (i.e. people would never used Python or R):
 * automation of repeated tasks by writing scripts (again, using Python, R or
 the bash)
 * version controlling of scripts
-* integration of Git with Github. Pull requests.
+* integration of Git with Github/Bitbucket. Pull requests.
+* Workflows (e.g. [here](http://blog.shvetsov.com/2013/04/using-git-with-dropbox.html) and [here](http://jetheis.com/blog/2013/02/17/using-dropbox-as-a-private-github/) for non- or not-yet public scripts via Dropbox/Bitbucket
+* Git for "Single Developer" (e.g. [this](http://nvie.com/posts/a-successful-git-branching-model/) and [this](http://octodecillion.com/blog/single-developer-git-workflow/)
+
 
 To more experienced users:
 
@@ -78,3 +81,7 @@ course. If it is aimed for master students then it should be once a week maybe
 There is a Master's program at UTU on [Bioinformatics](https://nettiopsu.utu.fi/opas/tutkintoOhjelma.htm?rid=22413&uiLang=fi&lang=en&lvv=2014).
 It seems that there is no course on "best-practices" such as version control or
 unittesting.
+
+It might be a good idea to be precise about what prerequisites we
+expect. If we need to cover the basics of R/Python we might not have
+the time to get to the meat of the course.

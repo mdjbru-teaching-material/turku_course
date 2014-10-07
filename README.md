@@ -55,7 +55,9 @@ the bash)
 * Git for "Single Developer" (e.g.
   [this](http://nvie.com/posts/a-successful-git-branching-model/) and
   [this](http://octodecillion.com/blog/single-developer-git-workflow/))
-* Or this! ![http://xkcd.com/1296/](http://imgs.xkcd.com/comics/git_commit.png)
+* Or this:
+
+![http://xkcd.com/1296/](http://imgs.xkcd.com/comics/git_commit.png)
 
 To more experienced users:
 

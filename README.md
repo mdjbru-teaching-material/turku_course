@@ -6,6 +6,7 @@
 * [Material to define the teaching objectives](#material-to-define-the-teaching-objectives)
     - [Important concepts to teach](#important-concepts-to-teach)
 * [Comments](#comments)
+* [Project draft](#project-draft)
 
 ## Good templates for teaching software development
 
@@ -86,8 +87,39 @@ There is a Master's program at UTU on
 It seems that there is no course on "best-practices" such as version control or
 unittesting.
 
-
 It might be a good idea to be precise about what prerequisites we
 expect. If we need to cover the basics of R/Python we might not have
 the time to get to the meat of the course.
+
+## Project draft
+
+This is a basic project draft, aiming at a PhD course.
+
+### Timeline and practical organization
+
+* Course duration: 3 full days. Possibilities are:
+    - **Three consecutive days**. Advantages: compact, people can focus on the
+      course and the material from a given day is still fresh the next
+      day. Inconvenient: people do not have time to apply what they learn to
+      their own research in-between classes and it is less likely that we get
+      feedback from one day to the other. Also, if people do not try to apply
+      what they learn at once after the classes, they might just forget about
+      it and the course will be of little use.
+	- **One full day per week during three consecutive weeks**. Advantages:
+      people only have to focus one day at a time, they do not accumulate
+      fatigue about informatics during three consecutive days and they are more
+      likely to be fresh and rested before each teaching day. People have time
+      between each week to try the things they learn, and come back with
+      questions on the next session. People are "re-activated" about applying
+      what they learn three separate times, and it is more likely that they
+      will try to apply what they learn just after hearing about it if they
+      have three opportunities instead of just one in hte case of a consecutive
+      three-day course. Inconvenient: people have to be available for one day
+      in three consecutive weeks, might be a bit harder to fit in their
+      schedule. Also people might tend to forget a bit more about what they
+      heard the previous time (but this is probably not a big problem since a
+      quick reminder can be done at the beginning of each day, and the material
+      will probably be divided in more or less independent units over the three
+      days), but this can be counter-balanced by the advantage of having more
+      time to incorporate and train on the previous topics during each week.
 

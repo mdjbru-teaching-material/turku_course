@@ -99,27 +99,154 @@ This is a basic project draft, aiming at a PhD course.
 
 * Course duration: 3 full days. Possibilities are:
     - **Three consecutive days**. Advantages: compact, people can focus on the
-      course and the material from a given day is still fresh the next
-      day. Inconvenient: people do not have time to apply what they learn to
-      their own research in-between classes and it is less likely that we get
-      feedback from one day to the other. Also, if people do not try to apply
-      what they learn at once after the classes, they might just forget about
-      it and the course will be of little use.
+    course and the material from a given day is still fresh the next
+    day. Inconvenient: people do not have time to apply what they learn to
+    their own research in-between classes and it is less likely that we get
+    feedback from one day to the other. Also, if people do not try to apply
+    what they learn at once after the classes, they might just forget about it
+    and the course will be of little use.
 	- **One full day per week during three consecutive weeks**. Advantages:
-      people only have to focus one day at a time, they do not accumulate
-      fatigue about informatics during three consecutive days and they are more
-      likely to be fresh and rested before each teaching day. People have time
-      between each week to try the things they learn, and come back with
-      questions on the next session. People are "re-activated" about applying
-      what they learn three separate times, and it is more likely that they
-      will try to apply what they learn just after hearing about it if they
-      have three opportunities instead of just one in hte case of a consecutive
-      three-day course. Inconvenient: people have to be available for one day
-      in three consecutive weeks, might be a bit harder to fit in their
-      schedule. Also people might tend to forget a bit more about what they
-      heard the previous time (but this is probably not a big problem since a
-      quick reminder can be done at the beginning of each day, and the material
-      will probably be divided in more or less independent units over the three
-      days), but this can be counter-balanced by the advantage of having more
-      time to incorporate and train on the previous topics during each week.
+    people only have to focus one day at a time, they do not accumulate fatigue
+    about informatics during three consecutive days and they are more likely to
+    be fresh and rested before each teaching day. People have time between each
+    week to try the things they learn, and come back with questions on the next
+    session. People are "re-activated" about applying what they learn three
+    separate times, and it is more likely that they will try to apply what they
+    learn just after hearing about it if they have three opportunities instead
+    of just one in hte case of a consecutive three-day course. Inconvenient:
+    people have to be available for one day in three consecutive weeks, might
+    be a bit harder to fit in their schedule. Also people might tend to forget
+    a bit more about what they heard the previous time (but this is probably
+    not a big problem since a quick reminder can be done at the beginning of
+    each day, and the material will probably be divided in more or less
+    independent units over the three days), but this can be counter-balanced by
+    the advantage of having more time to incorporate and train on the previous
+    topics during each week.
 
+* Teachers involved:
+    - Carlos
+    - Matthieu
+	- Roland
+	- we can also check with Tiina if she would be interested in teaching
+    something there?
+	- other researchers of the group (e.g. Erica and NGS specific things? She
+      has been giving workshops in 2011 in Jyväskylä and in 2014 in Roscoff).
+
+* Place and practicals
+    - Depends on the number of people attending, maybe a reasonable expectation
+    is 5-30?
+    - Genetics seminar room or similar is ideal. Small room and video
+	projector, internet access through Sparknet, students can easily chat with
+	each other to solve issues and it is easy for the teacher (and potential
+	helpers) to walk between the tables and
+	- Each course is probably a mix of presentation on the screen and
+    practicals (hopefully more practicals than lecture-like presentation), and
+    it would be good to have, in addition to the teacher, one or two helpers to
+    assist for the practicals (Matthieu was participating in Erica's
+    bioinformatics workshop in Jyväskylä in 2011 and in his experience it was
+    extremely helpful to have several people helping the students with the
+    practicals in addition to the main teacher).
+
+* Persistency of teaching materials (github, pdf, presentations, links to online references)
+
+* Aim is not to teach everything but to deliver the important concepts
+  (e.g. version control, testing) and the basic skills (shell, git basics, data
+  persistence and traceability, programming, debugging) so that they can learn
+  by themselves and adopt good practices when using other tools (e.g. teaching
+  how to use CSC might not be feasible in three days, but if they now how to
+  use the shell, how to connect remotely, how to transfer files and to version
+  control their scripts they are well equipped and can deal with the very good
+  documentation of CSC).
+	   
+* CSC accounts for students? See with Erica how it was working for the
+  Jyväskylä bioinformatics course in 2011. We can actually check with her if
+  there is still material available on-line for that and how were the
+  practicals for using CSC accounts for students.
+
+* Note: CSC use a module system which might be a bit hard to grasp at the
+  beginning, but if virtual environments are already introduced to the students
+  then it is probably very easy to understand.
+
+### General contents
+
+* Main objectives (from the Software Carpentry website):
+    - "to make scientists more productive, and their work more reliable, by
+    teaching them basic computing skills."
+	- "most scientists are never taught how to build, use, validate, and share
+    software well. As a result, many spend hours or days doing things badly
+    that could be done well in just a few minutes. Our goal is to change that
+    so that scientists can spend less time wrestling with software and more
+    time doing useful research."
+
+* In this respect, the objectives are probably more about **giving basic, solid
+  computer skills** than can be invested into research projects afterwards
+  rather than teaching how to analyse NGS data *per se*.
+
+* Again from Software Carpentry, the core topics:
+    - the basics of structured programming in Python or R
+    - version control using Git, Mercurial, or Subversion
+    - unit testing using an xUnit-style framework
+    - automating tasks using the Unix shell
+
+* Each concept taught can be illustrated by a real-life example for
+  scientists. It is fairly easy to take examples from our real research
+  experience and give it to the students as a training.
+
+### Detailed contents
+
+* Day one, morning: ** scripting and version control **
+	- introduction to scripting language (Python or R)
+	- basic variable assignment, flow control
+	- functions
+	- writing modulable and re-usable code
+
+* Day one, afternoon: ** scripting and version control **
+    - finishing scripting
+    - version control with Git (this probably depends on having introduced a
+      scripting language before, either bash or R or Python)
+	- Git for single developper
+	- Sharing code with GitHub or BitBucket (a word abour licenses?)
+
+* Day two, morning: ** bash shell and task automation, ssh **
+    - working remotely: ssh to CSC
+    - introduction to bash shell (important for e.g. CSC)
+    - automation of repeated tasks with shell scripts (for Windows users, what
+      about win-bash, cygwin or UnxUtils?)
+
+* Day two, afternoon: ** testing and code profiling **
+    - testing, coverage with either Python or R
+    - debugging (print statements, symbolic debuggers, traceback() and
+      recover() in R)
+    - code profiling
+
+* Day three, morning: ** documentation and virtual environments **
+    - docstrings in Python, basics of R package writing
+    - basics of Python module writing
+	- interest and use of virtual environments
+
+* Day three, afternoon: ** if time, integrated pet project?**
+    - would be nice if students could decide on a common pet project at the end
+    of day two
+	- the afternoon could be used to divide the works between small teams
+      (e.g. each team has to write a couple of functions, for which the input
+      and output matches the other teams functions to produce a complete module
+      or pipeline
+	- people would have to write simple code, test for it, documentation and
+    publish it on GitHub
+
+### Teachers
+
+| Day | Topic                            | Proposed teacher |
+|-----+----------------------------------+------------------|
+|   1 | Intro to Python                  | Carlos           |
+|   1 | Intro to R                       | Matthieu         |
+|   1 | Version control with Git         | Matthieu         |
+|   1 | Git, single developper           | Roland           |
+|   1 | Sharing code with GitHub         | Carlos           |
+|   2 | Bash shell, ssh, task automation | Matthieu         |
+|   2 | Testing, code coverage           | Carlos           |
+|   2 | Debugging                        | Carlos           |
+|   2 | Code profiling                   | Matthieu         |
+|   3 | Documentation, modules in Python | Carlos           |
+|   3 | Writing R packages               | Matthieu         |
+|   3 | Virtual environments             | Carlos           |

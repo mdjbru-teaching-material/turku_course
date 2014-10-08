@@ -110,7 +110,7 @@ This is a basic project draft, aiming at a PhD course.
     feedback from one day to the other. Also, if people do not try to apply
     what they learn at once after the classes, they might just forget about it
     and the course will be of little use.
-	- **One full day per week during three consecutive weeks**. Advantages:
+    - **One full day per week during three consecutive weeks**. Advantages:
     people only have to focus one day at a time, they do not accumulate fatigue
     about informatics during three consecutive days and they are more likely to
     be fresh and rested before each teaching day. People have time between each
@@ -131,20 +131,20 @@ This is a basic project draft, aiming at a PhD course.
 * Teachers involved:
     - Carlos
     - Matthieu
-	- Roland
-	- we can also check with Tiina if she would be interested in teaching
+    - Roland
+    - we can also check with Tiina if she would be interested in teaching
     something there?
-	- other researchers of the group (e.g. Erica and NGS specific things? She
-      has been giving workshops in 2011 in Jyväskylä and in 2014 in Roscoff).
+    - other researchers of the group (e.g. Erica and NGS specific things? She
+    has been giving workshops in 2011 in Jyväskylä and in 2014 in Roscoff).
 
 * Place and practicals
     - Depends on the number of people attending, maybe a reasonable expectation
     is 5-30?
     - Genetics seminar room or similar is ideal. Small room and video
-	projector, internet access through Sparknet, students can easily chat with
-	each other to solve issues and it is easy for the teacher (and potential
-	helpers) to walk between the tables and help students individually.
-	- Each course is probably a mix of presentation on the screen and
+    projector, internet access through Sparknet, students can easily chat with
+    each other to solve issues and it is easy for the teacher (and potential
+    helpers) to walk between the tables and help students individually.
+    - Each course is probably a mix of presentation on the screen and
     practicals (hopefully more practicals than lecture-like presentation), and
     it would be good to have, in addition to the teacher, one or two helpers to
     assist for the practicals (Matthieu was participating in Erica's
@@ -181,7 +181,7 @@ This is a basic project draft, aiming at a PhD course.
 * Main objectives (from the Software Carpentry website):
     - "to make scientists more productive, and their work more reliable, by
     teaching them basic computing skills."
-	- "most scientists are never taught how to build, use, validate, and share
+    - "most scientists are never taught how to build, use, validate, and share
     software well. As a result, many spend hours or days doing things badly
     that could be done well in just a few minutes. Our goal is to change that
     so that scientists can spend less time wrestling with software and more
@@ -216,43 +216,43 @@ This is a basic project draft, aiming at a PhD course.
 ### Detailed contents
 
 * Day one, morning: ** scripting and version control **
-	- introduction to scripting language (Python or R)
-	- basic variable assignment, flow control
-	- functions
-	- writing modulable and re-usable code
+    - introduction to scripting language (Python or R)
+    - basic variable assignment, flow control
+    - functions
+    - writing modulable and re-usable code
 
 * Day one, afternoon: ** scripting and version control **
     - finishing scripting
     - version control with Git (this probably depends on having introduced a
-      scripting language before, either bash or R or Python)
-	- Git for single developper
-	- Sharing code with GitHub or BitBucket (a word abour licenses?)
+    scripting language before, either bash or R or Python)
+    - Git for single developper
+    - Sharing code with GitHub or BitBucket (a word abour licenses?)
 
 * Day two, morning: ** bash shell and task automation, ssh **
     - working remotely: ssh to CSC
     - introduction to bash shell (important for e.g. CSC)
     - automation of repeated tasks with shell scripts (for Windows users, what
-      about win-bash, cygwin or UnxUtils?)
+    about win-bash, cygwin or UnxUtils?)
 
 * Day two, afternoon: ** testing and code profiling **
     - testing, coverage with either Python or R
     - debugging (print statements, symbolic debuggers, traceback() and
-      recover() in R)
+    recover() in R)
     - code profiling
 
 * Day three, morning: ** documentation and virtual environments **
     - docstrings in Python, basics of R package writing
     - basics of Python module writing
-	- interest and use of virtual environments
+    - interest and use of virtual environments
 
 * Day three, afternoon: ** if time, integrated pet project?**
     - would be nice if students could decide on a common pet project at the end
     of day two
-	- the afternoon could be used to divide the works between small teams
-      (e.g. each team has to write a couple of functions, for which the input
-      and output matches the other teams functions to produce a complete module
-      or pipeline
-	- people would have to write simple code, test for it, documentation and
+    - the afternoon could be used to divide the works between small teams
+    (e.g. each team has to write a couple of functions, for which the input and
+    output matches the other teams functions to produce a complete module or
+    pipeline)
+    - people would have to write simple code, test for it, documentation and
     publish it on GitHub
 
 ### Teachers

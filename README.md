@@ -7,6 +7,11 @@
     - [Important concepts to teach](#important-concepts-to-teach)
 * [Comments](#comments)
 * [Project draft](#project-draft)
+    - [Timeline and practical organization](#timeline-and-practical-organization)
+    - [General contents](#general-content)
+	- [Prerequisites](#prerequisites)
+	- [Detailed contents](#detailed-content)
+	- [Teachers](#teachers)
 
 ## Good templates for teaching software development
 
@@ -138,7 +143,7 @@ This is a basic project draft, aiming at a PhD course.
     - Genetics seminar room or similar is ideal. Small room and video
 	projector, internet access through Sparknet, students can easily chat with
 	each other to solve issues and it is easy for the teacher (and potential
-	helpers) to walk between the tables and
+	helpers) to walk between the tables and help students individually.
 	- Each course is probably a mix of presentation on the screen and
     practicals (hopefully more practicals than lecture-like presentation), and
     it would be good to have, in addition to the teacher, one or two helpers to
@@ -147,7 +152,8 @@ This is a basic project draft, aiming at a PhD course.
     extremely helpful to have several people helping the students with the
     practicals in addition to the main teacher).
 
-* Persistency of teaching materials (github, pdf, presentations, links to online references)
+* Persistency of teaching materials (github, pdf, presentations, links to
+  online references)
 
 * Aim is not to teach everything but to deliver the important concepts
   (e.g. version control, testing) and the basic skills (shell, git basics, data
@@ -166,6 +172,9 @@ This is a basic project draft, aiming at a PhD course.
 * Note: CSC use a module system which might be a bit hard to grasp at the
   beginning, but if virtual environments are already introduced to the students
   then it is probably very easy to understand.
+
+* Feedback form one month or six month after the course to see if people have
+  changed their habits?
 
 ### General contents
 
@@ -191,6 +200,18 @@ This is a basic project draft, aiming at a PhD course.
 * Each concept taught can be illustrated by a real-life example for
   scientists. It is fairly easy to take examples from our real research
   experience and give it to the students as a training.
+
+### Prerequisites
+
+* Realistically, we cannot expect all students to have experience with even
+  basic programming. Some will probably have used R but not all, while a few
+  can be already experienced in Python and R.
+
+* Safe to assume that everybody is beginner and familiar only with Windows or
+  Mac environment.
+
+* We have to ensure that every concept taught can be understood based on was is
+  explained before.
 
 ### Detailed contents
 
@@ -237,7 +258,7 @@ This is a basic project draft, aiming at a PhD course.
 ### Teachers
 
 | Day | Topic                            | Proposed teacher |
-|-----+----------------------------------+------------------|
+|-----|----------------------------------|------------------|
 |   1 | Intro to Python                  | Carlos           |
 |   1 | Intro to R                       | Matthieu         |
 |   1 | Version control with Git         | Matthieu         |

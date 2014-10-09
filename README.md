@@ -129,8 +129,8 @@ This is a basic project draft, aiming at a PhD course.
     topics during each week.
 
 * Teachers involved:
-    - Carlos
     - Matthieu
+    - Carlos
     - Roland
     - we can also check with Tiina if she would be interested in teaching
     something there?
@@ -140,10 +140,13 @@ This is a basic project draft, aiming at a PhD course.
 * Place and practicals
     - Depends on the number of people attending, maybe a reasonable expectation
     is 5-30?
-    - Genetics seminar room or similar is ideal. Small room and video
-    projector, internet access through Sparknet, students can easily chat with
-    each other to solve issues and it is easy for the teacher (and potential
-    helpers) to walk between the tables and help students individually.
+    - Genetics seminar room  or similar is ideal. Niklas said that the Genetics
+    seminar room is free of charge for us while we would need to rent some
+    other lecture room (for example those in LT1).
+    Small room and video projector, internet access through Sparknet, students
+    can easily chat with each other to solve issues and it is easy for the
+    teacher (and potential helpers) to walk between the tables and help
+    students individually.
     - Each course is probably a mix of presentation on the screen and
     practicals (hopefully more practicals than lecture-like presentation), and
     it would be good to have, in addition to the teacher, one or two helpers to
@@ -236,8 +239,8 @@ This is a basic project draft, aiming at a PhD course.
 
 * Day two, afternoon: ** testing and code profiling **
     - testing, coverage with either Python or R
-    - debugging (print statements, symbolic debuggers, traceback() and
-    recover() in R)
+    - debugging (print statements, symbolic debuggers, ``traceback()`` and
+    ``recover()`` in R)
     - code profiling
 
 * Day three, morning: ** documentation and virtual environments **

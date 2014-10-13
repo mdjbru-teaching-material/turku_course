@@ -6,6 +6,7 @@
 * [Material to define the teaching objectives](#material-to-define-the-teaching-objectives)
     - [Important concepts to teach](#important-concepts-to-teach)
 * [Comments](#comments)
+    - [Choosing Python or R?](#choosing-python-or-r)
 * [Project draft](#project-draft)
     - [Timeline and practical organization](#timeline-and-practical-organization)
     - [General contents](#general-content)
@@ -95,6 +96,50 @@ unittesting.
 It might be a good idea to be precise about what prerequisites we
 expect. If we need to cover the basics of R/Python we might not have
 the time to get to the meat of the course.
+
+### Choosing Python or R?
+
+It might be too audacious to aim at teaching both Python and R during only 3
+days. Maybe it would be more reasonable to choose only one, and use it to teach
+the concepts (functions, modular code, version control, testing, ...).
+
+* **Python**
+  - **pros**
+    - widely used, lots of scientific libraries, including matplotlib, numpy, pandas
+    - clean syntax, easy to learn
+	- nice modules for testing and code coverage
+	- documentation can easily be included as docstrings in the code
+  - **cons**
+    - maybe not the most useful for biology Ph.Ds: they are more likely to have
+      to do analyses in R than to do data processing in Python. Even if pandas
+      is there in Python, Matthieu thinks R is probably the tool of choice when
+      it comes to statistical analyses.
+    - there are currently two main versions of Python, can be a bit
+      confusing. One way could be just to use version 3 and just mention
+      version 2 without going back to it during the course.
+	- not a single mainstream IDE equivalent to RStudio with R?
+* **R**
+  - **pros**
+    - simple language, widely used, with a very large package library
+	- there are frameworks for testing (e.g. testthat) and writing modules
+    easily (e.g. devtools)
+	- RStudio is a nice IDE and has integrated interaction with Git
+	- nice profiling and benchmark tools
+  - **cons**
+    - maybe not as "clean" language as Python (for example, the methods for
+      classes are less visible than in Python, and object-oriented programming
+      might be more confusing to learn).
+	- not proper coverage tools yet (even though some tools exist).
+
+In short: Python more adapted for teaching informatic concepts, R more adapted
+for biologists?
+
+One way can be to give the course with Python: once the concepts are learnt and
+adopted, they can be easily transferred to R. Also, Ph.D students are more
+likely to be exposed to R at some point in some other course (isn't there
+already an R course for Ph.D at Utu actually?).
+
+It could be also good to have a follow-up course focusing on R.
 
 ## Project draft
 

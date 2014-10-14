@@ -147,6 +147,11 @@ This is a basic project draft, aiming at a PhD course.
 
 ### Timeline and practical organization
 
+* It might be good to set up a web page on GitHub to present the course and the
+  practical details, as well as make the teaching material available. Software
+  Carpentry has a [GitHub repository](https://github.com/swcarpentry/bc) which
+  explains how to do it.
+
 * Course duration: 3 full days. Possibilities are:
     - **Three consecutive days**. Advantages: compact, people can focus on the
     course and the material from a given day is still fresh the next
@@ -263,7 +268,9 @@ This is a basic project draft, aiming at a PhD course.
 
 * We should ask students when they register what is their expertise in
   informatics, if they already use any programming language, what is their
-  operating system, if they have been using the CSC services or not.
+  operating system, if they have been using the CSC services or not. A good
+  starting point is from the Software Carpentry materials
+  [here](http://software-carpentry.org/workshops/assess/pre-learner.html).
 
 ### Short contents
 

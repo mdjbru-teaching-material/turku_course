@@ -275,6 +275,16 @@ This is a basic project draft, aiming at a PhD course.
     scripting language before, either bash or R or Python)
     - Git for single developper
     - Sharing code with GitHub or BitBucket (a word abour licenses?)
+	- **note**: since most students probably don't use a Linux environment on
+      their laptop, it could be a good move to introduce a GUI for Git (there
+      is a list [here](http://git-scm.com/download/gui/linux)). Git also comes
+      with ``git-gui`` and ``gitk``, which could be used instead of a
+      third-party tool to keep things simple and to avoid introducing another
+      tool. Using Git from the command line could be done later. Or is it that
+      the command line use should be presented at once? On the one hand, it
+      might be good to get students used as soon as possible to using the
+      command line version, but on the other hand they might never use Git if
+      we start with an abrupt introduction Git + command line.
 
 * Day two, morning: ** bash shell and task automation, ssh **
     - working remotely: ssh to CSC
@@ -305,17 +315,25 @@ This is a basic project draft, aiming at a PhD course.
 
 ### Teachers
 
-| Day | Topic                            | Proposed teacher |
-|-----|----------------------------------|------------------|
-|   1 | Intro to Python                  | Carlos           |
-|   1 | Intro to R                       | Matthieu         |
-|   1 | Version control with Git         | Matthieu         |
-|   1 | Git, single developper           | Roland           |
-|   1 | Sharing code with GitHub         | Carlos           |
-|   2 | Bash shell, ssh, task automation | Matthieu         |
-|   2 | Testing, code coverage           | Carlos           |
-|   2 | Debugging                        | Carlos           |
-|   2 | Code profiling                   | Matthieu         |
-|   3 | Documentation, modules in Python | Carlos           |
-|   3 | Writing R packages               | Matthieu         |
-|   3 | Virtual environments             | Carlos           |
+| Day | Topic                            | kept | Proposed teacher |
+|-----+----------------------------------+------+------------------|
+|   1 | Intro to Python                  | x    | Carlos           |
+|   1 | Intro to R                       |      | Matthieu         |
+|   1 | Version control with Git         | x    | Matthieu         |
+|   1 | Git, single developper           | x    | Roland           |
+|   1 | Sharing code with GitHub         | x    | Carlos           |
+|   2 | Bash shell, ssh, task automation | x    | Matthieu         |
+|   2 | Testing, code coverage           | x    | Carlos           |
+|   2 | Debugging                        | x    | Carlos           |
+|   2 | Code profiling                   | x    | Matthieu         |
+|   3 | Documentation, modules in Python | x    | Carlos           |
+|   3 | Writing R packages               |      | Matthieu         |
+|   3 | Virtual environments             | x    | Carlos           |
+
+Tasks per person:
+  - Carlos: 6
+  - Matthieu: 3
+  - Roland: 1
+
+This is a lot for Carlos, so maybe some tasks (e.g. basic Python, code
+debugging) can be transfered to Matthieu (or Roland).

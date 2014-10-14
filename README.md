@@ -261,6 +261,23 @@ This is a basic project draft, aiming at a PhD course.
 * We have to ensure that every concept taught can be understood based on was is
   explained before.
 
+* We should ask students when they register what is their expertise in
+  informatics, if they already use any programming language, what is their
+  operating system, if they have been using the CSC services or not.
+
+### Short contents
+
+* Introduction to python
+* Version control with Git
+* Sharing code (GitHub and BitBucket)
+* Introduction to the shell
+* Test and code coverage
+* Code profiling
+* Debugging
+* Documentation
+* Virtual environments
+* Pet project
+
 ### Detailed contents
 
 * Day one, morning: ** scripting and version control **
@@ -274,7 +291,9 @@ This is a basic project draft, aiming at a PhD course.
     - version control with Git (this probably depends on having introduced a
     scripting language before, either bash or R or Python)
     - Git for single developper
-    - Sharing code with GitHub or BitBucket (a word abour licenses?)
+    - Sharing code with GitHub or BitBucket (a word about licenses?)
+	- It would be nice to illustrate the use of GitHub and BitBucket by showing
+      real-life projects that use them (e.g. BioPython, ggplot2, ...)
 	- **note**: since most students probably don't use a Linux environment on
       their laptop, it could be a good move to introduce a GUI for Git (there
       is a list [here](http://git-scm.com/download/gui/linux)). Git also comes
@@ -296,7 +315,8 @@ This is a basic project draft, aiming at a PhD course.
     - testing, coverage with either Python or R
     - debugging (print statements, symbolic debuggers, ``traceback()`` and
     ``recover()`` in R)
-    - code profiling
+    - code profiling, refactoring (underline the interest of having a test
+      suite ready when improving a code that already works)
 
 * Day three, morning: ** documentation and virtual environments **
     - docstrings in Python, basics of R package writing

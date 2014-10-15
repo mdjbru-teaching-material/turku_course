@@ -348,7 +348,7 @@ This is a basic project draft, aiming at a PhD course.
 ### Teachers
 
 | Day | Topic                            | kept | Proposed teacher |
-|-----+----------------------------------+------+------------------|
+|-----|----------------------------------|------|------------------|
 |   1 | Intro to Python                  | x    | Carlos           |
 |   1 | Intro to R                       |      | Matthieu         |
 |   1 | Version control with Git         | x    | Matthieu         |

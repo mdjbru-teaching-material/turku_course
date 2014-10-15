@@ -349,23 +349,24 @@ This is a basic project draft, aiming at a PhD course.
 
 | Day | Topic                            | kept | Proposed teacher |
 |-----|----------------------------------|------|------------------|
-|   1 | Intro to Python                  | x    | Carlos           |
+|   1 | Intro to Python                  | x    | [Matthieu/Roland]|
 |   1 | Intro to R                       |      | Matthieu         |
 |   1 | Version control with Git         | x    | Matthieu         |
 |   1 | Git, single developper           | x    | Roland           |
 |   1 | Sharing code with GitHub         | x    | Carlos           |
 |   2 | Bash shell, ssh, task automation | x    | Matthieu         |
 |   2 | Testing, code coverage           | x    | Carlos           |
-|   2 | Debugging                        | x    | Carlos           |
+|   2 | Debugging                        | x    | [Matthieu/Roland]|
 |   2 | Code profiling                   | x    | Matthieu         |
 |   3 | Documentation, modules in Python | x    | Carlos           |
 |   3 | Writing R packages               |      | Matthieu         |
 |   3 | Virtual environments             | x    | Carlos           |
 
 Tasks per person:
-  - Carlos: 6
-  - Matthieu: 3
-  - Roland: 1
+
+* Carlos: 4
+* Matthieu: 3 + ?
+* Roland: 1 + ?
 
 This is a lot for Carlos, so maybe some tasks (e.g. basic Python, code
-debugging) can be transfered to Matthieu (or Roland).
+debugging) can be transfered to Matthieu (or Roland). [Good idea].

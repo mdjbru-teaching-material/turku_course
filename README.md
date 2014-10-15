@@ -147,6 +147,11 @@ This is a basic project draft, aiming at a PhD course.
 
 ### Timeline and practical organization
 
+* It might be good to set up a web page on GitHub to present the course and the
+  practical details, as well as make the teaching material available. Software
+  Carpentry has a [GitHub repository](https://github.com/swcarpentry/bc) which
+  explains how to do it.
+
 * Course duration: 3 full days. Possibilities are:
     - **Three consecutive days**. Advantages: compact, people can focus on the
     course and the material from a given day is still fresh the next
@@ -261,6 +266,25 @@ This is a basic project draft, aiming at a PhD course.
 * We have to ensure that every concept taught can be understood based on was is
   explained before.
 
+* We should ask students when they register what is their expertise in
+  informatics, if they already use any programming language, what is their
+  operating system, if they have been using the CSC services or not. A good
+  starting point is from the Software Carpentry materials
+  [here](http://software-carpentry.org/workshops/assess/pre-learner.html).
+
+### Short contents
+
+* Introduction to python
+* Version control with Git
+* Sharing code (GitHub and BitBucket)
+* Introduction to the shell
+* Test and code coverage
+* Code profiling
+* Debugging
+* Documentation
+* Virtual environments
+* Pet project
+
 ### Detailed contents
 
 * Day one, morning: ** scripting and version control **
@@ -274,7 +298,19 @@ This is a basic project draft, aiming at a PhD course.
     - version control with Git (this probably depends on having introduced a
     scripting language before, either bash or R or Python)
     - Git for single developper
-    - Sharing code with GitHub or BitBucket (a word abour licenses?)
+    - Sharing code with GitHub or BitBucket (a word about licenses?)
+	- It would be nice to illustrate the use of GitHub and BitBucket by showing
+      real-life projects that use them (e.g. BioPython, ggplot2, ...)
+	- **note**: since most students probably don't use a Linux environment on
+      their laptop, it could be a good move to introduce a GUI for Git (there
+      is a list [here](http://git-scm.com/download/gui/linux)). Git also comes
+      with ``git-gui`` and ``gitk``, which could be used instead of a
+      third-party tool to keep things simple and to avoid introducing another
+      tool. Using Git from the command line could be done later. Or is it that
+      the command line use should be presented at once? On the one hand, it
+      might be good to get students used as soon as possible to using the
+      command line version, but on the other hand they might never use Git if
+      we start with an abrupt introduction Git + command line.
 
 * Day two, morning: ** bash shell and task automation, ssh **
     - working remotely: ssh to CSC
@@ -286,7 +322,13 @@ This is a basic project draft, aiming at a PhD course.
     - testing, coverage with either Python or R
     - debugging (print statements, symbolic debuggers, ``traceback()`` and
     ``recover()`` in R)
-    - code profiling
+    - code profiling, refactoring (underline the interest of having a test
+    suite ready when improving a code that already works)
+	- if enough time, code timing (i.e. try to predict how long code will take
+      to run by running small subsets, looking at the relationship between
+      input size and run time and extrapolating). This might be especially
+      useful when preparing a parallel run on CSC for example, or just to know
+      how much can be done in a given time.
 
 * Day three, morning: ** documentation and virtual environments **
     - docstrings in Python, basics of R package writing
@@ -305,17 +347,25 @@ This is a basic project draft, aiming at a PhD course.
 
 ### Teachers
 
-| Day | Topic                            | Proposed teacher |
-|-----|----------------------------------|------------------|
-|   1 | Intro to Python                  | Carlos           |
-|   1 | Intro to R                       | Matthieu         |
-|   1 | Version control with Git         | Matthieu         |
-|   1 | Git, single developper           | Roland           |
-|   1 | Sharing code with GitHub         | Carlos           |
-|   2 | Bash shell, ssh, task automation | Matthieu         |
-|   2 | Testing, code coverage           | Carlos           |
-|   2 | Debugging                        | Carlos           |
-|   2 | Code profiling                   | Matthieu         |
-|   3 | Documentation, modules in Python | Carlos           |
-|   3 | Writing R packages               | Matthieu         |
-|   3 | Virtual environments             | Carlos           |
+| Day | Topic                            | kept | Proposed teacher |
+|-----+----------------------------------+------+------------------|
+|   1 | Intro to Python                  | x    | Carlos           |
+|   1 | Intro to R                       |      | Matthieu         |
+|   1 | Version control with Git         | x    | Matthieu         |
+|   1 | Git, single developper           | x    | Roland           |
+|   1 | Sharing code with GitHub         | x    | Carlos           |
+|   2 | Bash shell, ssh, task automation | x    | Matthieu         |
+|   2 | Testing, code coverage           | x    | Carlos           |
+|   2 | Debugging                        | x    | Carlos           |
+|   2 | Code profiling                   | x    | Matthieu         |
+|   3 | Documentation, modules in Python | x    | Carlos           |
+|   3 | Writing R packages               |      | Matthieu         |
+|   3 | Virtual environments             | x    | Carlos           |
+
+Tasks per person:
+  - Carlos: 6
+  - Matthieu: 3
+  - Roland: 1
+
+This is a lot for Carlos, so maybe some tasks (e.g. basic Python, code
+debugging) can be transfered to Matthieu (or Roland).

@@ -368,4 +368,4 @@ Tasks per person:
   - Roland: 1
 
 This is a lot for Carlos, so maybe some tasks (e.g. basic Python, code
-debugging) can be transfered to Matthieu (or Roland).
+debugging) can be transferred to Matthieu (or Roland).

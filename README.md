@@ -323,7 +323,12 @@ This is a basic project draft, aiming at a PhD course.
     - debugging (print statements, symbolic debuggers, ``traceback()`` and
     ``recover()`` in R)
     - code profiling, refactoring (underline the interest of having a test
-      suite ready when improving a code that already works)
+    suite ready when improving a code that already works)
+	- if enough time, code timing (i.e. try to predict how long code will take
+      to run by running small subsets, looking at the relationship between
+      input size and run time and extrapolating). This might be especially
+      useful when preparing a parallel run on CSC for example, or just to know
+      how much can be done in a given time.
 
 * Day three, morning: ** documentation and virtual environments **
     - docstrings in Python, basics of R package writing

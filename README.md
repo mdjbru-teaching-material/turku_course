@@ -58,7 +58,11 @@ the bash)
   - version controlling of scripts
   - working remotely (e.g. bash shell on CSC)
   - integration of Git with Github/Bitbucket. Pull requests.
-  - Workflows (e.g. [here](http://blog.shvetsov.com/2013/04/using-git-with-dropbox.html) and [here](http://jetheis.com/blog/2013/02/17/using-dropbox-as-a-private-github/) for non- or not-yet public scripts via Dropbox/Bitbucket
+  - Workflows
+    (e.g. [here](http://blog.shvetsov.com/2013/04/using-git-with-dropbox.html)
+    and
+    [here](http://jetheis.com/blog/2013/02/17/using-dropbox-as-a-private-github/)
+    for non- or not-yet public scripts via Dropbox/Bitbucket
   - Git for "Single Developer" (e.g.
   [this](http://nvie.com/posts/a-successful-git-branching-model/) and
   [this](http://octodecillion.com/blog/single-developer-git-workflow/))
@@ -73,7 +77,9 @@ the bash)
     [Read the Docs](https://readthedocs.org/).
   - python module packaging. Submitting packages to the
     [Python Package Index](https://pypi.python.org/).
-  - debugging (symbolic debugger)
+  - debugging (symbolic debugger) (a good
+    [resource](http://blog.ionelmc.ro/2013/06/05/python-debugging-tools/) for
+    Python)
   - code profiling
   
 ## Comments
@@ -150,7 +156,16 @@ This is a basic project draft, aiming at a PhD course.
 * It might be good to set up a web page on GitHub to present the course and the
   practical details, as well as make the teaching material available. Software
   Carpentry has a [GitHub repository](https://github.com/swcarpentry/bc) which
-  explains how to do it.
+  explains how to do it. It would be nice to generate it with a Python static
+  site generator ([Jekyll](http://jekyllrb.com/), which is the static site
+  generator of choice for GitHub, is written in Ruby!), and
+  [Pelican](http://docs.getpelican.com/en/3.4.0/index.html) might be a good
+  choice for that. It uses [Pygments](http://pygments.org/) for code syntax
+  highlighting. A detailed explanation about how to publish on GitHub with
+  Pelican is available [here](http://docs.getpelican.com/en/3.4.0/tips.html).
+
+* A draft version of the website is available here:
+  http://mdjbru-teaching-material.github.io/turku_course/
 
 * Course duration: 3 full days. Possibilities are:
     - **Three consecutive days**. Advantages: compact, people can focus on the
@@ -287,13 +302,13 @@ This is a basic project draft, aiming at a PhD course.
 
 ### Detailed contents
 
-* Day one, morning: ** scripting and version control **
+* Day one, morning: **scripting and version control**
     - introduction to scripting language (Python or R)
     - basic variable assignment, flow control
     - functions
     - writing modulable and re-usable code
 
-* Day one, afternoon: ** scripting and version control **
+* Day one, afternoon: **scripting and version control**
     - finishing scripting
     - version control with Git (this probably depends on having introduced a
     scripting language before, either bash or R or Python)
@@ -312,13 +327,13 @@ This is a basic project draft, aiming at a PhD course.
       command line version, but on the other hand they might never use Git if
       we start with an abrupt introduction Git + command line.
 
-* Day two, morning: ** bash shell and task automation, ssh **
+* Day two, morning: **bash shell and task automation, ssh**
     - working remotely: ssh to CSC
     - introduction to bash shell (important for e.g. CSC)
     - automation of repeated tasks with shell scripts (for Windows users, what
     about win-bash, cygwin or UnxUtils?)
 
-* Day two, afternoon: ** testing and code profiling **
+* Day two, afternoon: **testing and code profiling**
     - testing, coverage with either Python or R
     - debugging (print statements, symbolic debuggers, ``traceback()`` and
     ``recover()`` in R)
@@ -330,12 +345,12 @@ This is a basic project draft, aiming at a PhD course.
       useful when preparing a parallel run on CSC for example, or just to know
       how much can be done in a given time.
 
-* Day three, morning: ** documentation and virtual environments **
+* Day three, morning: **documentation and virtual environments**
     - docstrings in Python, basics of R package writing
     - basics of Python module writing
     - interest and use of virtual environments
 
-* Day three, afternoon: ** if time, integrated pet project?**
+* Day three, afternoon: **if time, integrated pet project?**
     - would be nice if students could decide on a common pet project at the end
     of day two
     - the afternoon could be used to divide the works between small teams
@@ -349,24 +364,25 @@ This is a basic project draft, aiming at a PhD course.
 
 | Day | Topic                            | kept | Proposed teacher |
 |-----|----------------------------------|------|------------------|
-|   1 | Intro to Python                  | x    | [Matthieu/Roland]|
+|   1 | Intro to Python                  | x    | Carlos           |
 |   1 | Intro to R                       |      | Matthieu         |
 |   1 | Version control with Git         | x    | Matthieu         |
-|   1 | Git, single developper           | x    | Roland           |
+|   1 | Git, single developper           | x    | Matthieu         |
 |   1 | Sharing code with GitHub         | x    | Carlos           |
 |   2 | Bash shell, ssh, task automation | x    | Matthieu         |
 |   2 | Testing, code coverage           | x    | Carlos           |
-|   2 | Debugging                        | x    | [Matthieu/Roland]|
+|   2 | Debugging                        | x    | Matthieu         |
 |   2 | Code profiling                   | x    | Matthieu         |
 |   3 | Documentation, modules in Python | x    | Carlos           |
 |   3 | Writing R packages               |      | Matthieu         |
 |   3 | Virtual environments             | x    | Carlos           |
 
-Tasks per person:
+Teaching per person:
 
-* Carlos: 4
-* Matthieu: 3 + ?
-* Roland: 1 + ?
+* Carlos: 5
+* Matthieu: 5
+* Roland: none, but willing to participate in material preparation
 
-This is a lot for Carlos, so maybe some tasks (e.g. basic Python, code
-debugging) can be transfered to Matthieu (or Roland). [Good idea].
+Roland is not sure that he will be available in February 2015 to actually
+participate in the teaching, but he is willing to participate in the material
+preparation (especially in the Python documentation part).

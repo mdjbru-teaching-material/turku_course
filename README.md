@@ -160,8 +160,9 @@ This is a basic project draft, aiming at a PhD course.
   site generator ([Jekyll](http://jekyllrb.com/), which is the static site
   generator of choice for GitHub, is written in Ruby!), and
   [Pelican](http://docs.getpelican.com/en/3.4.0/index.html) might be a good
-  choice for that! It uses [Pygments](http://pygments.org/) for code syntax
-  highlighting.
+  choice for that. It uses [Pygments](http://pygments.org/) for code syntax
+  highlighting. A detailed explanation about how to publish on GitHub with
+  Pelican is available [here](http://docs.getpelican.com/en/3.4.0/tips.html).
 
 * Course duration: 3 full days. Possibilities are:
     - **Three consecutive days**. Advantages: compact, people can focus on the

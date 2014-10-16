@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Informatics for scientists - Turku course</title><link>http://mdjbru-teaching-material.github.io/turku_course/</link><description></description><atom:link href="http://mdjbru-teaching-material.github.io/turku_course/feeds/matthieu-bruneaux.rss.xml" rel="self"></atom:link><lastBuildDate>Thu, 16 Oct 2014 00:00:00 +0300</lastBuildDate><item><title>Introduction to Python</title><link>http://mdjbru-teaching-material.github.io/turku_course/introduction-to-python.html</link><description>&lt;h1&gt;Presentation of Python&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Python is an interpreted language (distinction compiled/interpreted)&lt;/li&gt;
+&lt;li&gt;Python is widely used in the scientific community (examples of projects using
+    Python, e.g. BioPython, modeller)&lt;/li&gt;
+&lt;li&gt;There are a lot of libraries available (e.g. Numpy, BioPython, matplotlib,
+    pandas) and a large community&lt;/li&gt;
+&lt;li&gt;Python is multi-platform (if it works on your laptop, it should work on the
+    CSC servers)&lt;/li&gt;
+&lt;li&gt;We are going to teach Python 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Installation of Python&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;How to install Python on a Windows or Mac machine&lt;/li&gt;
+&lt;li&gt;How to install Ipython&lt;/li&gt;
+&lt;li&gt;Set up the working environment (do we use an IDE, or just a simple text
+    editor associated with a console window running Ipython?)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Basics of Python&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Variables (assignment, int, float, strings, lists, dicts)&lt;/li&gt;
+&lt;li&gt;Operations&lt;/li&gt;
+&lt;li&gt;Writing a script, comments&lt;/li&gt;
+&lt;li&gt;Flow control (if, then, for, while)&lt;/li&gt;
+&lt;li&gt;Reading from and writing to a file&lt;/li&gt;
+&lt;li&gt;Using the Python documentation (e.g. the tutorial and the library manual,
+    pdfs from the Python docs)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Modulable code&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Functions&lt;/li&gt;
+&lt;li&gt;Parsing arguments from the command line&lt;/li&gt;
+&lt;li&gt;Introduction to documentation for functions&lt;/li&gt;
+&lt;li&gt;Separating functions to a separate file (beginning of module writing)&lt;/li&gt;
+&lt;li&gt;Advanced: references and copies in Python (important point, it is a dangerous
+    pitfall when one is not aware of it)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Using an existing library: example with BioPython and matplotlib&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;cf. the BioPython tutorial&lt;/li&gt;
+&lt;li&gt;Reading some fasta sequences, doing some work on them, writing them to a file&lt;/li&gt;
+&lt;li&gt;Reading a csv file, processing it and plotting a graph with matplotlib&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;End of the course: complete script&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Write a script which loads some aligned fasta sequences from a file and plot
+    the residue conservation along the primary sequence&lt;/li&gt;
+&lt;li&gt;This script can be used as an example material for the version control course&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Matthieu Bruneaux</dc:creator><pubDate>Thu, 16 Oct 2014 00:00:00 +0300</pubDate><guid>tag:mdjbru-teaching-material.github.io,2014-10-16:turku_course/introduction-to-python.html</guid></item><item><title>Introduction to the shell</title><link>http://mdjbru-teaching-material.github.io/turku_course/introduction-to-the-shell.html</link><description>&lt;h1&gt;Presentation of the shell&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Command line interface, looks old-fashioned but very convenient&lt;/li&gt;
+&lt;li&gt;Main interface when you want to login to CSC servers or remote Linux
+  servers&lt;/li&gt;
+&lt;li&gt;Also present in Linux distributions for personal computers and Mac&lt;/li&gt;
+&lt;li&gt;With Windows, the cmd prompt is a bit similar (text-based) but not as
+  powerful&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Connection to a remote shell&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Connection to taito server&lt;/li&gt;
+&lt;li&gt;Connection to linux.utu.fi&lt;/li&gt;
+&lt;li&gt;Connection to desktop computer in Utu (if running Linux)&lt;/li&gt;
+&lt;li&gt;Tools: putty (windows) or ssh (mac and linux)&lt;/li&gt;
+&lt;li&gt;A word about the security of connections?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Shell basics&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Different flavours of shell (bash, tcsh, &amp;#x2026;)&lt;/li&gt;
+&lt;li&gt;Files and directories (ls, rm, mv, cp, mkdir, touch)&lt;/li&gt;
+&lt;li&gt;Owners, groups and rwx rights&lt;/li&gt;
+&lt;li&gt;Reading files (cat, less)&lt;/li&gt;
+&lt;li&gt;Redirection (&amp;gt;, &amp;gt;&amp;gt;, &amp;lt;)&lt;/li&gt;
+&lt;li&gt;stdin, stdout, stderr&lt;/li&gt;
+&lt;li&gt;grep, wc, sort, uniq, cut, sed&lt;/li&gt;
+&lt;li&gt;pipes&lt;/li&gt;
+&lt;li&gt;example of a pipe to process a data file (count number of different species
+    in aligned sequences in a fasta files: grep for "&amp;gt;", cut for species name,
+    sort and uniq, wc)&lt;/li&gt;
+&lt;li&gt;shell cheat sheet (Tiina prepared one for the Jyväskylä workshop in 2011)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Shell scripts&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Storing simple commands in shell scripts&lt;/li&gt;
+&lt;li&gt;Parsing arguments&lt;/li&gt;
+&lt;li&gt;Control flow (loops, if, while)&lt;/li&gt;
+&lt;li&gt;Applying script to all files in a directory&lt;/li&gt;
+&lt;li&gt;Version control of shell scripts&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Matthieu Bruneaux</dc:creator><pubDate>Thu, 16 Oct 2014 00:00:00 +0300</pubDate><guid>tag:mdjbru-teaching-material.github.io,2014-10-16:turku_course/introduction-to-the-shell.html</guid></item><item><title>Version control with Git</title><link>http://mdjbru-teaching-material.github.io/turku_course/version-control-with-git.html</link><description>&lt;p&gt;Some material is already available in Matthieu's presentation about
+reproducible research with R.&lt;/p&gt;
+&lt;p&gt;We can assume that we wrote a working script in the previous session about
+Python's basics.&lt;/p&gt;
+&lt;h1&gt;Presentation and interest of version control&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Issues when code is not version-controlled&lt;/li&gt;
+&lt;li&gt;How version control works: history, branches, merging&lt;/li&gt;
+&lt;li&gt;Interest of version control for collaborative work and for single developper
+  (the single developper case will be developped in more details later)&lt;/li&gt;
+&lt;li&gt;Tools: SVN, &lt;strong&gt;Git&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Online servers for repositories: GitHub and BitBucket, differences between
+    the two&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Installation of Git&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Install Git, set up the PATH for accessing it from the command line&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;How to use Git locally&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;First commit&lt;/li&gt;
+&lt;li&gt;Second commit&lt;/li&gt;
+&lt;li&gt;Diff between files&lt;/li&gt;
+&lt;li&gt;How to revert to a previous version&lt;/li&gt;
+&lt;li&gt;Branching and merging&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Setting up a remote repository&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Set up a GitHub account&lt;/li&gt;
+&lt;li&gt;Create a new repository&lt;/li&gt;
+&lt;li&gt;Push to the new repository&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Cloning an existing project&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Clone a project prepared by the teachers&lt;/li&gt;
+&lt;li&gt;Modify the code and send a pull request&lt;/li&gt;
+&lt;/ul&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Matthieu Bruneaux</dc:creator><pubDate>Thu, 16 Oct 2014 00:00:00 +0300</pubDate><guid>tag:mdjbru-teaching-material.github.io,2014-10-16:turku_course/version-control-with-git.html</guid></item></channel></rss>

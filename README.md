@@ -164,6 +164,9 @@ This is a basic project draft, aiming at a PhD course.
   highlighting. A detailed explanation about how to publish on GitHub with
   Pelican is available [here](http://docs.getpelican.com/en/3.4.0/tips.html).
 
+* A draft version of the website is available here:
+  http://mdjbru-teaching-material.github.io/turku_course/
+
 * Course duration: 3 full days. Possibilities are:
     - **Three consecutive days**. Advantages: compact, people can focus on the
     course and the material from a given day is still fresh the next
@@ -299,13 +302,13 @@ This is a basic project draft, aiming at a PhD course.
 
 ### Detailed contents
 
-* Day one, morning: ** scripting and version control **
+* Day one, morning: **scripting and version control**
     - introduction to scripting language (Python or R)
     - basic variable assignment, flow control
     - functions
     - writing modulable and re-usable code
 
-* Day one, afternoon: ** scripting and version control **
+* Day one, afternoon: **scripting and version control**
     - finishing scripting
     - version control with Git (this probably depends on having introduced a
     scripting language before, either bash or R or Python)
@@ -324,13 +327,13 @@ This is a basic project draft, aiming at a PhD course.
       command line version, but on the other hand they might never use Git if
       we start with an abrupt introduction Git + command line.
 
-* Day two, morning: ** bash shell and task automation, ssh **
+* Day two, morning: **bash shell and task automation, ssh**
     - working remotely: ssh to CSC
     - introduction to bash shell (important for e.g. CSC)
     - automation of repeated tasks with shell scripts (for Windows users, what
     about win-bash, cygwin or UnxUtils?)
 
-* Day two, afternoon: ** testing and code profiling **
+* Day two, afternoon: **testing and code profiling**
     - testing, coverage with either Python or R
     - debugging (print statements, symbolic debuggers, ``traceback()`` and
     ``recover()`` in R)
@@ -342,12 +345,12 @@ This is a basic project draft, aiming at a PhD course.
       useful when preparing a parallel run on CSC for example, or just to know
       how much can be done in a given time.
 
-* Day three, morning: ** documentation and virtual environments **
+* Day three, morning: **documentation and virtual environments**
     - docstrings in Python, basics of R package writing
     - basics of Python module writing
     - interest and use of virtual environments
 
-* Day three, afternoon: ** if time, integrated pet project?**
+* Day three, afternoon: **if time, integrated pet project?**
     - would be nice if students could decide on a common pet project at the end
     of day two
     - the afternoon could be used to divide the works between small teams

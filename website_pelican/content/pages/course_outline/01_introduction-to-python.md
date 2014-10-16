@@ -1,6 +1,7 @@
 Title: Introduction to Python
 Date: 2014-10-16
 Summary: Description of the introduction to Python course
+Status: hidden
 
 # Presentation of Python
 

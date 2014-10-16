@@ -1,6 +1,7 @@
 Title: Introduction
 Date: 2014-10-16
 Summary: Description of the course
+Sortorder: 010
 
 
 # What is this course about?

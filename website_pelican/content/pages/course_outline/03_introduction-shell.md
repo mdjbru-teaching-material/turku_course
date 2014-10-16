@@ -1,6 +1,7 @@
 Title: Introduction to the shell
 Date: 2014-10-16
 Summary: Description of the shell introductory course
+Status: hidden
 
 # Presentation of the shell
 

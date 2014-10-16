@@ -1,6 +1,7 @@
 Title: Version control with Git
 Date: 2014-10-16
 Summary: Description of the version control course
+Status: hidden
 
 Some material is already available in Matthieu's presentation about
 reproducible research with R.

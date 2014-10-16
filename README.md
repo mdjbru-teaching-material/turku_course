@@ -58,7 +58,11 @@ the bash)
   - version controlling of scripts
   - working remotely (e.g. bash shell on CSC)
   - integration of Git with Github/Bitbucket. Pull requests.
-  - Workflows (e.g. [here](http://blog.shvetsov.com/2013/04/using-git-with-dropbox.html) and [here](http://jetheis.com/blog/2013/02/17/using-dropbox-as-a-private-github/) for non- or not-yet public scripts via Dropbox/Bitbucket
+  - Workflows
+    (e.g. [here](http://blog.shvetsov.com/2013/04/using-git-with-dropbox.html)
+    and
+    [here](http://jetheis.com/blog/2013/02/17/using-dropbox-as-a-private-github/)
+    for non- or not-yet public scripts via Dropbox/Bitbucket
   - Git for "Single Developer" (e.g.
   [this](http://nvie.com/posts/a-successful-git-branching-model/) and
   [this](http://octodecillion.com/blog/single-developer-git-workflow/))
@@ -73,7 +77,9 @@ the bash)
     [Read the Docs](https://readthedocs.org/).
   - python module packaging. Submitting packages to the
     [Python Package Index](https://pypi.python.org/).
-  - debugging (symbolic debugger)
+  - debugging (symbolic debugger) (a good
+    [resource](http://blog.ionelmc.ro/2013/06/05/python-debugging-tools/) for
+    Python)
   - code profiling
   
 ## Comments

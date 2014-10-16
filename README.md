@@ -367,20 +367,22 @@ This is a basic project draft, aiming at a PhD course.
 |   1 | Intro to Python                  | x    | Carlos           |
 |   1 | Intro to R                       |      | Matthieu         |
 |   1 | Version control with Git         | x    | Matthieu         |
-|   1 | Git, single developper           | x    | Roland           |
+|   1 | Git, single developper           | x    | Matthieu         |
 |   1 | Sharing code with GitHub         | x    | Carlos           |
 |   2 | Bash shell, ssh, task automation | x    | Matthieu         |
 |   2 | Testing, code coverage           | x    | Carlos           |
-|   2 | Debugging                        | x    | Carlos           |
+|   2 | Debugging                        | x    | Matthieu         |
 |   2 | Code profiling                   | x    | Matthieu         |
 |   3 | Documentation, modules in Python | x    | Carlos           |
 |   3 | Writing R packages               |      | Matthieu         |
 |   3 | Virtual environments             | x    | Carlos           |
 
-Tasks per person:
-  - Carlos: 6
-  - Matthieu: 3
-  - Roland: 1
+Teaching per person:
 
-This is a lot for Carlos, so maybe some tasks (e.g. basic Python, code
-debugging) can be transferred to Matthieu (or Roland).
+* Carlos: 5
+* Matthieu: 5
+* Roland: none, but willing to participate in material preparation
+
+Roland is not sure that he will be available in February 2015 to actually
+participate in the teaching, but he is willing to participate in the material
+preparation (especially in the Python documentation part).

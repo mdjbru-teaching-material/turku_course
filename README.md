@@ -156,7 +156,12 @@ This is a basic project draft, aiming at a PhD course.
 * It might be good to set up a web page on GitHub to present the course and the
   practical details, as well as make the teaching material available. Software
   Carpentry has a [GitHub repository](https://github.com/swcarpentry/bc) which
-  explains how to do it.
+  explains how to do it. It would be nice to generate it with a Python static
+  site generator ([Jekyll](http://jekyllrb.com/), which is the static site
+  generator of choice for GitHub, is written in Ruby!), and
+  [Pelican](http://docs.getpelican.com/en/3.4.0/index.html) might be a good
+  choice for that! It uses [Pygments](http://pygments.org/) for code syntax
+  highlighting.
 
 * Course duration: 3 full days. Possibilities are:
     - **Three consecutive days**. Advantages: compact, people can focus on the

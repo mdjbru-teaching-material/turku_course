@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <title>Introduction to the shell</title>
+        <link rel="stylesheet" href="http://mdjbru-teaching-material.github.io/turku_course/theme/css/main.css" />
+
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="http://mdjbru-teaching-material.github.io/turku_course/">Informatics for scientists - Turku course </a></h1>
+                <nav><ul>
+                    <li><a href="http://mdjbru-teaching-material.github.io/turku_course/pages/introduction.html">Introduction</a></li>
+                    <li><a href="http://mdjbru-teaching-material.github.io/turku_course/pages/introduction-to-python.html">Introduction to Python</a></li>
+                    <li class="active"><a href="http://mdjbru-teaching-material.github.io/turku_course/pages/introduction-to-the-shell.html">Introduction to the shell</a></li>
+                    <li><a href="http://mdjbru-teaching-material.github.io/turku_course/pages/version-control-with-git.html">Version control with Git</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+<section id="content" class="body">
+    <h1 class="entry-title">Introduction to the shell</h1>
+    
+    <h1>Presentation of the shell</h1>
+<ul>
+<li>Command line interface, looks old-fashioned but very convenient</li>
+<li>Main interface when you want to login to CSC servers or remote Linux
+  servers</li>
+<li>Also present in Linux distributions for personal computers and Mac</li>
+<li>With Windows, the cmd prompt is a bit similar (text-based) but not as
+  powerful</li>
+</ul>
+<h1>Connection to a remote shell</h1>
+<ul>
+<li>Connection to taito server</li>
+<li>Connection to linux.utu.fi</li>
+<li>Connection to desktop computer in Utu (if running Linux)</li>
+<li>Tools: putty (windows) or ssh (mac and linux)</li>
+<li>A word about the security of connections?</li>
+</ul>
+<h1>Shell basics</h1>
+<ul>
+<li>Different flavours of shell (bash, tcsh, &#x2026;)</li>
+<li>Files and directories (ls, rm, mv, cp, mkdir, touch)</li>
+<li>Owners, groups and rwx rights</li>
+<li>Reading files (cat, less)</li>
+<li>Redirection (&gt;, &gt;&gt;, &lt;)</li>
+<li>stdin, stdout, stderr</li>
+<li>grep, wc, sort, uniq, cut, sed</li>
+<li>pipes</li>
+<li>example of a pipe to process a data file (count number of different species
+    in aligned sequences in a fasta files: grep for "&gt;", cut for species name,
+    sort and uniq, wc)</li>
+<li>shell cheat sheet (Tiina prepared one for the Jyväskylä workshop in 2011)</li>
+</ul>
+<h1>Shell scripts</h1>
+<ul>
+<li>Storing simple commands in shell scripts</li>
+<li>Parsing arguments</li>
+<li>Control flow (loops, if, while)</li>
+<li>Applying script to all files in a directory</li>
+<li>Version control of shell scripts</li>
+</ul>
+</section>
+        <section id="extras" class="body">
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>

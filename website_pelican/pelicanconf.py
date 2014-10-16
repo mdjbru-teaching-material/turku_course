@@ -3,12 +3,12 @@
 from __future__ import unicode_literals
 
 AUTHOR = u'Matthieu Bruneaux'
-SITENAME = u'Informatics for scientists'
+SITENAME = u'Informatics for scientists - Turku course'
 SITEURL = 'http://mdjbru-teaching-material.github.io/turku_course'
 
 PATH = 'content'
 
-TIMEZONE = 'Europe/Paris'
+TIMEZONE = 'Europe/Helsinki'
 
 DEFAULT_LANG = u'en'
 

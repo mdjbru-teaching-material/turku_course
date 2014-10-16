@@ -6,15 +6,17 @@
 	License: MIT <http://opensource.org/licenses/MIT>
 	Licensed by: Smashing Media GmbH <http://www.smashingmagazine.com/>
 	Original author: Enrique Ramírez <http://enrique-ramirez.com/>
+        Modified
 */
 
 /* Imports */
 @import url("reset.css");
 @import url("pygment.css");
 @import url("typogrify.css");
-@import url(//fonts.googleapis.com/css?family=Yanone+Kaffeesatz&subset=latin);
+/* @import url(//fonts.googleapis.com/css?family=Yanone+Kaffeesatz&subset=latin); */
 
 /***** Global *****/
+
 /* Body */
 body {
     background: #F5F4EF;
@@ -28,18 +30,18 @@ body {
 }
 
 /* Headings */
-h1 {font-size: 2em }
-h2 {font-size: 1.571em}	/* 22px */
-h3 {font-size: 1.429em}	/* 20px */
-h4 {font-size: 1.286em}	/* 18px */
-h5 {font-size: 1.143em}	/* 16px */
-h6 {font-size: 1em}		/* 14px */
+h1 {font-size: 1.4em }
+h2 {font-size: 1.3em}	
+h3 {font-size: 1.2em}	
+h4 {font-size: 1.1em}	
+h5 {font-size: 1.05em}	
+h6 {font-size: 1em}	
 
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 400;
 	line-height: 1.1;
 	margin-bottom: .8em;
-    font-family: 'Yanone Kaffeesatz', arial, serif;
+    /* font-family: 'Yanone Kaffeesatz', arial, serif; */
 }
 
 h3, h4, h5, h6 { margin-top: .8em; }
@@ -50,12 +52,12 @@ hr { border: 2px solid #EEEEEE; }
 a {outline: 0;}
 a img {border: 0px; text-decoration: none;}
 a:link, a:visited {
-	color: #C74350;
+	color: #3C8AC0;
 	padding: 0 1px;
 	text-decoration: underline;
 }
 a:hover, a:active {
-	background-color: #C74350;
+	background-color: #3C8AB0;
 	color: #fff;
 	text-decoration: none;
 	text-shadow: 1px 1px 1px #333;
@@ -159,17 +161,18 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 }
 
 	/* Banner */
-	#banner h1 {font-size: 3.571em; line-height: 0;}
+	#banner h1 {font-size: 2.9em; line-height: 0;}
 	#banner h1 a:link, #banner h1 a:visited {
-		color: #000305;
+		color: #3C8AC0;
 		display: block;
 		font-weight: bold;
 		margin: 0 0 .6em .2em;
 		text-decoration: none;
+		text-align: center;
 	}
 	#banner h1 a:hover, #banner h1 a:active {
 		background: none;
-		color: #C74350;
+		color: #3C8AC0;
 		text-shadow: none;
 	}
 	
@@ -203,7 +206,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 	}
 	#banner nav a:hover, #banner nav a:active,
 	#banner nav .active a:link, #banner nav .active a:visited {
-		background: #C74451;
+		background: #3C8AC0;
 		color: #fff;
 		text-shadow: none !important;
 	}
@@ -375,7 +378,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 li:last-child .hentry, #content > .hentry {border: 0; margin: 0;}
 #content > .hentry {padding: 1em 0;}
 .hentry img{display : none ;}
-.entry-title {font-size: 3em; margin-bottom: 10px; margin-top: 0;}
+.entry-title {font-size: 2em; margin-bottom: 10px; margin-top: 0;}
 .entry-title a:link, .entry-title a:visited {text-decoration: none; color: #333;}
 .entry-title a:visited {background-color: #fff;}
 

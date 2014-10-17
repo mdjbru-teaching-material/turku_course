@@ -170,7 +170,7 @@ img.left, figure.left {float: left; margin: 0 2em 2em 0;}
 	#banner h1 a:link, #banner h1 a:visited {
 		color: #3C8AC0;
 		display: block;
-		font-weight: bold;
+		font-weight: normal;
 		margin: 0 0 .6em .2em;
 		text-decoration: none;
 		text-align: center;

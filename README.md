@@ -1,3 +1,5 @@
+(link to the course webpage: http://mdjbru-teaching-material.github.io/turku_course/)
+
 ### Table of content
 
 * [Good templates for teaching software development](#good-templates-for-teaching-software-development)

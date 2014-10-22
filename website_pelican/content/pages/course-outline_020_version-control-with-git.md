@@ -30,6 +30,7 @@ Python's basics.
 - Diff between files
 - How to revert to a previous version
 - Branching and merging
+- Resolving merge conflicts
 
 # Setting up a remote repository
 

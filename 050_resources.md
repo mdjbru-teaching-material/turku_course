@@ -7,43 +7,50 @@ These are online resources of interest for people attending the course.
 
 # Programming
 
-- [Software Carpentry](http://software-carpentry.org/)
-    + A very useful website aiming at improving software skills of scientists
-      for better research
-    + Lessons material is available online
+## Software Carpentry
 
-- General [Python](https://www.python.org/) material
-    + The [official documentation](https://docs.python.org/3/)
-    + Numerous courses listed [here](https://wiki.python.org/moin/PythonTraining)
+[Project website aiming at improving software skills of scientists for better research](http://software-carpentry.org/)
 
-- Testing
-    + Continuous integration testing with [Travis](https://travis-ci.org/).
+## General Python material
 
-- Debugging
-    + A good [resource](http://blog.ionelmc.ro/2013/06/05/python-debugging-tools/)
+- [The official documentation](https://docs.python.org/3/)
+- [A list of courses](https://wiki.python.org/moin/PythonTraining)
 
-- Writing documentation
-    + Automatic documentation on the web with [Read the Docs](https://readthedocs.org/)
+## Testing
 
-- Python module packaging
-    + Submitting packages to the [Python Package Index](https://pypi.python.org/)
+- [Continuous integration testing with Travis](https://travis-ci.org/).
 
-- Programmer skills
-    + A [programmer skill matrix](http://sijinjoseph.com/programmer-competency-matrix/)
-    + Another [view on programmer skills evolution](http://www.wayland-informatics.com/The%20Seven%20Stages%20of%20Expertise%20in%20Software.htm)
+## Debugging
+
+- [A good resource](http://blog.ionelmc.ro/2013/06/05/python-debugging-tools/)
+
+## Writing documentation
+
+- [Automatic documentation on the web with Read the Docs](https://readthedocs.org/)
+
+## Python module packaging
+
+- [Submitting packages to the Python Package Index](https://pypi.python.org/)
+
+## Programmer skills
+
+- [A programmer skill matrix](http://sijinjoseph.com/programmer-competency-matrix/)
+- [Another view on programmer skills evolution](http://www.wayland-informatics.com/The%20Seven%20Stages%20of%20Expertise%20in%20Software.htm)
   
 # Version control
 
-- [Git](http://git-scm.com/) documentation
-    + The [Pro Git book](http://git-scm.com/book) by Scott Chacon
-    + The [reference manual](http://git-scm.com/docs)
-    + [Git graphical user interfaces](http://git-scm.com/download/gui/linux)
+## Git documentation
 
-- Workflows
-    + Using Git with Dropbox:
-      [here](http://blog.shvetsov.com/2013/04/using-git-with-dropbox.html) and
-      [here](http://jetheis.com/blog/2013/02/17/using-dropbox-as-a-private-github/)
-    + [What you should not do](http://xkcd.com/1296/)
+- [Git website](http://git-scm.com/)
+- [The Pro Git book by Scott Chacon](http://git-scm.com/book)
+- [The reference manual](http://git-scm.com/docs)
+- [Git graphical user interfaces](http://git-scm.com/download/gui/linux)
+
+## Workflows
+
+- [Using Git with Dropbox](http://blog.shvetsov.com/2013/04/using-git-with-dropbox.html)
+- [Using Dropbox as a private GitHub](http://jetheis.com/blog/2013/02/17/using-dropbox-as-a-private-github/)
+- [What you should not do](http://xkcd.com/1296/)
 
 # Website preparation
 

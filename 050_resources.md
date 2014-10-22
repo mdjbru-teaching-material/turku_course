@@ -1,0 +1,64 @@
+Title: Resources
+Date: 2014-10-22
+Summary: Links to online resources
+Sortorder: 050
+
+These are online resources of interest for people attending the course.
+
+# Programming
+
+- [Software Carpentry](http://software-carpentry.org/)
+    + A very useful website aiming at improving software skills of scientists
+      for better research
+    + Lessons material is available online
+
+- General [Python](https://www.python.org/) material
+    + The [official documentation](https://docs.python.org/3/)
+    + Numerous courses listed [here](https://wiki.python.org/moin/PythonTraining)
+
+- Testing
+    + Continuous integration testing with [Travis](https://travis-ci.org/).
+
+- Debugging
+    + A good [resource](http://blog.ionelmc.ro/2013/06/05/python-debugging-tools/)
+
+- Writing documentation
+    + Automatic documentation on the web with [Read the Docs](https://readthedocs.org/)
+
+- Python module packaging
+    + Submitting packages to the [Python Package Index](https://pypi.python.org/)
+
+- Programmer skills
+    + A [programmer skill matrix](http://sijinjoseph.com/programmer-competency-matrix/)
+    + Another [view on programmer skills evolution](http://www.wayland-informatics.com/The%20Seven%20Stages%20of%20Expertise%20in%20Software.htm)
+  
+# Version control
+
+- [Git](http://git-scm.com/) documentation
+    + The [Pro Git book](http://git-scm.com/book) by Scott Chacon
+    + The [reference manual](http://git-scm.com/docs)
+    + [Git graphical user interfaces](http://git-scm.com/download/gui/linux)
+
+- Workflows
+    + Using Git with Dropbox:
+      [here](http://blog.shvetsov.com/2013/04/using-git-with-dropbox.html) and
+      [here](http://jetheis.com/blog/2013/02/17/using-dropbox-as-a-private-github/)
+    + [What you should not do](http://xkcd.com/1296/)
+
+# Website preparation
+
+Software Carpentry has a [GitHub repository](https://github.com/swcarpentry/bc)
+which explains how to generate a website and host it on GitHub.
+[Jekyll](http://jekyllrb.com/), which is the static site generator of choice
+for GitHub, is written in Ruby, but
+[Pelican](http://docs.getpelican.com/en/3.4.0/index.html) is a good alternative
+written in Python for that. It uses [Pygments](http://pygments.org/) for code
+syntax highlighting. A detailed explanation about how to publish on GitHub with
+Pelican is available [here](http://docs.getpelican.com/en/3.4.0/tips.html).
+
+# Course already existing at Utu
+
+There is a Master's program at UTU on
+[Bioinformatics](https://nettiopsu.utu.fi/opas/tutkintoOhjelma.htm?rid=22413&uiLang=fi&lang=en&lvv=2014).
+It seems that there is no course on "best-practices" such as version control or
+unittesting.

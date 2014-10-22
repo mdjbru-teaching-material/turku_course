@@ -1,7 +1,7 @@
-Title: README
+Title: README working file
 Date: 2014-10-22
-Summary: README file
-Status: hidden
+Summary: README working file
+Sortorder: 090
 
 (link to the course webpage: http://mdjbru-teaching-material.github.io/turku_course/)
 

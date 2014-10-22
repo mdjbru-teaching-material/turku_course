@@ -6,12 +6,12 @@ Sortorder: 010
 Here are the outlines of the different course sections:
 
 - Day one
-    + [Introduction to Python]({filename}course-outline_01_introduction-to-python.md)
-    + [Version control with Git]({filename}course-outline_02_version-control-with-git.md)
+    + [Introduction to Python]({filename}course-outline_010_introduction-to-python.md)
+    + [Version control with Git]({filename}course-outline_020_version-control-with-git.md)
 
 - Day two
-    + [Introduction to the shell]({filename}course-outline_03_introduction-shell.md)
-    + Testing, debugging and code profiling
+    + [Introduction to the shell]({filename}course-outline_030_introduction-shell.md)
+    + [Testing, debugging and code profiling]({filename}course-outline_040_testing-debugging-profiling.md)
 
 - Day three
     + Documentation in Python

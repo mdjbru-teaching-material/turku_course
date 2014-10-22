@@ -9,7 +9,8 @@ help:
 	@echo '                                                                       '
 	@echo 'Usage:                                                                 '
 	@echo '   make copy                        copy the md files to pelican dir.  '
-	@echo '   make clean                       remove the generated files         '
+	@echo '   make clean                       remove the generated files and all '
+	@echo '                                    files in content/pages             '
 	@echo '   make regenerate                  regenerate files upon modification '
 	@echo '   make publish                     generate using production settings '
 	@echo '   make serve                       serve site at http://localhost:8000'
@@ -19,7 +20,8 @@ help:
 copy:
 	cp *.md website_pelican/content/pages
 
-clean: copy
+clean:
+	rm -f $(PELICAN_DIR)/content/pages/*
 	cd $(PELICAN_DIR); make clean
 
 regenerate: copy

@@ -1,8 +1,9 @@
-Title: Introduction
-Date: 2014-10-16
-Summary: Description of the course
-Sortorder: 010
-
+Title: Home
+Date: 2014-10-21
+Summary: Homepage
+URL:
+Save_as: index.html
+Status: hidden
 
 # What is this course about?
 

@@ -6,8 +6,7 @@ Status: hidden
 # Presentation of the shell
 
 - Command line interface, looks old-fashioned but very convenient
-- Main interface when you want to login to CSC servers or remote Linux
-  servers
+- Main interface when you want to login to CSC servers or remote Linux servers
 - Also present in Linux distributions for personal computers and Mac
 - With Windows, the cmd prompt is a bit similar (text-based) but not as
   powerful
@@ -31,8 +30,8 @@ Status: hidden
 - grep, wc, sort, uniq, cut, sed
 - pipes
 - example of a pipe to process a data file (count number of different species
-    in aligned sequences in a fasta files: grep for ">", cut for species name,
-    sort and uniq, wc)
+in aligned sequences in a fasta files: grep for ">", cut for species name, sort
+and uniq, wc)
 - shell cheat sheet (Tiina prepared one for the Jyväskylä workshop in 2011)
 
 # Shell scripts

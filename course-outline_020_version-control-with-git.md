@@ -17,7 +17,7 @@ Python's basics.
   (the single developper case will be developped in more details later)
 - Tools: SVN, **Git**
 - Online servers for repositories: GitHub and BitBucket, differences between
-    the two
+  the two
 
 # Installation of Git
 
@@ -30,6 +30,7 @@ Python's basics.
 - Diff between files
 - How to revert to a previous version
 - Branching and merging
+- Resolving merge conflicts
 
 # Setting up a remote repository
 

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8" />
+    <title>README working file</title>
+    <link rel="stylesheet" href="../theme/css/main.css" />
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+  </head>
+
+  <body id="index" class="home">
+    <header id="banner" class="body">
+      <h1><a href="../">Informatics for scientists - Turku course </a></h1>
+      <nav><ul>
+<!-- http://stackoverflow.com/questions/18520046/how-can-i-control-the-order-of-pages-from-within-a-pelican-article-category -->
+          <li><a href="../pages/course-outline.html">Course outline</a></li>
+          <li><a href="../pages/resources.html">Resources</a></li>
+          <li class="active"><a href="../pages/readme-working-file.html">README working file</a></li>
+      </ul></nav>
+    </header><!-- /#banner -->
+
+<section id="content" class="body">
+    <h1 class="entry-title">README working file</h1>
+    
+    <p>(link to the course webpage: http://mdjbru-teaching-material.github.io/turku_course/)</p>
+<h3>Table of content</h3>
+<ul>
+<li><a href="#good-templates-for-teaching-software-development">Good templates for teaching software development</a><ul>
+<li><a href="#software-carpentry">Software Carpentry</a></li>
+<li><a href="#other-courses-on-python">Other courses on Python</a></li>
+</ul>
+</li>
+<li><a href="#material-to-define-the-teaching-objectives">Material to define the teaching objectives</a><ul>
+<li><a href="#important-concepts-to-teach">Important concepts to teach</a></li>
+</ul>
+</li>
+<li><a href="#comments">Comments</a><ul>
+<li><a href="#choosing-python-or-r">Choosing Python or R?</a></li>
+</ul>
+</li>
+<li><a href="#project-draft">Project draft</a><ul>
+<li><a href="#timeline-and-practical-organization">Timeline and practical organization</a></li>
+<li><a href="#general-content">General contents</a></li>
+<li><a href="#prerequisites">Prerequisites</a></li>
+<li><a href="#detailed-content">Detailed contents</a></li>
+<li><a href="#teachers">Teachers</a></li>
+</ul>
+</li>
+</ul>
+<h2>Good templates for teaching software development</h2>
+<h3>Software Carpentry</h3>
+<p>Unix shell, Git and R (we can replace R with Python)
+    <a href="https://github.com/karthik/2014-10-31-nw">https://github.com/karthik/2014-10-31-nw</a>.</p>
+<p>They are using a Creative Commons license. So we can use the material, remix it
+but need to give credits.</p>
+<h3>Other courses on Python</h3>
+<p>There are many here <a href="https://wiki.python.org/moin/PythonTraining">https://wiki.python.org/moin/PythonTraining</a>. We can
+cherry-pick from there. It seems that a ovewiew course including
+test-driven-development (TDD)and other best-practices are not too common? Maybe
+not for very beginners maybe.</p>
+<p>One option could be to teach the very basics of Python from the
+"best-practices" approach. (Pep8 and TDD).</p>
+<h2>Material to define the teaching objectives</h2>
+<p>The points we want to teach will depend on the expected audience level
+(beginner, proficient user, advanced) an also of course on our own skills!</p>
+<p>This blog <a href="http://sijinjoseph.com/programmer-competency-matrix/">http://sijinjoseph.com/programmer-competency-matrix/</a> gives a good
+view of programming skills at different stages of a programmer learning
+life. Maybe we can use it as a basis to select what to teach to which audience?</p>
+<p>There is also this site
+<a href="http://www.wayland-informatics.com/The%20Seven%20Stages%20of%20Expertise%20in%20Software.htm">http://www.wayland-informatics.com/The%20Seven%20Stages%20of%20Expertise%20in%20Software.htm</a>.</p>
+<h3>Important concepts to teach</h3>
+<p>(see also the Software Carpentry materials)</p>
+<ul>
+<li>To complete beginners (i.e. people would never used Python or R):</li>
+<li>introduction to a programming language (Python, R or even just the bash
+  shell)</li>
+<li>automation of repeated tasks by writing scripts (again, using Python, R or
+the bash)</li>
+<li>version controlling of scripts</li>
+<li>working remotely (e.g. bash shell on CSC)</li>
+<li>integration of Git with Github/Bitbucket. Pull requests.</li>
+<li>Workflows
+    (e.g. <a href="http://blog.shvetsov.com/2013/04/using-git-with-dropbox.html">here</a>
+    and
+    <a href="http://jetheis.com/blog/2013/02/17/using-dropbox-as-a-private-github/">here</a>
+    for non- or not-yet public scripts via Dropbox/Bitbucket</li>
+<li>Git for "Single Developer" (e.g.
+  <a href="http://nvie.com/posts/a-successful-git-branching-model/">this</a> and
+  <a href="http://octodecillion.com/blog/single-developer-git-workflow/">this</a>)</li>
+<li>
+<p>Or this:
+  <img alt="http://xkcd.com/1296/" src="http://imgs.xkcd.com/comics/git_commit.png" /></p>
+</li>
+<li>
+<p>To more experienced users:</p>
+</li>
+<li>virtual environments</li>
+<li>testing, coverage and test-driven development</li>
+<li>Continuous Integration testing with <a href="https://travis-ci.org/">Travis</a>.</li>
+<li>Automatic documentation on the web with
+    <a href="https://readthedocs.org/">Read the Docs</a>.</li>
+<li>python module packaging. Submitting packages to the
+    <a href="https://pypi.python.org/">Python Package Index</a>.</li>
+<li>debugging (symbolic debugger) (a good
+    <a href="http://blog.ionelmc.ro/2013/06/05/python-debugging-tools/">resource</a> for
+    Python)</li>
+<li>code profiling</li>
+</ul>
+<h2>Comments</h2>
+<p>Carlos talked to Niklas. It seems the department really needs PhD courses as
+students have hard time finding course to get credits from. Besides there might
+be funding available for such PhD course (need to talk to Ville). Then this
+course can be open to postdocs as well. In such case, it is likely that many
+students will be experienced.  We can aim for giving the course January or
+February. So there is time for advertise it.  If it is a PhD course (preferred
+option for both Carlos and Matthieu) then it can be a three-day full day
+course. If it is aimed for master students then it should be once a week maybe
+(as they have many other activities during the week).</p>
+<p>There is a Master's program at UTU on
+<a href="https://nettiopsu.utu.fi/opas/tutkintoOhjelma.htm?rid=22413&amp;uiLang=fi&amp;lang=en&amp;lvv=2014">Bioinformatics</a>.
+It seems that there is no course on "best-practices" such as version control or
+unittesting.</p>
+<p>It might be a good idea to be precise about what prerequisites we
+expect. If we need to cover the basics of R/Python we might not have
+the time to get to the meat of the course.</p>
+<h3>Choosing Python or R?</h3>
+<p>It might be too audacious to aim at teaching both Python and R during only 3
+days. Maybe it would be more reasonable to choose only one, and use it to teach
+the concepts (functions, modular code, version control, testing, ...).</p>
+<ul>
+<li><strong>Python</strong></li>
+<li><strong>pros</strong><ul>
+<li>widely used, lots of scientific libraries, including matplotlib, numpy, pandas</li>
+<li>clean syntax, easy to learn</li>
+<li>nice modules for testing and code coverage</li>
+<li>documentation can easily be included as docstrings in the code</li>
+</ul>
+</li>
+<li><strong>cons</strong><ul>
+<li>maybe not the most useful for biology Ph.Ds: they are more likely to have
+  to do analyses in R than to do data processing in Python. Even if pandas
+  is there in Python, Matthieu thinks R is probably the tool of choice when
+  it comes to statistical analyses.</li>
+<li>there are currently two main versions of Python, can be a bit
+  confusing. One way could be just to use version 3 and just mention
+  version 2 without going back to it during the course.</li>
+<li>not a single mainstream IDE equivalent to RStudio with R?</li>
+</ul>
+</li>
+<li><strong>R</strong></li>
+<li><strong>pros</strong><ul>
+<li>simple language, widely used, with a very large package library</li>
+<li>there are frameworks for testing (e.g. testthat) and writing modules
+easily (e.g. devtools)</li>
+<li>RStudio is a nice IDE and has integrated interaction with Git</li>
+<li>nice profiling and benchmark tools</li>
+</ul>
+</li>
+<li><strong>cons</strong><ul>
+<li>maybe not as "clean" language as Python (for example, the methods for
+  classes are less visible than in Python, and object-oriented programming
+  might be more confusing to learn).</li>
+<li>not proper coverage tools yet (even though some tools exist).</li>
+</ul>
+</li>
+</ul>
+<p>In short: Python more adapted for teaching informatic concepts, R more adapted
+for biologists?</p>
+<p>One way can be to give the course with Python: once the concepts are learnt and
+adopted, they can be easily transferred to R. Also, Ph.D students are more
+likely to be exposed to R at some point in some other course (isn't there
+already an R course for Ph.D at Utu actually?).</p>
+<p>It could be also good to have a follow-up course focusing on R.</p>
+<h2>Project draft</h2>
+<p>This is a basic project draft, aiming at a PhD course.</p>
+<h3>Timeline and practical organization</h3>
+<ul>
+<li>
+<p>It might be good to set up a web page on GitHub to present the course and the
+  practical details, as well as make the teaching material available. Software
+  Carpentry has a <a href="https://github.com/swcarpentry/bc">GitHub repository</a> which
+  explains how to do it. It would be nice to generate it with a Python static
+  site generator (<a href="http://jekyllrb.com/">Jekyll</a>, which is the static site
+  generator of choice for GitHub, is written in Ruby!), and
+  <a href="http://docs.getpelican.com/en/3.4.0/index.html">Pelican</a> might be a good
+  choice for that. It uses <a href="http://pygments.org/">Pygments</a> for code syntax
+  highlighting. A detailed explanation about how to publish on GitHub with
+  Pelican is available <a href="http://docs.getpelican.com/en/3.4.0/tips.html">here</a>.</p>
+</li>
+<li>
+<p>A draft version of the website is available here:
+  http://mdjbru-teaching-material.github.io/turku_course/</p>
+</li>
+<li>
+<p>Course duration: 3 full days. Possibilities are:</p>
+<ul>
+<li><strong>Three consecutive days</strong>. Advantages: compact, people can focus on the
+course and the material from a given day is still fresh the next
+day. Inconvenient: people do not have time to apply what they learn to
+their own research in-between classes and it is less likely that we get
+feedback from one day to the other. Also, if people do not try to apply
+what they learn at once after the classes, they might just forget about it
+and the course will be of little use.</li>
+<li><strong>One full day per week during three consecutive weeks</strong>. Advantages:
+people only have to focus one day at a time, they do not accumulate fatigue
+about informatics during three consecutive days and they are more likely to
+be fresh and rested before each teaching day. People have time between each
+week to try the things they learn, and come back with questions on the next
+session. People are "re-activated" about applying what they learn three
+separate times, and it is more likely that they will try to apply what they
+learn just after hearing about it if they have three opportunities instead
+of just one in hte case of a consecutive three-day course. Inconvenient:
+people have to be available for one day in three consecutive weeks, might
+be a bit harder to fit in their schedule. Also people might tend to forget
+a bit more about what they heard the previous time (but this is probably
+not a big problem since a quick reminder can be done at the beginning of
+each day, and the material will probably be divided in more or less
+independent units over the three days), but this can be counter-balanced by
+the advantage of having more time to incorporate and train on the previous
+topics during each week.</li>
+</ul>
+</li>
+<li>
+<p>Teachers involved:</p>
+<ul>
+<li>Matthieu</li>
+<li>Carlos</li>
+<li>Roland</li>
+<li>we can also check with Tiina if she would be interested in teaching
+something there?</li>
+<li>other researchers of the group (e.g. Erica and NGS specific things? She
+has been giving workshops in 2011 in Jyväskylä and in 2014 in Roscoff).</li>
+</ul>
+</li>
+<li>
+<p>Place and practicals</p>
+<ul>
+<li>Depends on the number of people attending, maybe a reasonable expectation
+is 5-30?</li>
+<li>Genetics seminar room  or similar is ideal. Niklas said that the Genetics
+seminar room is free of charge for us while we would need to rent some
+other lecture room (for example those in LT1).
+Small room and video projector, internet access through Sparknet, students
+can easily chat with each other to solve issues and it is easy for the
+teacher (and potential helpers) to walk between the tables and help
+students individually.</li>
+<li>Each course is probably a mix of presentation on the screen and
+practicals (hopefully more practicals than lecture-like presentation), and
+it would be good to have, in addition to the teacher, one or two helpers to
+assist for the practicals (Matthieu was participating in Erica's
+bioinformatics workshop in Jyväskylä in 2011 and in his experience it was
+extremely helpful to have several people helping the students with the
+practicals in addition to the main teacher).</li>
+</ul>
+</li>
+<li>
+<p>Persistency of teaching materials (github, pdf, presentations, links to
+  online references)</p>
+</li>
+<li>
+<p>Aim is not to teach everything but to deliver the important concepts
+  (e.g. version control, testing) and the basic skills (shell, git basics, data
+  persistence and traceability, programming, debugging) so that they can learn
+  by themselves and adopt good practices when using other tools (e.g. teaching
+  how to use CSC might not be feasible in three days, but if they now how to
+  use the shell, how to connect remotely, how to transfer files and to version
+  control their scripts they are well equipped and can deal with the very good
+  documentation of CSC).</p>
+</li>
+<li>
+<p>CSC accounts for students? See with Erica how it was working for the
+  Jyväskylä bioinformatics course in 2011. We can actually check with her if
+  there is still material available on-line for that and how were the
+  practicals for using CSC accounts for students.</p>
+</li>
+<li>
+<p>Note: CSC use a module system which might be a bit hard to grasp at the
+  beginning, but if virtual environments are already introduced to the students
+  then it is probably very easy to understand.</p>
+</li>
+<li>
+<p>Feedback form one month or six month after the course to see if people have
+  changed their habits?</p>
+</li>
+</ul>
+<h3>General contents</h3>
+<ul>
+<li>
+<p>Main objectives (from the Software Carpentry website):</p>
+<ul>
+<li>"to make scientists more productive, and their work more reliable, by
+teaching them basic computing skills."</li>
+<li>"most scientists are never taught how to build, use, validate, and share
+software well. As a result, many spend hours or days doing things badly
+that could be done well in just a few minutes. Our goal is to change that
+so that scientists can spend less time wrestling with software and more
+time doing useful research."</li>
+</ul>
+</li>
+<li>
+<p>In this respect, the objectives are probably more about <strong>giving basic, solid
+  computer skills</strong> than can be invested into research projects afterwards
+  rather than teaching how to analyse NGS data <em>per se</em>.</p>
+</li>
+<li>
+<p>Again from Software Carpentry, the core topics:</p>
+<ul>
+<li>the basics of structured programming in Python or R</li>
+<li>version control using Git, Mercurial, or Subversion</li>
+<li>unit testing using an xUnit-style framework</li>
+<li>automating tasks using the Unix shell</li>
+</ul>
+</li>
+<li>
+<p>Each concept taught can be illustrated by a real-life example for
+  scientists. It is fairly easy to take examples from our real research
+  experience and give it to the students as a training.</p>
+</li>
+</ul>
+<h3>Prerequisites</h3>
+<ul>
+<li>
+<p>Realistically, we cannot expect all students to have experience with even
+  basic programming. Some will probably have used R but not all, while a few
+  can be already experienced in Python and R.</p>
+</li>
+<li>
+<p>Safe to assume that everybody is beginner and familiar only with Windows or
+  Mac environment.</p>
+</li>
+<li>
+<p>We have to ensure that every concept taught can be understood based on was is
+  explained before.</p>
+</li>
+<li>
+<p>We should ask students when they register what is their expertise in
+  informatics, if they already use any programming language, what is their
+  operating system, if they have been using the CSC services or not. A good
+  starting point is from the Software Carpentry materials
+  <a href="http://software-carpentry.org/workshops/assess/pre-learner.html">here</a>.</p>
+</li>
+</ul>
+<h3>Short contents</h3>
+<ul>
+<li>Introduction to python</li>
+<li>Version control with Git</li>
+<li>Sharing code (GitHub and BitBucket)</li>
+<li>Introduction to the shell</li>
+<li>Test and code coverage</li>
+<li>Code profiling</li>
+<li>Debugging</li>
+<li>Documentation</li>
+<li>Virtual environments</li>
+<li>Pet project</li>
+</ul>
+<h3>Detailed contents</h3>
+<ul>
+<li>
+<p>Day one, morning: <strong>scripting and version control</strong></p>
+<ul>
+<li>introduction to scripting language (Python or R)</li>
+<li>basic variable assignment, flow control</li>
+<li>functions</li>
+<li>writing modulable and re-usable code</li>
+</ul>
+</li>
+<li>
+<p>Day one, afternoon: <strong>scripting and version control</strong></p>
+<ul>
+<li>finishing scripting</li>
+<li>version control with Git (this probably depends on having introduced a
+scripting language before, either bash or R or Python)</li>
+<li>Git for single developper</li>
+<li>Sharing code with GitHub or BitBucket (a word about licenses?)</li>
+<li>It would be nice to illustrate the use of GitHub and BitBucket by showing
+  real-life projects that use them (e.g. BioPython, ggplot2, ...)</li>
+<li><strong>note</strong>: since most students probably don't use a Linux environment on
+  their laptop, it could be a good move to introduce a GUI for Git (there
+  is a list <a href="http://git-scm.com/download/gui/linux">here</a>). Git also comes
+  with <code>git-gui</code> and <code>gitk</code>, which could be used instead of a
+  third-party tool to keep things simple and to avoid introducing another
+  tool. Using Git from the command line could be done later. Or is it that
+  the command line use should be presented at once? On the one hand, it
+  might be good to get students used as soon as possible to using the
+  command line version, but on the other hand they might never use Git if
+  we start with an abrupt introduction Git + command line.</li>
+</ul>
+</li>
+<li>
+<p>Day two, morning: <strong>bash shell and task automation, ssh</strong></p>
+<ul>
+<li>working remotely: ssh to CSC</li>
+<li>introduction to bash shell (important for e.g. CSC)</li>
+<li>automation of repeated tasks with shell scripts (for Windows users, what
+about win-bash, cygwin or UnxUtils?)</li>
+</ul>
+</li>
+<li>
+<p>Day two, afternoon: <strong>testing and code profiling</strong></p>
+<ul>
+<li>testing, coverage with either Python or R</li>
+<li>debugging (print statements, symbolic debuggers, <code>traceback()</code> and
+<code>recover()</code> in R)</li>
+<li>code profiling, refactoring (underline the interest of having a test
+suite ready when improving a code that already works)</li>
+<li>if enough time, code timing (i.e. try to predict how long code will take
+  to run by running small subsets, looking at the relationship between
+  input size and run time and extrapolating). This might be especially
+  useful when preparing a parallel run on CSC for example, or just to know
+  how much can be done in a given time.</li>
+</ul>
+</li>
+<li>
+<p>Day three, morning: <strong>documentation and virtual environments</strong></p>
+<ul>
+<li>docstrings in Python, basics of R package writing</li>
+<li>basics of Python module writing</li>
+<li>interest and use of virtual environments</li>
+</ul>
+</li>
+<li>
+<p>Day three, afternoon: <strong>if time, integrated pet project?</strong></p>
+<ul>
+<li>would be nice if students could decide on a common pet project at the end
+of day two</li>
+<li>the afternoon could be used to divide the works between small teams
+(e.g. each team has to write a couple of functions, for which the input and
+output matches the other teams functions to produce a complete module or
+pipeline)</li>
+<li>people would have to write simple code, test for it, documentation and
+publish it on GitHub</li>
+</ul>
+</li>
+</ul>
+<h3>Teachers</h3>
+<table>
+<thead>
+<tr>
+<th>Day</th>
+<th>Topic</th>
+<th>kept</th>
+<th>Proposed teacher</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Intro to Python</td>
+<td>x</td>
+<td>Carlos</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Intro to R</td>
+<td></td>
+<td>Matthieu</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Version control with Git</td>
+<td>x</td>
+<td>Matthieu</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Git, single developper</td>
+<td>x</td>
+<td>Matthieu</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Sharing code with GitHub</td>
+<td>x</td>
+<td>Carlos</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Bash shell, ssh, task automation</td>
+<td>x</td>
+<td>Matthieu</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Testing, code coverage</td>
+<td>x</td>
+<td>Carlos</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Debugging</td>
+<td>x</td>
+<td>Matthieu</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Code profiling</td>
+<td>x</td>
+<td>Matthieu</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Documentation, modules in Python</td>
+<td>x</td>
+<td>Carlos</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Writing R packages</td>
+<td></td>
+<td>Matthieu</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Virtual environments</td>
+<td>x</td>
+<td>Carlos</td>
+</tr>
+</tbody>
+</table>
+<p>Teaching per person:</p>
+<ul>
+<li>Carlos: 5</li>
+<li>Matthieu: 5</li>
+<li>Roland: none, but willing to participate in material preparation</li>
+</ul>
+<p>Roland is not sure that he will be available in February 2015 to actually
+participate in the teaching, but he is willing to participate in the material
+preparation (especially in the Python documentation part).</p>
+</section>
+
+    <!-- <section id="extras" class="body"> -->
+    <!--  -->
+    <!--  -->
+    <!-- </section><\!-- /#extras -\-> -->
+    
+    <footer id="contentinfo" class="body">
+      <address id="about" class="vcard body">
+	<p>
+          Generated with <a href="http://getpelican.com/">Pelican</a>, a
+          static site generator which
+          uses <a href="http://python.org">Python</a>.
+	</p>
+        <p>
+	  Theme modified from the original <i>notmyidea</i> theme
+	  by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing
+	  Magazine</a>.
+	</p>
+      </address><!-- /#about -->
+    </footer><!-- /#contentinfo -->
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+
+  </body>
+</html>

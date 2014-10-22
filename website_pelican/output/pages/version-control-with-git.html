@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-        <meta charset="utf-8" />
-        <title>Version control with Git</title>
-        <link rel="stylesheet" href="../theme/css/main.css" />
-
-        <!--[if IE]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  
+  <head>
+    <meta charset="utf-8" />
+    <title>Version control with Git</title>
+    <link rel="stylesheet" href="../theme/css/main.css" />
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
-</head>
+  </head>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="../">Informatics for scientists - Turku course </a></h1>
-                <nav><ul>
+  <body id="index" class="home">
+    <header id="banner" class="body">
+      <h1><a href="../">Informatics for scientists - Turku course </a></h1>
+      <nav><ul>
 <!-- http://stackoverflow.com/questions/18520046/how-can-i-control-the-order-of-pages-from-within-a-pelican-article-category -->
-                    <li><a href="../pages/introduction.html">Introduction</a></li>
-                    <li><a href="../pages/course-outline.html">Course outline</a></li>
-                </ul></nav>
-        </header><!-- /#banner -->
+          <li><a href="../pages/course-outline.html">Course outline</a></li>
+          <li><a href="../pages/resources.html">Resources</a></li>
+          <li><a href="../pages/readme-working-file.html">README working file</a></li>
+      </ul></nav>
+    </header><!-- /#banner -->
+
 <section id="content" class="body">
     <h1 class="entry-title">Version control with Git</h1>
     
@@ -34,7 +36,7 @@ Python's basics.</p>
   (the single developper case will be developped in more details later)</li>
 <li>Tools: SVN, <strong>Git</strong></li>
 <li>Online servers for repositories: GitHub and BitBucket, differences between
-    the two</li>
+  the two</li>
 </ul>
 <h1>Installation of Git</h1>
 <ul>
@@ -47,6 +49,7 @@ Python's basics.</p>
 <li>Diff between files</li>
 <li>How to revert to a previous version</li>
 <li>Branching and merging</li>
+<li>Resolving merge conflicts</li>
 </ul>
 <h1>Setting up a remote repository</h1>
 <ul>
@@ -60,16 +63,30 @@ Python's basics.</p>
 <li>Modify the code and send a pull request</li>
 </ul>
 </section>
-        <section id="extras" class="body">
-        </section><!-- /#extras -->
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
+    <!-- <section id="extras" class="body"> -->
+    <!--  -->
+    <!--  -->
+    <!-- </section><\!-- /#extras -\-> -->
+    
+    <footer id="contentinfo" class="body">
+      <address id="about" class="vcard body">
+	<p>
+          Generated with <a href="http://getpelican.com/">Pelican</a>, a
+          static site generator which
+          uses <a href="http://python.org">Python</a>.
+	</p>
+        <p>
+	  Theme modified from the original <i>notmyidea</i> theme
+	  by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing
+	  Magazine</a>.
+	</p>
+      </address><!-- /#about -->
+    </footer><!-- /#contentinfo -->
 
-                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
-        </footer><!-- /#contentinfo -->
+    <!--  -->
+    <!--  -->
+    <!--  -->
 
-</body>
+  </body>
 </html>

@@ -7,11 +7,11 @@ Status: hidden
 
 - Python is an interpreted language (distinction compiled/interpreted)
 - Python is widely used in the scientific community (examples of projects using
-    Python, e.g. BioPython, modeller)
+  Python, e.g. BioPython, modeller)
 - There are a lot of libraries available (e.g. Numpy, BioPython, matplotlib,
-    pandas) and a large community
+  pandas) and a large community
 - Python is multi-platform (if it works on your laptop, it should work on the
-    CSC servers)
+  CSC servers)
 - We are going to teach Python 3
 
 # Installation of Python
@@ -19,7 +19,7 @@ Status: hidden
 - How to install Python on a Windows or Mac machine
 - How to install Ipython
 - Set up the working environment (do we use an IDE, or just a simple text
-    editor associated with a console window running Ipython?)
+  editor associated with a console window running Ipython?)
 
 # Basics of Python
 
@@ -29,7 +29,7 @@ Status: hidden
 - Flow control (if, then, for, while)
 - Reading from and writing to a file
 - Using the Python documentation (e.g. the tutorial and the library manual,
-    pdfs from the Python docs)
+  pdfs from the Python docs)
 
 # Modulable code
 
@@ -38,7 +38,7 @@ Status: hidden
 - Introduction to documentation for functions
 - Separating functions to a separate file (beginning of module writing)
 - Advanced: references and copies in Python (important point, it is a dangerous
-    pitfall when one is not aware of it)
+  pitfall when one is not aware of it)
 
 # Using an existing library: example with BioPython and matplotlib
 
@@ -49,5 +49,5 @@ Status: hidden
 # End of the course: complete script
 
 - Write a script which loads some aligned fasta sequences from a file and plot
-    the residue conservation along the primary sequence
+  the residue conservation along the primary sequence
 - This script can be used as an example material for the version control course

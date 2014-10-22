@@ -1,8 +1,10 @@
-Title: Introduction
-Date: 2014-10-16
-Summary: Description of the course
-Sortorder: 010
-
+Title: 
+Date: 2014-10-21
+Summary: Homepage
+URL:
+Save_as: index.html
+Status: hidden
+Slug: home
 
 # What is this course about?
 
@@ -18,4 +20,7 @@ programming skills were becoming necessary for our research projects.
 
 There is no need for prior experience with programming to attend the course.
 
+# Where and when does it take place?
 
+For now, we plan to have it at the end of January 2015 in the Genetics seminar
+room.

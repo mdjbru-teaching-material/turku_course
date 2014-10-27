@@ -18,8 +18,8 @@ Here are the outlines of the different course sections:
     + Virtual environments
     + Wrapping up: developing an integrated project ([example]())
 
-A follow-up session might take place later in the year if there are enough
-people interested in it.
+A follow-up session might take place later in the year if enough people are
+interested in it.
 
 # Final project (day three)
 

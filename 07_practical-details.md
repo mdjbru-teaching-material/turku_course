@@ -31,7 +31,7 @@ software web sites:
 
 TODO: Check with CSC how it works to get students accounts
 
-# Before the course
+# Pre-assessment form
 
-Fill in the pre-assessment form (TODO: prepare the form, we can use the one
-from Software Carpentry).
+Please fill in and send the
+[pre-assessment form]({filename}pre-assessment.md) before the course.

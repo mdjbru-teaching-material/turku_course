@@ -15,7 +15,7 @@ for the course or if you don't have a *Sparknet* account.
 The material taught is valid for Windows, Linux and MacOS systems. The students
 are expected to have installed the necessary software on their machine before
 they attend the course. System-specific instructions are usually found on the
-installation pages of the software:
+software web sites:
 
 - [Python](https://www.python.org/) and [Ipython](http://ipython.org/)
 - [Git](http://git-scm.com/doc)
@@ -31,7 +31,7 @@ installation pages of the software:
 
 TODO: Check with CSC how it works to get students accounts
 
-# Before the course
+# Pre-assessment form
 
-Fill in the pre-assessment form (TODO: prepare the form, we can use the one
-from Software Carpentry).
+Please fill in and send the
+[pre-assessment form]({filename}pre-assessment.md) before the course.

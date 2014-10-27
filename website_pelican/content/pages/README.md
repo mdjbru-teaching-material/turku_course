@@ -393,3 +393,11 @@ Teaching per person:
 Roland is not sure that he will be available in February 2015 to actually
 participate in the teaching, but he is willing to participate in the material
 preparation (especially in the Python documentation part).
+
+### Other
+
+Should we talk a bit about licenses?
+
+Maybe we could use [Etherpad](http://etherpad.org) to share code during the
+sessions? There is a list of public instances
+[here](https://github.com/ether/etherpad-lite/wiki/Sites-that-run-Etherpad-Lite).

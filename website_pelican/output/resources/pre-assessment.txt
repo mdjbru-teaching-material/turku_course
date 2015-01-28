@@ -1,14 +1,6 @@
-Title: Pre-assessment form
-Date: 2014-10-27
-Summary: Form to fill before the course
-Status: hidden
-
-To fill the form, please download the corresponding
-[text file]({filename}/resources/pre-assessment.txt) and send it to
-xxx@utu.fi.
-
-*(This pre-assessment form is a modified material from
-[Software Carpentry](http://software-carpentry.org/workshops/assess/pre-learner.html)).*
+(This pre-assessment form is a modified material from Software Carpentry, see:
+http://software-carpentry.org/workshops/assess/pre-learner.html
+for the original material)
 
 1.  Name
 

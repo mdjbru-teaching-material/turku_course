@@ -35,3 +35,5 @@ DEFAULT_PAGINATION = 10
 # Theme
 THEME = "themes/notmyidea_custom"
 
+# Static paths to upload
+STATIC_PATHS = ["resources"]

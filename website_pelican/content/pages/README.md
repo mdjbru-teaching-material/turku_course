@@ -2,6 +2,7 @@ Title: README working file
 Date: 2014-10-22
 Summary: README working file
 Sortorder: 090
+Status: hidden
 
 (link to the course webpage: http://mdjbru-teaching-material.github.io/turku_course/)
 

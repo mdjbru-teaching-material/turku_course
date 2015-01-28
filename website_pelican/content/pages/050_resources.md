@@ -9,7 +9,7 @@ These are online resources of interest for people attending the course.
 
 ## Software Carpentry
 
-[Project website aiming at improving software skills of scientists for better research](http://software-carpentry.org/)
+- [Project aiming at improving software skills of scientists for better research](http://software-carpentry.org/)
 
 ## General Python material
 

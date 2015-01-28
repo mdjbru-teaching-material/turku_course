@@ -16,7 +16,7 @@ Here are the outlines of the different course sections:
 - Day three
     + Documentation in Python
     + Virtual environments
-    + Wrapping up: developing an integrated project ([example]())
+    + Wrapping up: developing an integrated project
 
 A follow-up session might take place later in the year if enough people are
 interested in it.
@@ -25,6 +25,6 @@ interested in it.
 
 The end of the third day will be devoted to the students working as several
 small groups within a team to distribute tasks, write, test and share code in
-order to create a small and complete Python module. The purpose of the moudle
+order to create a small and complete Python module. The purpose of the module
 can be a project proposed by the students themselves (the preferred options) or
 chosen by the teachers.

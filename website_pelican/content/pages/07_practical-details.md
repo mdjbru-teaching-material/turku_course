@@ -7,10 +7,10 @@ Sortorder: 007
 
 A large portion of the course (most of it actually) will be hands-on work, and
 students are expected to bring a laptop with a wireless internet connection to
-be able to practice as they learn. *Sparknet* is available in the Genetics
-seminar room (but the students should have their own *Sparknet*
-credentials). Please contact us beforehand if you don't have access to a laptop
-for the course or if you don't have a *Sparknet* account.
+be able to practice as they learn. *Sparknet* and *eduroam* are available in
+the Genetics seminar room. Please contact us beforehand if you don't have
+access to a laptop for the course or if you don't have a *Sparknet* nor a
+*eduroam* account.
 
 The material taught is valid for Windows, Linux and MacOS systems. The students
 are expected to have installed the necessary software on their machine before
@@ -29,7 +29,7 @@ software web sites:
   [Filezilla](https://filezilla-project.org/) for file transfer to a remote
   server
 
-TODO: Check with CSC how it works to get students accounts
+<!-- TODO: Check with CSC how it works to get students accounts -->
 
 # Pre-assessment form
 

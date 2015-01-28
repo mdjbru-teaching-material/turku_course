@@ -4,7 +4,7 @@ Summary: Form to fill before the course
 Status: hidden
 
 Please fill in this form before the course (you can copy-paste it to a text
-editor and fill it in or underline your choices):
+editor and fill it in or underline your choices) and send it to xxx@utu.fi:
 
 1.  Name
 

@@ -63,9 +63,12 @@ written in Python for that. It uses [Pygments](http://pygments.org/) for code
 syntax highlighting. A detailed explanation about how to publish on GitHub with
 Pelican is available [here](http://docs.getpelican.com/en/3.4.0/tips.html).
 
-# Course already existing at Utu
+# Bioinformatic course existing at Utu
 
 There is a Master's program at UTU on
 [Bioinformatics](https://nettiopsu.utu.fi/opas/tutkintoOhjelma.htm?rid=22413&uiLang=fi&lang=en&lvv=2014).
-It seems that there is no course on "best-practices" such as version control or
-unittesting.
+
+*Please note that we do not intend this course to be a bioinformatic course:
+our objective is only to expose researchers who have to use computer tools for
+their research but do not have a formal IT education to some key concepts for a
+better use of their tools.*

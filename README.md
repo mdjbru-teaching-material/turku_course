@@ -31,6 +31,10 @@ Unix shell, Git and R (we can replace R with Python)
 They are using a Creative Commons license. So we can use the material, remix it
 but need to give credits.
 
+There is also a very nice example of how to use Dropbox pulic links to share
+scripts and bash history live with students
+<http://software-carpentry.org/blog/2015/02/instructor-debriefing-2015-02-10.html>.
+
 ### Other courses on Python
 
 There are many here <https://wiki.python.org/moin/PythonTraining>. We can

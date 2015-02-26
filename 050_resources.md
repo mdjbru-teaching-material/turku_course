@@ -54,8 +54,8 @@ These are online resources of interest for people attending the course.
 
 # Papers about scientific computing
 
-- [Noble's "A quick guide to organizing computational biology projects"](TODO_ADDLINK)
-- [Wilson's "Best Practices for scientific computing"](TODO_ADDLINK)
+- [Noble's "A quick guide to organizing computational biology projects"](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424)
+- [Wilson's "Best Practices for scientific computing"](TODO_ADD_LINK)
 
 # Website preparation
 

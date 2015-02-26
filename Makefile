@@ -1,4 +1,4 @@
-PELICAN_DIR=website_pelican
+PELICAN_DIR=website_pelican_do-not-modify-by-hand
 
 help:
 	@echo 'Makefile for the web site                                              '
@@ -18,7 +18,7 @@ help:
 	@echo '   make github                      upload the web site via gh-pages   '
 
 copy:
-	cp *.md website_pelican/content/pages
+	cp *.md $(PELICAN_DIR)/content/pages
 
 clean:
 	rm -f $(PELICAN_DIR)/content/pages/*

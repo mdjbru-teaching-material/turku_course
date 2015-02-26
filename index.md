@@ -11,7 +11,7 @@ The aim of this course is to teach **good practices in informatics** to
 scientists whose primary field is not computer science.
 
 Scientists increasingly need to rely on computer tools to perform their
-research. However, they often lack formal education on how to design and use
+research. However, they often lack a formal education on how to design and use
 computer software efficiently and reliably. Every step is an analysis pipeline
 should be easily reproducible, but this is often not the case.
 
@@ -29,13 +29,25 @@ themselves what they will still miss at the end of the course.
 # Who is teaching this course?
 
 We are researchers in biology who learnt about informatics on the way, as
-programming skills were becoming necessary for our research projects.
+programming skills were becoming necessary for our research projects. For now
+the planned teachers are [Carlos Peña](http://nymphalidae.utu.fi/cpena/) and
+[Matthieu Bruneaux](http://mdjbru.toile-libre.org/).
 
 # Who can attend this course?
 
-There is no need for prior experience with programming to attend the course.
+There is no need for prior experience with programming to attend the
+course. The course is open to everybody, students and researchers. There is no
+registration fee, but we expect people who enroll to attend or to warn us in
+advance if they can't.
+
+# How much credits can I get from the course?
+
+The plan is to provide 2 credits to students attending the three days and
+fulfilling the homework tasks. For more information, please contact
+[Niklas Wahlberg](mailto:niklas.wahlberg@utu.fi) who is the responsible person
+for the students.
 
 # Where and when is it taking place?
 
-The course will take place in the Genetics seminar room (Pharmacity, Turku)
-from the xxth of January to the xxth of February 2015.
+The course will take place in the Genetics seminar room in Pharmacity (Turku,
+Finland) from the 21st to the 23rd of April 2015 (three full days in a row).

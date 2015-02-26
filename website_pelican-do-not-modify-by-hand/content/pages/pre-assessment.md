@@ -5,7 +5,7 @@ Status: hidden
 
 To fill the form, please download the corresponding
 [text file]({filename}/resources/pre-assessment.txt) and send it to
-matthieu.bruneaux@ens-lyon.org and carlos.pena@utu.fi..
+xxx@utu.fi.
 
 *(This pre-assessment form is a modified material from
 [Software Carpentry](http://software-carpentry.org/workshops/assess/pre-learner.html)).*
@@ -132,4 +132,3 @@ matthieu.bruneaux@ens-lyon.org and carlos.pena@utu.fi..
     - I would create this list using "Find in Files" and "copy and paste".
     - I would create this list using basic command line programs.
     - I would create this list using a pipeline of command line programs.
-

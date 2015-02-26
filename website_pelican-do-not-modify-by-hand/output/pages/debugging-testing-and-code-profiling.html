@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8" />
+    <title>Debugging, testing and code profiling</title>
+    <link rel="stylesheet" href="../theme/css/main.css" />
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+  </head>
+
+  <body id="index" class="home">
+    <header id="banner" class="body">
+      <h1><a href="../">Informatics for scientists - Turku course </a></h1>
+      <nav><ul>
+<!-- http://stackoverflow.com/questions/18520046/how-can-i-control-the-order-of-pages-from-within-a-pelican-article-category -->
+          <li><a href="../">About</a></li>
+          <li><a href="../pages/before-the-course.html">Before the course</a></li>
+          <li><a href="../pages/course-outline.html">Course outline</a></li>
+          <li><a href="../pages/resources.html">Resources</a></li>
+      </ul></nav>
+    </header><!-- /#banner -->
+
+<section id="content" class="body">
+    <h1 class="entry-title">Debugging, testing and code profiling</h1>
+    
+    <h1>Debugging</h1>
+<ul>
+<li>Basic technique: print statements, logging module</li>
+<li>Symbolic debugger</li>
+<li>Defensive programming, robustness, assert statement</li>
+<li>Silent errors are dangerous, need for rigorous testing</li>
+</ul>
+<h1>Testing with Python</h1>
+<ul>
+<li>Importance of testing (e.g. working code, modification, checking is needed to
+  ensure that nothing broke)</li>
+<li>Manual testing with small test scripts</li>
+<li>Automated testing with unit tests</li>
+<li>Unit tests force to code small functions with one role, code easier to reuse
+  and change</li>
+<li>Test-driven development: write the tests before the code</li>
+</ul>
+<h1>Code coverage</h1>
+<ul>
+<li>Tools for code coverage estimation</li>
+<li>Objective is 100% coverage, what is realistic, what is acceptable</li>
+<li>High coverage does not prove a code is correct</li>
+</ul>
+<h1>Integration with Github</h1>
+<p>(this can also be exposed later, when documentation has been explained, as one
+session about how to integrate testing, code coverage and documentation with
+GitHub and ReadTheDocs)</p>
+<ul>
+<li>Automated testing with Travis</li>
+<li>Code coverage (is it also with Travis?)</li>
+</ul>
+<h1>Profiling and refactoring</h1>
+<ul>
+<li>There are several ways to do the same thing, all equally correct, but some
+  are faster</li>
+<li>Code profiling tools</li>
+<li>Code timing, predicting run time for a given dataset size (useful to check
+  that an analysis can be run in a reasonable amount of time and to estimate
+  run times for CSC submissions)</li>
+<li>Basics of algorithmic complexity (constant time, n, n^2, trade-off memory and
+  speed)</li>
+<li>General considerations when writing Python, guidelines for refactoring</li>
+<li>Interest of having a complete test suite before starting refactoring</li>
+</ul>
+</section>
+
+    <!-- <section id="extras" class="body"> -->
+    <!--  -->
+    <!--  -->
+    <!-- </section><\!-- /#extras -\-> -->
+    
+    <footer id="contentinfo" class="body">
+      <address id="about" class="vcard body">
+	<p>
+          Generated with <a href="http://getpelican.com/">Pelican</a>, a
+          static site generator which
+          uses <a href="http://python.org">Python</a>.
+	</p>
+        <p>
+	  Theme modified from the original <i>notmyidea</i> theme
+	  by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing
+	  Magazine</a>.
+	</p>
+      </address><!-- /#about -->
+    </footer><!-- /#contentinfo -->
+
+    <!--  -->
+    <!--  -->
+    <!--  -->
+
+  </body>
+</html>

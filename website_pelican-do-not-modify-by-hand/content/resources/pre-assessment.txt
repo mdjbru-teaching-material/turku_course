@@ -1,14 +1,6 @@
-Title: Pre-assessment form
-Date: 2014-10-27
-Summary: Form to fill before the course
-Status: hidden
-
-To fill the form, please download the corresponding
-[text file]({filename}/resources/pre-assessment.txt) and send it to
-matthieu.bruneaux@ens-lyon.org and carlos.pena@utu.fi..
-
-*(This pre-assessment form is a modified material from
-[Software Carpentry](http://software-carpentry.org/workshops/assess/pre-learner.html)).*
+(This pre-assessment form is a modified material from Software Carpentry, see:
+http://software-carpentry.org/workshops/assess/pre-learner.html
+for the original material)
 
 1.  Name
 
@@ -132,4 +124,3 @@ matthieu.bruneaux@ens-lyon.org and carlos.pena@utu.fi..
     - I would create this list using "Find in Files" and "copy and paste".
     - I would create this list using basic command line programs.
     - I would create this list using a pipeline of command line programs.
-

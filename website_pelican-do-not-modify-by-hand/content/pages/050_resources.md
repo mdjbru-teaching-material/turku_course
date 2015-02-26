@@ -52,11 +52,6 @@ These are online resources of interest for people attending the course.
 - [Using Dropbox as a private GitHub](http://jetheis.com/blog/2013/02/17/using-dropbox-as-a-private-github/)
 - [What you should not do](http://xkcd.com/1296/)
 
-# Papers about scientific computing
-
-- [Noble's "A quick guide to organizing computational biology projects"](TODO_ADDLINK)
-- [Wilson's "Best Practices for scientific computing"](TODO_ADDLINK)
-
 # Website preparation
 
 Software Carpentry has a [GitHub repository](https://github.com/swcarpentry/bc)
@@ -77,4 +72,3 @@ There is a Master's program at UTU on
 our objective is only to expose researchers who have to use computer tools for
 their research but do not have a formal IT education to some key concepts for a
 better use of their tools.*
-

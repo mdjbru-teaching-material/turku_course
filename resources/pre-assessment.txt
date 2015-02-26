@@ -1,6 +1,7 @@
-(This pre-assessment form is a modified material from Software Carpentry, see:
-http://software-carpentry.org/workshops/assess/pre-learner.html
-for the original material)
+(This pre-assessment form is a material modified from Software Carpentry.
+The original can be found at:
+http://software-carpentry.org/workshops/assess/pre-learner.html)
+
 
 1.  Name
 

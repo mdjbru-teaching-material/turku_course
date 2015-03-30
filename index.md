@@ -50,4 +50,11 @@ for the students.
 # Where and when is it taking place?
 
 The course will take place in the Genetics seminar room in Pharmacity (Turku,
-Finland) from the 21st to the 23rd of April 2015 (three full days in a row).
+Finland) from the 21st to the 23rd of April 2015 (three full days in a
+row).
+
+The Genetics seminar room is located on the 7th floor of the Pharmacity building ([Google maps](https://maps.google.fi/maps?f=q&source=s_q&hl=en&geocode=&q=turku+pharmacity&aq=&sll=60.451601,22.268397&sspn=0.001254,0.004128&vpsrc=6&t=h&ie=UTF8&hq=&hnear=PharmaCity,+It%C3%A4inen+Pitk%C3%A4katu,+Turku&ll=60.448862,22.291815&spn=0.001254,0.004128&z=19)).
+
+The course will be from 9am to 17pm, with a one-hour lunch break and some
+coffee breaks along the way. People can stay after the course (17pm-18pm) if
+they have some questions on what was taught during the day.

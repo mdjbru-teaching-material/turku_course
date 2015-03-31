@@ -28,3 +28,24 @@ small groups within a team to distribute tasks, write, test and share code in
 order to create a small and complete Python module. The purpose of the module
 can be a project proposed by the students themselves (the preferred options) or
 chosen by the teachers.
+
+# Teachers for each course section
+
+Durations of each section are very rough estimates. If we are going faster or
+slower than expected, some topics may be treated earlier or later, or
+altogether skipped if more time is spent on another topic in which people have
+more interest.
+
+ Day | Time                 | Topic                            | Teacher
+-----|----------------------|----------------------------------|----------
+   1 | AM (3.5 hours)       | Intro to Python                  | Carlos
+   1 | PM (3.5 hours)       | Version control with Git         | Matthieu 
+   2 | AM (3 hours)         | Testing, code coverage           | Carlos
+   2 | PM (1.5 hours)       | Debugging and code profiling     | Matthieu 
+   2 | PM (2.5 hours)       | Bash shell, ssh, task automation | Matthieu 
+   3 | AM (2 hours)         | Documentation, modules in Python | Carlos
+   3 | AM/PM (2 hours)      | Virtual environments             | Carlos
+   3 | PM (rest of the day) | Practicals - integrated project  | Matthieu 
+
+
+

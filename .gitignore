@@ -1,3 +1,6 @@
+# No need to keep track of generated files by Pelican
+website_pelican_do-not-modify-by-hand
+
 # Created by .ignore support plugin (hsz.mobi)
 ### Python template
 # Byte-compiled / optimized / DLL files

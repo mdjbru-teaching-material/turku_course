@@ -17,17 +17,19 @@ are expected to have installed the necessary software on their machine before
 they attend the course. System-specific instructions are usually found on the
 software web sites:
 
-- [Python](https://www.python.org/) and [Ipython](http://ipython.org/)
-- [Git](http://git-scm.com/doc)
+- [Python](https://www.python.org/) (install the version 3.4.3) and [Ipython](http://ipython.org/)
+- [Git](http://git-scm.com/doc) is a command line program for version control of software.
 - a text editor with syntax highlighting such as
   [Notepad++](http://www.notepad-plus-plus.org/) for Windows or
-  [Geany](http://www.geany.org/) for Linux (TODO: add a free software text
-  editor for Mac?)
-- [putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) for
-  remote connection to an ssh server using Windows
-- [WinSCP](http://winscp.net/eng/index.php) or
-  [Filezilla](https://filezilla-project.org/) for file transfer to a remote
-  server
+  [Geany](http://www.geany.org/) for Linux, Sublime Text can be installed on
+  Windows, Mac OSX and Linux computers (it is free if you install it for evaluation,
+  and there is not time limit for the evaluation period).
+- Windows users: [putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) for
+  remote connection to an ssh server using Windows. Mac OSX and Linux users already 
+  have a console/terminal with such capability.
+- Windows users: Window[WinSCP](http://winscp.net/eng/index.php) for file 
+  transfer to a remote server. Windows, Mac OSX and Linux users might use 
+  [Filezilla](https://filezilla-project.org/).
 
 <!-- TODO: Check with CSC how it works to get students accounts -->
 

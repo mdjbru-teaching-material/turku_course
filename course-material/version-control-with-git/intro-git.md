@@ -29,7 +29,7 @@
 - The first researcher who will need to reproduce your results is likely to be
   **you**.
 
-### Reproducibility of analyses
+#### Lab notebook for analyses ?
 
 - Lab books make lab work traceable. Analyses should also be traceable.
 - Analysis steps must be recorded, and reverting to any previous step must be
@@ -43,6 +43,8 @@
   successive versions of a file.
 - Version controlled projects can be forked, merged and shared with
   collaborators.
+- Interesting both for collaborative work and for single developper (the single
+  developper case will be developped in more details later)
 
 ### Example of a version control flow for a Python script
 
@@ -64,19 +66,17 @@
   the rest as it is in **V8** and commit it as **V9**
 - **V10** is the next commit
 
-
-
-
-
-- How version control works: history, branches, merging
-- Interest of version control for collaborative work and for single developper
-  (the single developper case will be developped in more details later)
-
 ### What are the available tools?
 
-- Tools: SVN, **Git**
-- Online servers for repositories: GitHub and BitBucket, differences between
-  the two
+- Existing version control tools:
+  + [**Subversion**](https://subversion.apache.org/),
+  + [**Bazaar**](http://bazaar.canonical.com/en/),
+  + [**Mercurial**](http://mercurial.selenic.com/),
+  + [**Git**](http://git-scm.com/)
+- Online servers for repositories:
+  + [**BitBucket**](https://bitbucket.org/) (free private repositories)
+  + [**GitHub**](https://github.com/) (free for public repositories but not for
+    private repositories)
 
 ## Installing and setting up Git
 
@@ -122,6 +122,7 @@
 
 - Clone a project prepared by the teachers
 - Modify the code and send a pull request
+- Clone a real life example (e.g. python GO parser)
 
 ## Going further: workflow example for single developper
 

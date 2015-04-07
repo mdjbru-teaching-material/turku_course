@@ -9,20 +9,20 @@ altogether skipped if more time is spent on another topic in which people have
 more interest.
 
 - Day one
-    + AM (3.5 hours): [Introduction to Python](https://github.com/mdjbru-teaching-material/turku_course/blob/master/course-material/introduction-to-python/intro_python.md)
-      ([Previous draft]({filename}course-outline_010_introduction-to-python.md)) [*Carlos*]
-    + PM (3.5 hours): [Version control with Git](https://github.com/mdjbru-teaching-material/turku_course/blob/master/course-material/version-control-with-git/intro-git.md)
-	  ([Previous draft]({filename}course-outline_020_version-control-with-git.md)) [*Matthieu*]
+    + AM (3.5 hours): [Introduction to Python](https://github.com/mdjbru-teaching-material/turku_course/blob/master/course-material/introduction-to-python/intro_python.md) [*Carlos*]
+    + PM (3.5 hours): [Version control with Git](https://github.com/mdjbru-teaching-material/turku_course/blob/master/course-material/version-control-with-git/intro-git.md) [*Matthieu*]
 
 - Day two
     + AM (3 hours): [Testing and code coverage]() [*Carlos*]
-    + PM (1.5 hours): [Debugging and code profiling]({filename}course-outline_040_testing-debugging-profiling.md) [*Matthieu*]
-	+ PM (2.5 hours): [Bash shell, ssh, task automation]({filename}course-outline_030_introduction-shell.md) [*Matthieu*]
+    + PM (1.5 hours): [Debugging and code profiling]()
+	  ([Previous draft]({filename}course-outline_040_testing-debugging-profiling.md)) [*Matthieu*]
+	  + PM (2.5 hours): [Bash shell, ssh, task automation]()
+	    ([Previous draft]({filename}course-outline_030_introduction-shell.md)) [*Matthieu*]
 
 - Day three
-    + AM (2 hours): Documentation and modules in Python [*Carlos*]
-    + AM/PM (2 hours): Virtual environments [*Carlos*]
-    + PM (rest of the day): Developing an integrated project [*Matthieu*]
+    + AM (2 hours): [Documentation and modules in Python]() [*Carlos*]
+    + AM/PM (2 hours): [Virtual environments]() [*Carlos*]
+    + PM (rest of the day): [Developing an integrated project]() [*Matthieu*]
 
 # Final project (day three)
 

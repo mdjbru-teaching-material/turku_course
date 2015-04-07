@@ -6,7 +6,8 @@ Sortorder: 010
 Here are the outlines of the different course sections:
 
 - Day one
-    + [Introduction to Python]({filename}course-outline_010_introduction-to-python.md)
+    + [Introduction to Python](https://github.com/mdjbru-teaching-material/turku_course/blob/master/course-material/introduction-to-python/intro_python.md)
+      ([Previous draft]({filename}course-outline_010_introduction-to-python.md))
     + [Version control with Git]({filename}course-outline_020_version-control-with-git.md)
 
 - Day two

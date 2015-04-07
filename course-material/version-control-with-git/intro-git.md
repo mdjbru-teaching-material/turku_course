@@ -60,8 +60,8 @@
 - At some point, the experimental changes are mature and we want to merge them
   back into the master branch. **V7b** and **V6** are merged together into **V8**
 - We realise we want to revert to a previous version of one function in the
-  script. For this function, we revert to the code present in **V2**, and commit it
-  as **V9**
+  script. For this function, we revert to the code present in **V2**, keep all
+  the rest as it is in **V8** and commit it as **V9**
 - **V10** is the next commit
 
 

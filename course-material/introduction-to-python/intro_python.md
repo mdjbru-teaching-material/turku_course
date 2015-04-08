@@ -31,3 +31,20 @@ Setup virtualenvwrapper in Mac:
 
 3. Popularity of Python.
 
+    ![Python wins](img/popularity_python1.png)
+    
+Source <http://blog.codeeval.com/codeevalblog/2015>
+
+4. Popularity of Python versus R in data science:
+
+    ![Programming languages for data science](img/popularity_python2.png)
+    
+5. Let's choose Python for this workshop:
+
+    ![Quora](img/choose_python1.png)
+    
+* Python is language with a precise, simple and efficient syntax.
+* Thus, it is easy to write, read and understand code.
+* Python has libraries for statistic analysisa and plotting of data,
+  comparable to those in R:  **NumPy, matplotlib and SciPy**.
+* There are popular toolkits for bioinformatics such as BioPython.

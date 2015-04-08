@@ -3,7 +3,7 @@
 (Carlos Peña)
 
 ## Overview
-* Presentation of Python
+* [Presentation of Python](#presentation-of-python)
 * Installation of Python
 * Resources
 * Basics of Python
@@ -17,7 +17,8 @@ Setup virtualenvwrapper in Mac:
     
 ## Resources
 * Uncle Bob
-* Big data Borantet
+* Big data Borat
+* http://swcarpentry.github.io/python-novice-inflammation/
 
 ## Presentation of Python
 1. There are many programming languages nowadays.
@@ -29,4 +30,21 @@ Setup virtualenvwrapper in Mac:
    ![Compiled versus interpreted languages](img/compiled_vs_interpreted.png)
 
 3. Popularity of Python.
-   p
+
+    ![Python wins](img/popularity_python1.png)
+    
+Source <http://blog.codeeval.com/codeevalblog/2015>
+
+4. Popularity of Python versus R in data science:
+
+    ![Programming languages for data science](img/popularity_python2.png)
+    
+5. Let's choose Python for this workshop:
+
+    ![Quora](img/choose_python1.png)
+    
+* Python is language with a precise, simple and efficient syntax.
+* Thus, it is easy to write, read and understand code.
+* Python has libraries for statistic analysisa and plotting of data,
+  comparable to those in R:  **NumPy, matplotlib and SciPy**.
+* There are popular toolkits for bioinformatics such as BioPython.

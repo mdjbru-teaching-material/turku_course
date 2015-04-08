@@ -17,7 +17,8 @@ Setup virtualenvwrapper in Mac:
     
 ## Resources
 * Uncle Bob
-* Big data Borantet
+* Big data Borat
+* http://swcarpentry.github.io/python-novice-inflammation/
 
 ## Presentation of Python
 1. There are many programming languages nowadays.
@@ -29,4 +30,4 @@ Setup virtualenvwrapper in Mac:
    ![Compiled versus interpreted languages](img/compiled_vs_interpreted.png)
 
 3. Popularity of Python.
-   p
+

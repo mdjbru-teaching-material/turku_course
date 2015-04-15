@@ -157,7 +157,7 @@
 
 *** Auto-completion
 
-- Let's go into =test-folder= and copy some files there:
+- Let's go into =test-folder=, but let's be lazy:
   #+BEGIN_SRC bash
   cd t # Press TAB at this point
   #+END_SRC
@@ -216,8 +216,79 @@
   -rw------- 1 jyybio20 jyybio    0 Apr 15 15:22 mySuperFile
   #+END_EXAMPLE
   Now we have a new file, with size 0 (it is empty).
-- 
+- cp
+- mv
+- rm
 
+*** Viewing a file
+
+- We can display the content of a text file with =cat=:
+  #+BEGIN_SRC bash
+  cat README
+  #+END_SRC
+  #+BEGIN_EXAMPLE
+  Those files were downloaded from the Ensembl genomes website.
+
+  Each file corresponds to one Escherichia coli strain for which a
+  complete or draft genome sequence is available. The name of the strain
+  is contained in the file name. Each file contains the peptide
+  sequences from all translations resulting from Ensembl known or novel
+  gene predictions for that given E. coli strain.
+
+  Files are in the FASTA format.
+
+  The original address is
+  ftp://ftp.ensemblgenomes.org/pub/current/bacteria/fasta/
+  #+END_EXAMPLE
+- We can use =cat= for big files too:
+  #+BEGIN_SRC bash
+  cat Escherichia_coli_o25_nm_str_e2539c1.GCA_000618405.1.26.pep.all.fa
+  #+END_SRC
+  but it is not so useful...
+- We can look at the beginning of a file with =head=:
+  #+BEGIN_SRC bash
+  head Escherichia_coli_o25_nm_str_e2539c1.GCA_000618405.1.26.pep.all.fa
+  #+END_SRC
+  and we can also ask for a specific number of lines:
+  #+BEGIN_SRC bash
+  head -n 20 Escherichia_coli_o25_nm_str_e2539c1.GCA_000618405.1.26.pep.all.fa  
+  #+END_SRC
+  In this case, =head= takes the =-n= option with a numerical argument, =20=,
+  to display the 20 first lines.
+- To look at the end of a file, we can use =tail=:
+  #+BEGIN_SRC bash
+  tail Escherichia_coli_o25_nm_str_e2539c1.GCA_000618405.1.26.pep.all.fa
+  tail -n 30 Escherichia_coli_o25_nm_str_e2539c1.GCA_000618405.1.26.pep.all.fa
+  #+END_SRC
+- But when we have a file we want to navigate, the most useful is probably
+  =less=:
+  #+BEGIN_SRC bash
+  less Escherichia_coli_o25_nm_str_e2539c1.GCA_000618405.1.26.pep.all.fa
+  #+END_SRC
+  You can use =UP ARROW= and =DOWN ARROW= to move around the file. You can also
+  navigate with =SPACE= and =b= to go down or up one screen, respectively. To
+  exit, press =q=.
+
+*** Redirection
+
+- >, >>, <
+
+*** Useful tools
+
+- wc
+- grep
+- sort
+- uniq
+- cut
+- sed
+
+*** Combining tools with pipes
+
+*** File rights
+
+*** A word about streams?
+
+- stdin, stdout, stderr
 
 ** Shell scripts
 

@@ -29,7 +29,7 @@
 - The first researcher who will need to reproduce your results is likely to be
   **you**.
 
-#### Lab notebook for analyses ?
+A lab notebook for analyses ?
 
 - Lab books make lab work traceable. Analyses should also be traceable.
 - Analysis steps must be recorded, and reverting to any previous step must be

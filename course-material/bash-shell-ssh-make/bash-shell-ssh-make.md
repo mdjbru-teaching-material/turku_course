@@ -10,9 +10,31 @@
 - With Windows, the cmd prompt is a bit similar (text-based) but not as
   powerful
 
+## Where can we find the shell?
+
+- On Linux and MacOS systems: open a terminal. This will provide you with a
+  Unix-like shell on both systems
+- On Windows: run "cmd.exe" or "cmd". This shell is quite different from the
+  Unix-like shell found in Linux and MacOS. To obtain a Unix shell on
+  Windows, one can install the [Cygwin](https://www.cygwin.com/) tools
+- It is strongly recommended to learn how to use a Unix shell since it is very
+  likely it is this type of shell you will be exposed to when you connect to a
+  remote server.
+
+## One shell or several shells?
+
+- A shell is a just a program providing an interface between the user and the
+  computer. Several different programs (shells) exist that can fulfill this
+  task.
+- The most popular and widely used shell is probably **bash**. It is the
+  default shell in most GNU/Linux distributions.
+- If you learn how to use **bash**, you will be able to use most remote servers
+  you'll have to connect to, and also the terminal from MacOS or the Cygwin
+  tools on Windows
+
 ## Connection to a remote shell
 
-- Connection to taito server
+- Connection to taito server using the provided student accounts and password
 - Connection to linux.utu.fi
 - Connection to desktop computer in Utu (if running Linux)
 - Tools: putty (windows) or ssh (mac and linux)
@@ -32,6 +54,18 @@
 in aligned sequences in a fasta files: grep for ">", cut for species name, sort
 and uniq, wc)
 - shell cheat sheet (Tiina prepared one for the Jyväskylä workshop in 2011)
+
+### First contact with the shell
+
+- What you see after connection in the **shell prompt**. It tells you the shell
+is ready to receive your input:
+
+    jyybio20@taito-login3$
+
+`jyybio20` is your username, `taito-login` is the host server to which you are
+connected.
+
+
 
 ## Shell scripts
 

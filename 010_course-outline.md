@@ -15,7 +15,7 @@ more interest.
 - Day two
     + AM (3 hours): [Testing and code coverage]() [*Carlos*]
     + PM (1.5 hours): [Debugging and code profiling](https://github.com/mdjbru-teaching-material/turku_course/blob/master/course-material/debugging-code-profiling/debugging-code-profiling.md) [*Matthieu*]
-	  + PM (2.5 hours): [Bash shell, ssh, task automation](https://github.com/mdjbru-teaching-material/turku_course/blob/master/course-material/bash-shell-ssh-make/bash-shell-ssh-make.md) [*Matthieu*]
+	  + PM (2.5 hours): [Bash shell, ssh, task automation](https://github.com/mdjbru-teaching-material/turku_course/blob/master/course-material/bash-shell-ssh-make/bash-shell-ssh-make.org) [*Matthieu*]
 
 - Day three
     + AM (2 hours): [Documentation and modules in Python]() [*Carlos*]

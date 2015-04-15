@@ -62,6 +62,7 @@ def aaComposition(sequence) :
     o = dict()
     for aa in myAA :
         o[aa] = sequence.count(aa)
+    assert sum(o.values()) == len(sequence)
     return(o)
 
 ### * Run

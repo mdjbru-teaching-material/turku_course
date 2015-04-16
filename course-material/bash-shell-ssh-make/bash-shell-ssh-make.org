@@ -154,6 +154,16 @@
   cd ~
   #+END_SRC
   The =~= is automatically replaced by the shell by your home folder path.
+- Actually, when you want to be /very/ lazy, you can just type =cd= to go back
+  to your home folder:
+  #+BEGIN_SRC bash
+  cd
+  #+END_SRC
+  But the =~= is also useful when you need to specify your home folder in a
+  more complicated path:
+  #+BEGIN_SRC bash
+  cd ~/ecoli-data
+  #+END_SRC
 
 *** Auto-completion
 

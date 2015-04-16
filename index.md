@@ -26,6 +26,9 @@ The course does not aim at teaching everything in a few days, but at exposing
 the researchers to some key ideas and making them well-equipped to learn by
 themselves what they will still miss at the end of the course.
 
+All the materials used during the preparation of the course are available as a
+[GitHub repository](https://github.com/mdjbru-teaching-material/turku_course).
+
 # Who is teaching this course?
 
 We are researchers in biology who learnt about informatics on the way, as
@@ -40,13 +43,6 @@ course. The course is open to everybody, students and researchers. There is no
 registration fee, but we expect people who enroll to attend or to warn us in
 advance if they can't.
 
-# How much credits can I get from the course?
-
-The plan is to provide 2 credits to students attending the three days and
-fulfilling the homework tasks. For more information, please contact
-[Niklas Wahlberg](mailto:niklas.wahlberg@utu.fi) who is the responsible person
-for the students.
-
 # Where and when is it taking place?
 
 The course will take place in the Genetics seminar room in Pharmacity (Turku,
@@ -58,3 +54,11 @@ The Genetics seminar room is located on the 7th floor of the Pharmacity building
 The course will be from 9am to 17pm, with a one-hour lunch break and some
 coffee breaks along the way. People can stay after the course (17pm-18pm) if
 they have some questions on what was taught during the day.
+
+# How much credits can I get from the course?
+
+The plan is to provide 2 credits to students attending the three days and
+fulfilling the homework tasks. For more information, please contact
+[Niklas Wahlberg](mailto:niklas.wahlberg@utu.fi) who is the responsible person
+for the students.
+

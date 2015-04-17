@@ -31,10 +31,12 @@ All the materials used during the preparation of the course are available as a
 
 # Who is teaching this course?
 
-We are researchers in biology who learnt about informatics on the way, as
-programming skills were becoming necessary for our research projects. For now
-the planned teachers are [Carlos Peña](http://nymphalidae.utu.fi/cpena/) and
-[Matthieu Bruneaux](http://mdjbru.toile-libre.org/).
+[Carlos Peña](http://nymphalidae.utu.fi/cpena/) and
+[Matthieu Bruneaux](http://mdjbru.toile-libre.org/) are biologists who learnt
+about informatics on the way, as programming skills were becoming necessary for
+their research projects. [Tiina Sävilammi](http://pnp.utu.fi/tiina.html) is a
+bioinformatics research assistant providing expertise for many research
+projects in the [PnP group](http://pnp.utu.fi/).
 
 # Who can attend this course?
 

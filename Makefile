@@ -3,6 +3,9 @@
 PELICAN_DIR=website_pelican_do-not-modify-by-hand
 RESOURCES_DIR=resources
 
+INTRO_GIT_DIR=course-material/version-control-with-git
+INTRO_GIT_SRC=$(INTRO_GIT_DIR)/git-presentation
+
 ### * Usage
 
 help:
@@ -13,6 +16,7 @@ help:
 	@echo 'pelican folder.                                                             '
 	@echo '                                                                            '
 	@echo 'Usage:                                                                      '
+	@echo '   make presentations  generate the pdf from org files (with Beamer)        '
 	@echo '   make copy           copy the md files and other resources to pelican dir '
 	@echo '   make clean          remove the generated files and all files in          '
 	@echo '                       content/pages                                        '
@@ -24,7 +28,13 @@ help:
 
 ### * Rules
 
-copy:
+presentations: $(INTRO_GIT_SRC).pdf
+
+$(INTRO_GIT_SRC).pdf: $(INTRO_GIT_SRC).org
+	emacs $< --batch -f org-beamer-export-to-pdf --kill
+	rm $(INTRO_GIT_SRC).tex
+
+copy: presentations
 	cp *.md $(PELICAN_DIR)/content/pages
 	mkdir -p $(PELICAN_DIR)/content/resources
 	cp -r $(RESOURCES_DIR)/* $(PELICAN_DIR)/content/resources

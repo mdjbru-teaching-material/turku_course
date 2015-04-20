@@ -56,7 +56,7 @@ Source <http://blog.codeeval.com/codeevalblog/2015>
 * If you get stuck, [Stackoverflow](http://stackoverflow.com/) might be of help.
 * <http://swcarpentry.github.io/python-novice-inflammation/>
 
-## Instalation of Python
+## Installation of Python
 * Python2 versus Python3. To install, or not to install, that is the question. 
   Let's install Python 3.4.3 <https://www.python.org/downloads/release/python-343/>
   

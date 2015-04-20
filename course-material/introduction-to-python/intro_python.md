@@ -21,7 +21,7 @@ Setup virtualenvwrapper in Mac:
 * http://swcarpentry.github.io/python-novice-inflammation/
 
 ## Presentation of Python
-1. There are many programming languages nowadays.
+### There are many programming languages nowadays.
 
    ![Too many indeed](img/programming_languages.png)
 
@@ -39,7 +39,11 @@ Source <http://blog.codeeval.com/codeevalblog/2015>
 
     ![Programming languages for data science](img/popularity_python2.png)
     
-5. Let's choose Python for this workshop:
+5. Python is a language used for a wide variety of purposes:
+
+Awesome Python <https://github.com/vinta/awesome-python>
+
+6. Let's choose Python for this workshop:
 
     ![Quora](img/choose_python1.png)
     

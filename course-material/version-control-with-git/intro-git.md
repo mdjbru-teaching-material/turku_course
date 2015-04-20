@@ -91,6 +91,21 @@ A lab notebook for analyses ?
 
 ## Basic Git usage
 
+Exercise: design a set of Python scripts to handle fasta sequences
+
+Coding sequences, check for beginning of ORF, stop-codon, translation, etc...
+
+Load the translation table from a text file
+
+Track and fix errors in this file
+
+Testing with this file
+
+Profiling: translation with list vs dictionary
+
+What is version-controlled? Scripts, not data, except if hand-generated data
+(e.g. transcription of written records)
+
 ### Adding files and committing changes
 
 - First commit

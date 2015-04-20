@@ -4,8 +4,8 @@
 
 ## Overview
 * [Presentation of Python](#presentation-of-python)
-* Installation of Python
 * [Resources](#resources)
+* [Installation of Python](#installation-of-python)
 * Basics of Python
 * Modulable code
 * Using an existing library
@@ -57,4 +57,17 @@ Source <http://blog.codeeval.com/codeevalblog/2015>
 ## Resources
 * [Uncle Bob](https://www.youtube.com/watch?v=Ai2nZIobM3o)
 * [Big data Borat](https://twitter.com/bigdataborat/status/355511037124030466)
+* [Python documentation](https://www.python.org/doc/)
+* If you get stuck, [Stackoverflow](http://stackoverflow.com/) might be of help.
 * <http://swcarpentry.github.io/python-novice-inflammation/>
+
+## Instalation of Python
+* Python2 versus Python3. To install, or not to install, that is the question. 
+  Let's install Python 3.4.3 <https://www.python.org/downloads/release/python-343/>
+  
+* Install iPython:
+
+```shell
+sudo easy_install pip
+sudo pip install ipython
+```

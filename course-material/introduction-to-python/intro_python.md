@@ -31,13 +31,13 @@ Setup virtualenvwrapper in Mac:
 
 #### Popularity of Python.
 
-    ![Python wins](img/popularity_python1.png)
+![Python wins](img/popularity_python1.png)
     
 Source <http://blog.codeeval.com/codeevalblog/2015>
 
 #### Popularity of Python versus R in data science:
 
-    ![Programming languages for data science](img/popularity_python2.png)
+![Programming languages for data science](img/popularity_python2.png)
     
 #### Python is a language used for a wide variety of purposes:
 
@@ -45,7 +45,7 @@ Awesome Python <https://github.com/vinta/awesome-python>
 
 #### Let's choose Python for this workshop:
 
-    ![Quora](img/choose_python1.png)
+![Quora](img/choose_python1.png)
     
 * Python is language with a precise, simple and efficient syntax.
 * Thus, it is easy to write, read and understand code.

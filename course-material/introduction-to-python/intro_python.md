@@ -9,7 +9,7 @@
 * [Installation of Python](#installation-of-python)
 * [Basics of Python](#basics-of-python)
 * [Modulable code](#modulable-code)
-* Using an existing library
+* [Using an existing library](#using-an-existing-library)
 * End of the course: complete script/package
 
 ![This will be you](img/neo.jpg)
@@ -111,25 +111,27 @@ In [1]:
 * Indenting.
 * Name your variables with :heart:
 * Python gurus say that a **function** is an *object* that can accept arguments
-  and possible return another *object*.
+  and possibly return another *object*.
 * I say that a **function** is a series of **instructions** designed to do only
   one thing. And it should do it lovely.
   
 ```python
 def my_cool_function_name(argument1, argument2):
     # do cool stuf with my two arguments
-    # if you want to return somenthing, use the keyword return
+    # if you want to return something, use the keyword return
 ```
 
 * Task 1: write a function that performs the complement of three nucleotides
   of DNA, a codon:
     * Input is a codon sequence: **ATG**
     * Output is the reverse complement: **TAC**
+    * Save your code into a file named **seq_utils.py**
 
 * Task 2: write a function that performs the complement of a long DNA
   sequence:
     * Input is a sequence: **ATGAAAATCCCGGTAAAACCT**
     * Output is the reverse complement: **TACTTTTAGGGCCATTTTGGA**
+    * Save your code into **the same** file **seq_utils.py**
     
 ### Modules
 * Python gurus say that a **module** is a simple way to structure your Python 
@@ -138,3 +140,21 @@ def my_cool_function_name(argument1, argument2):
   code.
 * A crucial benefit of organizing your code this way is that modules can borrow
   python code by importing each other. Modules import modules.
+  
+### Using an existing library
+* Modules of python code, also known as libraries, can be imported into your
+  project by using the keyword **import**.
+* We can import the code in your **seq_utils.py** and use its functions
+  in another project:
+  
+```python
+import seq_utils
+
+complemented_codon = seq_utils.complement_codon('ATC')
+print(complemented_codon)
+```
+
+* You can also do fancier imports. Explore.
+* There are thousands of thousands of Python libraries for you to import (but
+  you will have to install them first). We will continue this on the last day
+  of the course.

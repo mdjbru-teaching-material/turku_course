@@ -10,7 +10,7 @@ more interest.
 
 - Day one
     + AM (3.5 hours): [Introduction to Python](https://github.com/mdjbru-teaching-material/turku_course/blob/master/course-material/introduction-to-python/intro_python.md) [*Carlos*]
-    + PM (3.5 hours): [Version control with Git](https://github.com/mdjbru-teaching-material/turku_course/blob/master/course-material/version-control-with-git/intro-git.md) [*Matthieu*]
+    + PM (3.5 hours): [Version control with Git](https://github.com/mdjbru-teaching-material/turku_course/blob/master/course-material/version-control-with-git/intro-git.org) [*Matthieu*]
 
 - Day two
     + AM (3 hours): [Testing and code coverage]() [*Carlos*]

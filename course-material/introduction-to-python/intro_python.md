@@ -106,7 +106,7 @@ In [1]:
 * Writing modular code involves several steps.
 
 ### Functions
-![](img/identing_code.jpg)
+![](img/indenting_code.jpg)
 
 * Indenting.
 * Name your variables with :heart:

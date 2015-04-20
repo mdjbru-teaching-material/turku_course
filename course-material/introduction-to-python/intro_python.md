@@ -49,6 +49,8 @@ Source <http://blog.codeeval.com/codeevalblog/2015>
   comparable to those in R:  **NumPy, matplotlib and SciPy**.
 * There are popular toolkits for bioinformatics such as BioPython.
 
+![Python code should be easy to read](img/python_cute.jpg)
+
 ## Resources
 * [Uncle Bob](https://www.youtube.com/watch?v=Ai2nZIobM3o)
 * [Big data Borat](https://twitter.com/bigdataborat/status/355511037124030466)
@@ -89,7 +91,7 @@ In [1]:
 ```
 
 * Explore variables, strings, integers, floats, lists, dictionaries.
-* Explore operations **+, -, \*, \/, +=, -=**
+* Explore operations **+, -, \*, /, +=, -=**
 * Explore conditionals: **if...else**
 * Explore loops: **for, while**
 * Explore booleans: True, False, None, and boolean operations **and, or, not**.
@@ -104,9 +106,9 @@ In [1]:
 * Writing modular code involves several steps.
 
 ### Functions
+![](img/identing_code.jpg)
 
-![Python code should be easy to read](img/python_cute.jpg)
-
+* Indenting.
 * Name your variables with :heart:
 * Python gurus say that a **function** is an *object* that can accept arguments
   and possible return another *object*.

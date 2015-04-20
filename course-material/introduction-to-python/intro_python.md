@@ -25,25 +25,25 @@ Setup virtualenvwrapper in Mac:
 
    ![Too many indeed](img/programming_languages.png)
 
-2. Programming languages for all needs, tastes and categories.
+#### Programming languages for all needs, tastes and categories.
 
    ![Compiled versus interpreted languages](img/compiled_vs_interpreted.png)
 
-3. Popularity of Python.
+#### Popularity of Python.
 
     ![Python wins](img/popularity_python1.png)
     
 Source <http://blog.codeeval.com/codeevalblog/2015>
 
-4. Popularity of Python versus R in data science:
+#### Popularity of Python versus R in data science:
 
     ![Programming languages for data science](img/popularity_python2.png)
     
-5. Python is a language used for a wide variety of purposes:
+#### Python is a language used for a wide variety of purposes:
 
 Awesome Python <https://github.com/vinta/awesome-python>
 
-6. Let's choose Python for this workshop:
+#### Let's choose Python for this workshop:
 
     ![Quora](img/choose_python1.png)
     

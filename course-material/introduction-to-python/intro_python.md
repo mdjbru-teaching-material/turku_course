@@ -87,3 +87,10 @@ object?   -> Details about 'object', use 'object??' for extra details.
 
 In [1]: 
 ```
+
+* Explore variables, lists, dictionaries.
+* Explore operations **+, -, \*, \/, +=, -=**
+* Explore conditionals: **if...else**
+* Explore loops: **for, while**
+* Explore booleans: True, False, None, and boolean operations **and, or, not**.
+* Explore comparisons: **<, <=, >=, ==, !=, is, is not**

@@ -2,18 +2,18 @@
 
 (Carlos Peña)
 
+
 ## Overview
 * [Presentation of Python](#presentation-of-python)
 * [Resources](#resources)
 * [Installation of Python](#installation-of-python)
 * [Basics of Python](#basics-of-python)
-* Modulable code
+* [Modulable code](#modulable-code)
 * Using an existing library
 * End of the course: complete script/package
 
+![This will be you](img/neo.jpg)
 
-Setup virtualenvwrapper in Mac:
-    http://mkelsey.com/2013/04/30/how-i-setup-virtualenv-and-virtualenvwrapper-on-my-mac/
     
 
 ## Presentation of Python
@@ -88,9 +88,51 @@ object?   -> Details about 'object', use 'object??' for extra details.
 In [1]: 
 ```
 
-* Explore variables, lists, dictionaries.
+* Explore variables, strings, integers, floats, lists, dictionaries.
 * Explore operations **+, -, \*, \/, +=, -=**
 * Explore conditionals: **if...else**
 * Explore loops: **for, while**
 * Explore booleans: True, False, None, and boolean operations **and, or, not**.
 * Explore comparisons: **<, <=, >=, ==, !=, is, is not**
+* Comments and docstrings.
+* Operations on strings, integers, lists, list indexes, concatenation, etc.
+
+## Modulable code
+* Imagine you need to run a series of instructions in Python code many times.
+  Imagine that your colleague would like to run this code. 
+  **You should write modular code**.
+* Writing modular code involves several steps.
+
+### Functions
+
+![Python code should be easy to read](img/python_cute.jpg)
+
+* Name your variables with :heart:
+* Python gurus say that a **function** is an *object* that can accept arguments
+  and possible return another *object*.
+* I say that a **function** is a series of **instructions** designed to do only
+  one thing. And it should do it lovely.
+  
+```python
+def my_cool_function_name(argument1, argument2):
+    # do cool stuf with my two arguments
+    # if you want to return somenthing, use the keyword return
+```
+
+* Task 1: write a function that performs the complement of three nucleotides
+  of DNA, a codon:
+    * Input is a codon sequence: **ATG**
+    * Output is the reverse complement: **TAC**
+
+* Task 2: write a function that performs the complement of a long DNA
+  sequence:
+    * Input is a sequence: **ATGAAAATCCCGGTAAAACCT**
+    * Output is the reverse complement: **TACTTTTAGGGCCATTTTGGA**
+    
+### Modules
+* Python gurus say that a **module** is a simple way to structure your Python 
+  code.
+* Modules can be files with python code, or folder with several files with python
+  code.
+* A crucial benefit of organizing your code this way is that modules can borrow
+  python code by importing each other. Modules import modules.

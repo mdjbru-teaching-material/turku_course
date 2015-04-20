@@ -5,7 +5,7 @@
 ## Overview
 * [Presentation of Python](#presentation-of-python)
 * Installation of Python
-* Resources
+* [Resources](#resources)
 * Basics of Python
 * Modulable code
 * Using an existing library
@@ -15,10 +15,6 @@
 Setup virtualenvwrapper in Mac:
     http://mkelsey.com/2013/04/30/how-i-setup-virtualenv-and-virtualenvwrapper-on-my-mac/
     
-## Resources
-* Uncle Bob
-* Big data Borat
-* http://swcarpentry.github.io/python-novice-inflammation/
 
 ## Presentation of Python
 #### There are many programming languages nowadays.
@@ -57,3 +53,8 @@ Source <http://blog.codeeval.com/codeevalblog/2015>
 * Python has libraries for statistic analysisa and plotting of data,
   comparable to those in R:  **NumPy, matplotlib and SciPy**.
 * There are popular toolkits for bioinformatics such as BioPython.
+
+## Resources
+* [Uncle Bob](https://www.youtube.com/watch?v=Ai2nZIobM3o)
+* [Big data Borat](https://twitter.com/bigdataborat/status/355511037124030466)
+* <http://swcarpentry.github.io/python-novice-inflammation/>

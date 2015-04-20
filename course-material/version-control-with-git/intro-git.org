@@ -17,7 +17,7 @@
 
 - Some common issues arise when files are not version-controlled:
 
-  [[file://img/phd052810s.png]]
+  [[https://github.com/mdjbru-teaching-material/turku_course/blob/master/course-material/version-control-with-git/img/phd052810s.png]]
 
 - This happens not only for data, but for scripts also... How can we do it better?
 
@@ -48,7 +48,7 @@ A lab notebook for analyses ?
 
 *** Example of a version control flow for a Python script
 
-[[file://img/version-control-workflow.gif]]
+[[https://github.com/mdjbru-teaching-material/turku_course/blob/master/course-material/version-control-with-git/img/version-control-workflow.gif]]
 
 - *V1*, *V2*, and *V3* are successive versions of the script
 - *V4* is committed, but then a mistake is found. We revert to *V3*

@@ -21,7 +21,7 @@ Setup virtualenvwrapper in Mac:
 * http://swcarpentry.github.io/python-novice-inflammation/
 
 ## Presentation of Python
-### There are many programming languages nowadays.
+#### There are many programming languages nowadays.
 
    ![Too many indeed](img/programming_languages.png)
 

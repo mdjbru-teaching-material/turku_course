@@ -6,7 +6,7 @@
 * [Presentation of Python](#presentation-of-python)
 * [Resources](#resources)
 * [Installation of Python](#installation-of-python)
-* Basics of Python
+* [Basics of Python](#basics-of-python)
 * Modulable code
 * Using an existing library
 * End of the course: complete script/package
@@ -60,7 +60,7 @@ Source <http://blog.codeeval.com/codeevalblog/2015>
 * Python2 versus Python3. To install, or not to install, that is the question. 
   Let's install Python 3.4.3 <https://www.python.org/downloads/release/python-343/>
   
-* Install iPython:
+* Install IPython:
 
 ```shell
 sudo easy_install pip
@@ -68,4 +68,22 @@ sudo pip install ipython
 ```
 
 ## Basics of Python
-lorem
+* We will do some exercises before writing *real code*. Fire up IPython from 
+your command line:
+
+```shell
+ipython
+```
+
+```ipython
+Python 3.3.2+ (default, Feb 28 2014, 00:52:16) 
+Type "copyright", "credits" or "license" for more information.
+
+IPython 2.3.1 -- An enhanced Interactive Python.
+?         -> Introduction and overview of IPython's features.
+%quickref -> Quick reference.
+help      -> Python's own help system.
+object?   -> Details about 'object', use 'object??' for extra details.
+
+In [1]: 
+```

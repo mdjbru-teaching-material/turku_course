@@ -109,7 +109,7 @@ In [1]:
 ![](img/indenting_code.jpg)
 
 * Indenting.
-* Name your variables with :heart:
+* Name your variables with :heart: [Uncle Bob says](https://youtu.be/3rtZcXSkKDc)
 * Python gurus say that a **function** is an *object* that can accept arguments
   and possibly return another *object*.
 * I say that a **function** is a series of **instructions** designed to do only

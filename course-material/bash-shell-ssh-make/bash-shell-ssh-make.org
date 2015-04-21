@@ -1,5 +1,3 @@
-Please download the [[][pdf file]] with the practicals instructions.
-
 * Introduction to the shell and task automation                    :noexport:
 
 (Matthieu Bruneaux)

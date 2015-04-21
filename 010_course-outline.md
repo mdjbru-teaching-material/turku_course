@@ -14,7 +14,7 @@ more interest. You can access our Etherpad
     + PM (3.5 hours): [Version control with Git](https://github.com/mdjbru-teaching-material/turku_course/blob/master/course-material/version-control-with-git/intro-git.org) [*Matthieu*]
 
 - Day two
-    + AM (3 hours): [Testing and code coverage]() [*Carlos*]
+    + AM (3 hours): [Testing and code coverage](https://github.com/mdjbru-teaching-material/turku_course/blob/master/course-material/testing-and-code-coverage/testing.md) [*Carlos*]
     + PM (1.5 hours): [Debugging and code profiling](https://github.com/mdjbru-teaching-material/turku_course/blob/master/course-material/debugging-code-profiling/debugging-code-profiling.md) [*Matthieu*]
 	  + PM (2.5 hours): [Bash shell, ssh, task automation](https://github.com/mdjbru-teaching-material/turku_course/blob/master/course-material/bash-shell-ssh-make/bash-shell-ssh-make.org) [*Matthieu*]
 

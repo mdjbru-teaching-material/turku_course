@@ -6,7 +6,9 @@
 * [What is unit testing?](#what-is-unit-testing?)
 * [Why testing?](#why-testing?)
 * [Create unit tests](#create-unit-tests)
-* Test-driven-development framework.
+* [Test-driven development](#test-driven-development)
+* [Continuous integration](#continuous-integration)
+* [Coverage](#coverage)
 
 
 ## What is unit testing?
@@ -65,6 +67,14 @@ cd testing_repo
 We need to install the wonderful libraries ``nose`` and ``coverage``. Useful for
 unit testing.
 
+* Windows users: Put Python and scripts in your PATH. [Instructions](https://openhatch.org/wiki/Boston_Python_Workshop_6/Friday/Windows_set_up_Python).
+* Download [get-pip.py](https://bootstrap.pypa.io/get-pip.pyhttps://bootstrap.pypa.io/get-pip.py)
+* Install pip: ``python get-pip.py``
+```shell
+pip install nose
+pip install coverage
+```
+* For Mac and Linux users:
 ```shell
 sudo pip install nose
 sudo pip install coverage
@@ -78,11 +88,47 @@ nosetests tests.py
 ```
 
 * Write more tests. We always need more tests!
+
+## Test-driven development
+From Wikipedia:
+
+> Test-driven development (TDD) is a software development process that relies
+> on the repetition of a very short development cycle: first the developer 
+> writes an (initially failing) automated test case that defines a desired 
+> improvement or new function, then produces the minimum amount of code to pass
+> that test.
+
+## Continuous integration
+From Wikipedia:
+> Continuous integration (CI) is the practice, in software engineering, of
+> merging all developer working copies with a shared mainline several times a day.
+> CI was originally intended to be used in combination with automated unit
+> tests written through the practices of test-driven development.
+
+I say it is fancy wording for "testing with Github".
+
+* We will go to the Travis CI webpage to read the documentation for setting up
+  our repo in CI mode.
+* Set up CI for our test-repo.
+* Make a branch and see if Travis runs the tests.
+* Add a badge to your README.md
+
+## Coverage
 * Measure test coverage:
 
 ```shell
 nosetests tests.py --with-coverage --cover-html
 ```
+
+* Setup your test-repo in coveralls.
+* Configure Travis to work in combination with coveralls.
+* For travis need to install:
+```shell
+sudo pip install coveralls
+```
+* Make a branch and see if Coveralls runs the tests.
+* Add a badge to your README.md
+
 
 Most scientists do not use any testing framework for their code:
 

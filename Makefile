@@ -38,7 +38,7 @@ $(INTRO_GIT_SRC).pdf: $(INTRO_GIT_SRC).org
 
 $(INTRO_SHELL_SRC).pdf: $(INTRO_SHELL_SRC).org
 	emacs $< --batch -f org-beamer-export-to-pdf --kill
-	# rm $(INTRO_SHELL_SRC).tex
+	rm $(INTRO_SHELL_SRC).tex
 
 copy: presentations
 	cp *.md $(PELICAN_DIR)/content/pages

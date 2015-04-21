@@ -186,7 +186,7 @@ Check that you are in your home folder with =pwd=. You should see:
 If not, go back to your home folder by typing simply =cd= without any argument.
 
 Clone the Git repository with:
-: git clone xxxx
+: git clone https://github.com/mdjbru-teaching-material/practicals.git
 and run =ls=. What happened?
 
 ** Data content and motivation
@@ -546,8 +546,6 @@ How would you count the number of proteins in each fasta file?
 
 ** Useful tools: =cut=
 
-
-
 *** =cut= to get columns                                          :B_block:
 :PROPERTIES:
 :BEAMER_env: block
@@ -583,12 +581,111 @@ use for sorting, so that =sort -t"_" -k2 myFileName= would sort the lines in
 
 ** Useful tools: =uniq=                                           :noexport:
 
-toto
+*** =uniq= to find duplicates                                     :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+Let's look at the counts of "flagel" occurrences in the fasta files:
+: cat flagelCounts
+: cut -d: -f2 flagelCounts > rawFlagelCounts
+: sort -n rawFlagelCounts > sortedFlagelCounts
+Now try:
+: cat sortedFlagelCounts
+: uniq sortedFlagelCounts
+: uniq -c sortedFlagelCounts
+What is =uniq= doing in each case?
 
 ** Combining tools with pipes
 
-= w | head -n 20=
-= w | grep jyy=
+*** Pipes can connect an output and an input streams              :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+When we did =sort lineCounts=, we used =sort= of the output of =wc=, but we
+used an intermediate file.  The shell offers a powerful way to connect directly
+the output of a command to the input of another: the *pipe operator*:
+: wc -l *.fa | sort -n
+
+*** Exercises                                                     :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+The =w= output the list of connected users on the server:
+: w
+: w | head
+: w | less
+Use a pipe to find all the users whose login contains "jyy". Extend the same
+pipe to count how many there are.
+
+** Python script to determine amino acid composition
+
+*** Test the Python script                                        :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+The script =seqComposition.py= takes a fasta file and produces a table
+containing the amino-acid composition of each protein in the file.
+To run the script, type:
+: module load python-env/3.4.1   # This is specific to the server
+: python3 seqComposition.py myFastaFile # Use the fasta file you wish
+The output is sent to the terminal. Propose at least two ways to have a look at
+this output.
+
+** Python script to determine amino acid composition
+
+*** Exercise                                                      :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+Using only the Unix tools you know, the Python script and pipes, determine the
+distribution of the number of histidines per protein in the proteome of the
+strain of your choice.
+
+* Automating tasks
+
+** One step towards wizardry: shell scripts
+
+*** Reusing your tool pipeline                                    :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+Let's use =nano= to store your pipeline in a file:
+: nano getHistDistrib.sh
+(the usage of =nano= will be demonstrated live) The idea is to be able to
+produce the histidine distribution results just by typing:
+: bash getHistDistrib.sh myFastaFile
+
+*** Test your pipeline with a few files                           :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+Test your pipeline for 5 strains. How would you feel about doing it for 2000
+strains?
+
+** One step towards wizardry: shell scripts
+
+*** Making a general purpose listing script                         :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+Create a shell script (=testListing.sh=) with this content:
+#+BEGIN_SRC bash
+listFiles=`ls *.fa`
+echo $listFiles
+for myFile in $listFiles; do
+    echo $myFile
+    echo $myFile.results
+done
+#+END_SRC
+Run it with =bash=. What does this do?
+
+*** Exercise: final script                                        :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+Combine the script with your pipeline and the listing script into a single
+script to get the histidine distribution for all the fasta files in this
+folder.
 
 ** File rights                                                    :noexport:
 
@@ -611,7 +708,7 @@ toto
   sort and uniq, wc)
 - shell cheat sheet (Tiina prepared one for the Jyväskylä workshop in 2011)
 
-** Shell scripts
+** Shell scripts                                                  :noexport:
 
 -   Storing simple commands in shell scripts
 -   Parsing arguments
@@ -619,7 +716,7 @@ toto
 -   Applying script to all files in a directory
 -   Version control of shell scripts
 
-** Automate tasks
+** Automate tasks                                                 :noexport:
 
 - Download the new set of file
 - Run your scripts to analyze it

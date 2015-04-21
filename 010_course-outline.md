@@ -6,7 +6,8 @@ Sortorder: 010
 Durations of each section are very rough estimates. If we are going faster or
 slower than expected, some topics may be treated earlier or later, or
 altogether skipped if more time is spent on another topic in which people have
-more interest.
+more interest. You can access our Etherpad
+[here](https://etherpad.fr/p/turku-course-2015).
 
 - Day one
     + AM (3.5 hours): [Introduction to Python](https://github.com/mdjbru-teaching-material/turku_course/blob/master/course-material/introduction-to-python/intro_python.md) [*Carlos*]

@@ -5,6 +5,8 @@ RESOURCES_DIR=resources
 
 INTRO_GIT_DIR=course-material/version-control-with-git
 INTRO_GIT_SRC=$(INTRO_GIT_DIR)/git-presentation
+INTRO_SHELL_DIR=course-material/bash-shell-ssh-make
+INTRO_SHELL_SRC=$(INTRO_SHELL_DIR)/bash-shell-ssh-make-presentation
 
 ### * Usage
 
@@ -28,11 +30,15 @@ help:
 
 ### * Rules
 
-presentations: $(INTRO_GIT_SRC).pdf
+presentations: $(INTRO_GIT_SRC).pdf $(INTRO_SHELL_SRC).pdf
 
 $(INTRO_GIT_SRC).pdf: $(INTRO_GIT_SRC).org
 	emacs $< --batch -f org-beamer-export-to-pdf --kill
 	rm $(INTRO_GIT_SRC).tex
+
+$(INTRO_SHELL_SRC).pdf: $(INTRO_SHELL_SRC).org
+	emacs $< --batch -f org-beamer-export-to-pdf --kill
+	# rm $(INTRO_SHELL_SRC).tex
 
 copy: presentations
 	cp *.md $(PELICAN_DIR)/content/pages

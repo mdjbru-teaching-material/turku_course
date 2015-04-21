@@ -16,7 +16,7 @@
 
 ** Reproducibility of research
 
-*** Repoducibility                                                :B_block:
+*** Reproducibility                                                 :B_block:
 :PROPERTIES:
 :BEAMER_env: block
 :END:

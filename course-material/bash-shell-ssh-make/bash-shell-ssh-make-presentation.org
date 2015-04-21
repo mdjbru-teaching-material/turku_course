@@ -1,0 +1,647 @@
+#+Title: Introduction to the shell and task automation
+#+Author:
+#+Date: 2015-04-22
+
+* Introduction to the shell
+
+** What is the shell?
+
+*** In brief...                                                     :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+- Command line interface, looks old-fashioned but very convenient
+- Main interface when you want to login to *CSC servers* or *remote servers*
+- Also present in *Linux* distributions for personal computers and *Mac*
+- With *Windows*, the =cmd= prompt is a bit similar (text-based) but not as
+  powerful
+
+*** Usage                                                           :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:BEAMER_act: <2->
+:END:
+- Often the only interface For remote connections
+- *Automate repetitive tasks*
+- Powerful built-in commands
+- Shell scripts to *reproduce* data manipulation
+
+** Where can we find the shell?
+
+*** To find a shell...                                            :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+- On *Linux* and *MacOS* systems: open a *terminal*. This will provide you with a
+  Unix-like shell on both systems
+- On *Windows*: run =cmd.exe= or =cmd=. This shell is quite different from the
+  Unix-like shell found in Linux and MacOS. To obtain a Unix shell on Windows,
+  one can install the [[https://www.cygwin.com/][Cygwin]] tools.
+- It is strongly recommended to learn how to use a *Unix shell* since it is
+  very likely it is this type of shell you will be exposed to when you connect
+  to a *remote server*.
+
+** Where can we find the shell?
+
+*** One shell or several shells?                                  :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+- A shell: a program providing an *interface* between the user and the
+  computer. *Different shells exist*.
+- The most popular and widely used shell is probably *bash*. It is the
+  default shell in most GNU/Linux distributions.
+- If you learn how to use *bash*, you will be able to use most *remote servers*
+  you'll have to connect to, and also the *terminal* from MacOS or the *Cygwin*
+  tools on Windows
+
+** The CSC center in Kajaani
+
+#+BEGIN_CENTER
+[[file:img/digitice-csc-kajaani-800_ilmakuva_tehtaasta.jpg]]
+#+END_CENTER
+
+** Meet the Taito cluster (=taito.csc.fi=)
+
+#+BEGIN_CENTER
+[[file:img/yle-taito-supertietokone-kajaani.jpg]]
+#+END_CENTER
+
+** Connection to a remote shell
+
+*** The plan                                                        :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+- Using the CSC server Taito in Kajaani (student account)
+- Tools: *putty* (windows) or *ssh* (Mac and GNU/Linux)
+- A word about *ssh* and the *security of connections*?
+
+*** Student account                                               :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+- Logins: =jyybio01= to =jyybio20=
+- Password: on the whiteboard
+
+*** Connection                                                    :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:BEAMER_act: <2->
+:END:
+- From a terminal (Mac or GNU/Linux):
+  : ssh jyybioxx@taito.csc.fi
+  where =xx= is your student number.
+- From Putty: ask a teacher if needed
+
+** First contact with the shell                                   :noexport:
+
+*** Try those commands                                            :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+Can you tell what those commands are doing?
+- =whoami=
+- =pwd=
+- =ls=
+
+** First contact with the shell
+
+*** Just after connection                                           :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+What you see after connection in the *shell prompt*. It tells you the shell is
+ready to receive your input:
+: jyybioxx@taito-login3$
+=jyybioxx= is your username, =taito-login= is the host server to which you are
+connected. The number after =taito-login= can vary because Taito has several
+login nodes.
+
+** First contact with the shell
+
+*** Execute a command (=ls=)                                        :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+The shell *reads* and *executes* commands you enter at the prompt, and *prints*
+the output. Type =ls= and press =RETURN=. You should see:
+: appl_taito
+
+***                                                               :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:BEAMER_act: <2->
+:END:
+You just ran the =ls= command which produces an output: the list of files and
+folders present in the current directory. 
+
+Try another command: =whoami=. What does this command do?
+
+** First contact with the shell
+
+*** Execute a command (=pwd=)                                       :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+When you login to a server, you are automatically sent to your home folder. You
+can see where you are by typing =pwd=, which produces:
+: /homeappl/home/jyybioxx
+So you are now in the folder =jyybioxx=, which is itself contained in =home=,
+which is contained in =homeappl=, which is at the root of the file system (=/=,
+there is no parent directory above).
+
+** Adding options to a command
+
+*** Using =ls= options                                              :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+You can add options to a command with the dash sign =-=:
+: ls -l
+(this is -l, not -1)
+
+This runs the =ls= command with the =-l= option, which produces a detailed
+output:
+#+BEGIN_EXAMPLE
+total 4
+drwx------ 2 jyybio20 jyybio 4096 Apr 15 12:15 appl_taito
+drwx------ 2 jyybio20 jyybio 4096 Apr 15 15:22 ecoli-data
+#+END_EXAMPLE
+Now you can see the date of last modification of the folders and some other
+information. We'll see later in more details what the other information means.
+
+** Clone the Git repository for the practicals
+
+*** Clone the Git repository                                      :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+Before going further, you should clone a Git repository containing the data
+which was prepared for you (Git is installed on Taito). The repository is
+hosted on GitHub.
+
+Check that you are in your home folder with =pwd=. You should see:
+: /homeappl/home/jyybioxx
+If not, go back to your home folder by typing simply =cd= without any argument.
+
+Clone the Git repository with:
+: git clone xxxx
+and run =ls=. What happened?
+
+** Data content and motivation
+
+*** The data files                                                :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+Each file corresponds to one /Escherichia coli/ strain for which a
+complete or draft genome sequence is available. The name of the strain
+is contained in the file name. Each file contains the peptide
+sequences from all translations resulting from Ensembl known or novel
+gene predictions for that given /E. coli/ strain.
+
+Files are in the FASTA format. The original address is
+ftp://ftp.ensemblgenomes.org/pub/current/bacteria/fasta/.
+
+
+*** Motivation                                                    :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+We want to determine the amino acod content of all proteins of each strain, and
+compare the results between strains. We already have a Python script ready
+which can determine the amino-acid composition for protein sequences.
+
+** Basic folder navigation
+
+*** =cd= command                                                  :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+We can navigate from folder to folder using the =cd= command:
+: cd practicals
+: ls
+: cd ecoli-data
+: ls
+We could have go directly to the second subfolder with =cd
+practicals/ecoli-data=
+
+You can see there are already some files in this
+folder. Let's ask for more details:
+: ls -l
+
+How many files are there? How large are they?
+
+** Basic folder navigation
+
+*** Combining options for =ls=                                    :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+We can ask for more human-readable sizes with:
+: ls -l -h
+Can you see the difference with =ls -l=? What does =ls -h= do?
+
+We could also combine both options to =ls=: =ls -lh=
+
+** Basic folder navigation
+
+*** Moving to the parent directory                                :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+We can go back through the parent folders using =cd ..=:
+: pwd    # Where are you at this point?
+: cd ..
+: pwd    # And now?
+: ls
+: cd ..
+: pwd    # And here?
+: ls
+
+** Basic folder navigation
+
+*** Going back to the home directory                              :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+A faster way to go back to your home directory, from any starting directory, is
+just to type =cd= without any argument.  Now go back to the =ecoli-data=
+subfolder and back again to your home directory using =cd=.
+
+*** Shortcut for the home folder                                  :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+Another way to go to the home folder is to use the =~= character: this is
+automatically replaced by the path to your home folder by =bash=:
+: cd
+: cd practicals
+: cd ~
+: cd appl_taito
+: cd ~/practicals
+
+** Creating folders
+
+*** The =mkdir= command                                           :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+Go back to the =practicals= folder and create a new folder in it:
+: cd ~/practicals
+: mkdir results
+: cd results
+: ls
+
+*** Exercise                                                      :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+Create the following directory structure:
+: ~/practicals/scripts/python/modules/seqAnalysis
+and go back to your home folder.
+
+** Auto-completion
+
+*** The magic =TAB= key                                           :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+Let's go into =seqAnalysis= folder=, but let's be lazy:
+: cd     # Start from your home folder
+: cd pr  # Press TAB at this point
+Do you understand what happened? Use this feature to quickly go to
+=seqAnalysis=. What is the minimum number of keystrokes you have to use to go
+there from your home folder?
+
+*** Remember!                                                       :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+When you press =TAB=, the shell tries to complete what you just typed by
+itself. This auto-completion feature of the shell is very convenient and will
+save you a lot of typing!
+
+** Auto-completion
+
+*** Test auto-completion                                          :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+Now create a folder:
+: ~/practicals/scripts/python/modifiedSources
+Go back to your home folder, and go into =modifiedSources= using the =TAB=
+completion as much as you can. What do you notice?
+
+** Auto-completion
+*** Double =TAB=                                                  :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+Now create the folder
+: ~/practicals/scripts/python/modularComponents
+and type:
+: cd ~/practicals/scripts/python/mod  # Press =TAB= twice here
+:                           # Type "ule" and press =TAB= again
+Do you understand how =TAB= completion works? This also works for command
+names.
+
+** Copying, moving and removing files
+
+*** Creating an empty file                                        :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+Go the the =seqAnalysis= folder and type:
+: touch DNA-analysis.py
+: ls
+What happened?
+
+*** Moving a file                                                 :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+Now type:
+: mv DNA-analysis.py ../modularComponents
+What happened? Did you use the =TAB= key? (you should!) Explore the directory
+structure to find =DNA-analysis.py= again.
+
+** Copying, moving and removing files
+
+*** Copying a file                                                :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+Go to the =modularComponents= subfolder and type:
+: cp DNA-analysis.py ../modules
+What happened?
+
+*** Removing a file                                               :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+From =modularComponents= folder, type:
+: rm DNA-analysis.py
+What happened?
+
+** Creating a directory hierarchy
+
+*** Moving a folder                                               :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+From the =scripts= folder, move =modularComponents= into =modules=:
+: mv modularComponents modules
+: tree
+
+*** Copying a folder                                              :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+Go to the =practicals= folder and make a copy of =scripts=:
+: cp -r scripts scripts-backup
+Note the =-r= option used for recursive copy inside the directories.
+
+** Creating a directory hierarchy
+
+*** Removing a folder
+Remove the newly created folder with:
+: rm -r scripts-backup
+Again, note the =-r= option to work on folders.
+
+** Creating a directory hierarchy
+
+*** Exercise                                                      :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+Now that you have experience, create the exact following directory structure
+(only folders shown):
+#+BEGIN_EXAMPLE
+.
++-- appl_taito
+`-- practicals
+    +-- ecoli-data
+    |   `-- [...]
+    +-- results
+    |   `-- 2015-04-22
+    `-- scripts
+        +-- python
+        |   +-- popGenetics
+        |   +-- proteinStructure
+        |   `-- seqAnalysis
+        `-- R
+#+END_EXAMPLE
+
+** Viewing a file
+
+*** =cat= command                                                 :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+Go to the =ecoli-data= folder and type:
+: cat README
+Try also =cat= on one of the fasta files. What happened?
+
+*** =head= and =tail= commands                                    :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+: head Escherichia_coli_o5_k4_l_h4_str_atcc_23502.GCA_000333195.1.26.pep.all.fa
+: tail Escherichia_coli_o5_k4_l_h4_str_atcc_23502.GCA_000333195.1.26.pep.all.fa
+: head -n 30 Escherichia_coli_o5_k4_l_h4_str_atcc_23502.GCA_000333195.1.26.pep.all.fa
+: tail -n 3 Escherichia_coli_o5_k4_l_h4_str_atcc_23502.GCA_000333195.1.26.pep.all.fa
+Do you understand what those commands do?
+
+** Viewing a file
+
+*** =less= command                                                :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+=less= is very useful to examine large file. You can navigate using the up and
+down arrows or =B= and =SPACE= keys, and you can exit with =Q=.
+: less Escherichia_coli_o5_k4_l_h4_str_atcc_23502.GCA_000333195.1.26.pep.all.fa
+
+
+* Shell tools
+
+** Useful tools: =wc=
+
+*** =wc= to count words                                           :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+Go to the =ecoli-data= folder and type:
+: wc Escherichia_coli_o55_h7_str_06_3555.GCA_000617385.1.26.pep.all.fa
+which produces:
+:   26318   51865 1824223 Esch...
+We can have only the number of lines with =wc -l= (try it).
+
+*** Wildcards                                                     :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+Try:
+: wc -l *.fa
+What happened?
+
+** Redirection
+
+*** The =>= operator                                              :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+When a command produces some output, it can be redirected to a file instead of
+to the terminal:
+: wc -l *.fa > lineCounts
+: cat lineCounts
+=>= is a *redirection* operator, and automatically creates a new file or erases
+an existing file.
+
+*** The =>>= operator                                             :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+To redirect output and append it to an existing file, we can use the =>>=
+operator:
+: wc -l README >> lineCounts
+: cat lineCounts
+
+** Useful tools: =grep=
+
+*** =grep= to search for matches                                  :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+:grep "flagellin" Escherichia_coli_o55_h7_str_06_3555.GCA_000617385.1.26.pep.all.fa
+:grep --color=always "flagellin" Escherichia_coli_o55_h7_str_06_3555.GCA_000617385.1.26.pep.all.fa
+:grep -n --color=always "flagellin" Escherichia_coli_o55_h7_str_06_3555.GCA_000617385.1.26.pep.all.fa
+:grep -c --color=always "flagellin" Escherichia_coli_o55_h7_str_06_3555.GCA_000617385.1.26.pep.all.fa
+Do you understand what each of the =grep= options do?
+
+*** Exercise                                                      :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+Use =grep= to extract all the sequence names from one of the fasta file and
+store them in a file called =proteinNames=.
+
+** Useful tools: =grep=
+
+*** =grep= is versatile                                           :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+: grep -c flagellin *.fa
+: grep -c flagel *.fa
+Do you understand the output?
+
+*** Exercise                                                      :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+How would you count the number of proteins in each fasta file?
+
+** Useful tools: =cut=
+
+
+
+*** =cut= to get columns                                          :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+: grep -c flagel *.fa > flagelCounts
+: cat flagelCounts
+: cut -d "_" -f 1 flagelCounts
+: cut -d "_" -f 3 flagelCounts
+: cut -d "_" -f 3,5 flagelCounts
+: cut -d ":" -f 2 flagelCounts
+Do you understand what =cut= does and the roles of the =-d= and =-f= options?
+
+** Useful tools: =sort=
+
+*** =sort= to sort things                                         :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+Use =sort= to sort the line counts from =lineCounts=:
+: sort lineCounts
+Is everything correct? What if you try =sort -n lineCounts=? Can you see a
+difference? Try also =sort -r lineCounts=
+
+*** Exercise                                                      :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+Using =grep= and =sort= and an intermediate files, sort the bacterial proteomes
+by decreasing number of proteins. Hint: =sort= supports two interesting
+options, =-t= to specify a field separator and =-k= to specify which field to
+use for sorting, so that =sort -t"_" -k2 myFileName= would sort the lines in
+=myFileName= using the second field using "_" to delimit the fields.
+
+** Useful tools: =uniq=                                           :noexport:
+
+toto
+
+** Combining tools with pipes
+
+= w | head -n 20=
+= w | grep jyy=
+
+** File rights                                                    :noexport:
+
+** A word about streams?                                          :noexport:
+
+- stdin, stdout, stderr
+
+** Shell basics                                                   :noexport:
+
++ Different flavours of shell (bash, tcsh, &#x2026;)
++ Files and directories (ls, rm, mv, cp, mkdir, touch)
+- Owners, groups and rwx rights
++ Reading files (cat, less)
++ Redirection (>, >>, <)
+- stdin, stdout, stderr
++ grep, wc, sort, uniq, cut, sed
+- pipes
+- example of a pipe to process a data file (count number of different species
+  in aligned sequences in a fasta files: grep for ">", cut for species name,
+  sort and uniq, wc)
+- shell cheat sheet (Tiina prepared one for the Jyväskylä workshop in 2011)
+
+** Shell scripts
+
+-   Storing simple commands in shell scripts
+-   Parsing arguments
+-   Control flow (loops, if, while)
+-   Applying script to all files in a directory
+-   Version control of shell scripts
+
+** Automate tasks
+
+- Download the new set of file
+- Run your scripts to analyze it
+
+* Org config                                                       :noexport:
+
+#+OPTIONS: H:2 toc:nil
+#+STARTUP: beamer
+#+LaTeX_CLASS: beamer
+#+LaTeX_CLASS_OPTIONS: [big]
+#+LaTeX_HEADER: \usepackage{lmodern}
+#+LaTeX_HEADER: \usetheme{Boadilla}
+#+latex_header: \usecolortheme{whale}
+#+LaTeX_HEADER: \setbeamertemplate{footline}{}
+#+LaTeX_HEADER: \setbeamertemplate{navigation symbols}{}
+#+LaTeX_HEADER: \setbeamertemplate{itemize items}[circle]
+#+LaTeX_HEADER: \setbeamertemplate{enumerate items}[circle]
+#+LaTeX_HEADER: \setbeamertemplate{alert}{\textbf}
+# http://tex.stackexchange.com/questions/171705/changing-your-bullet-points-in-beamer-block-maybe-boadilla
+# http://tex.stackexchange.com/questions/68347/different-styles-of-bullets-of-enumerate
+# http://tex.stackexchange.com/questions/66995/modify-footer-of-slides
+# http://askubuntu.com/questions/98664/how-can-i-get-smooth-fonts-in-lyx
+# http://orgmode.org/worg/exporters/beamer/tutorial.html
+# http://orgmode.org/manual/Beamer-export.html
+# https://lists.gnu.org/archive/html/emacs-orgmode/2008-07/msg00163.html

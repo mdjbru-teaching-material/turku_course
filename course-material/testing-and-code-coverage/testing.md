@@ -92,7 +92,7 @@ nosetests tests.py
 ## Test-driven development
 From Wikipedia:
 
-> Test-driven development (TDD) is a software development process that relies
+> **Test-driven development (TDD)** is a software development process that relies
 > on the repetition of a very short development cycle: first the developer 
 > writes an (initially failing) automated test case that defines a desired 
 > improvement or new function, then produces the minimum amount of code to pass
@@ -100,7 +100,7 @@ From Wikipedia:
 
 ## Continuous integration
 From Wikipedia:
-> Continuous integration (CI) is the practice, in software engineering, of
+> **Continuous integration (CI)** is the practice, in software engineering, of
 > merging all developer working copies with a shared mainline several times a day.
 > CI was originally intended to be used in combination with automated unit
 > tests written through the practices of test-driven development.

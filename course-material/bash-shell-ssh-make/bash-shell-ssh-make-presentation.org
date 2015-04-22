@@ -19,11 +19,10 @@
 *** Usage                                                           :B_block:
 :PROPERTIES:
 :BEAMER_env: block
-:BEAMER_act: <2->
 :END:
-- Often the only interface For remote connections
-- *Automate repetitive tasks*
+- Often the only interface for remote connections
 - Powerful built-in commands
+- *Automate repetitive tasks*
 - Shell scripts to *reproduce* data manipulation
 
 ** Where can we find the shell?
@@ -32,8 +31,8 @@
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-- On *Linux* and *MacOS* systems: open a *terminal*. This will provide you with a
-  Unix-like shell on both systems
+- On *GNU/Linux* and *MacOS* systems: open a *terminal*. This will provide you
+  with a Unix-like shell on both systems
 - On *Windows*: run =cmd.exe= or =cmd=. This shell is quite different from the
   Unix-like shell found in Linux and MacOS. To obtain a Unix shell on Windows,
   one can install the [[https://www.cygwin.com/][Cygwin]] tools.
@@ -55,6 +54,13 @@
   you'll have to connect to, and also the *terminal* from MacOS or the *Cygwin*
   tools on Windows
 
+*** One word on terminology                                       :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+- During the course, we will often say interchangeably "the terminal", "the
+  shell" or "bash".
+
 ** The CSC center in Kajaani
 
 #+BEGIN_CENTER
@@ -66,6 +72,31 @@
 #+BEGIN_CENTER
 [[file:img/yle-taito-supertietokone-kajaani.jpg]]
 #+END_CENTER
+
+** A word about CSC servers
+
+*** Available servers                                             :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+- Taito: 19152 cores (16 cores per nodes)
+- Sisu: 39408 cores, for massively parallel jobs
+
+*** Job submission                                                :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+- CPU-intense calculations have to be submitted through a queue system
+- [[https://sui.csc.fi/group/sui/host-monitor][Server load]]
+- We can also run some simple commands directly at login
+
+*** Module system                                                   :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+- Many softwares installed
+- Sometimes different versions of a software
+- User has to explicitly load *modules*
 
 ** Connection to a remote shell
 
@@ -87,7 +118,6 @@
 *** Connection                                                    :B_block:
 :PROPERTIES:
 :BEAMER_env: block
-:BEAMER_act: <2->
 :END:
 - From a terminal (Mac or GNU/Linux):
   : ssh jyybioxx@taito.csc.fi
@@ -111,12 +141,12 @@ Can you tell what those commands are doing?
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-What you see after connection in the *shell prompt*. It tells you the shell is
-ready to receive your input:
-: jyybioxx@taito-login3$
-=jyybioxx= is your username, =taito-login= is the host server to which you are
-connected. The number after =taito-login= can vary because Taito has several
-login nodes.
+- What you see after connection in the *shell prompt*. It tells you the shell
+  is ready to receive your input:
+  : jyybioxx@taito-login3$
+- =jyybioxx= is your username, =taito-login= is the host server to which you
+  are connected. The number after =taito-login= can vary because Taito has
+  several login nodes.
 
 ** First contact with the shell
 
@@ -131,12 +161,11 @@ the output. Type =ls= and press =RETURN=. You should see:
 ***                                                               :B_block:
 :PROPERTIES:
 :BEAMER_env: block
-:BEAMER_act: <2->
 :END:
 You just ran the =ls= command which produces an output: the list of files and
 folders present in the current directory. 
 
-Try another command: =whoami=. What does this command do?
+- Try another command: =whoami=. What does this command do?
 
 ** First contact with the shell
 
@@ -144,12 +173,12 @@ Try another command: =whoami=. What does this command do?
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-When you login to a server, you are automatically sent to your home folder. You
-can see where you are by typing =pwd=, which produces:
-: /homeappl/home/jyybioxx
-So you are now in the folder =jyybioxx=, which is itself contained in =home=,
-which is contained in =homeappl=, which is at the root of the file system (=/=,
-there is no parent directory above).
+- When you login to a server, you are automatically sent to your home
+  folder. You can see where you are by typing =pwd=, which produces:
+  : /homeappl/home/jyybioxx
+- So you are now in the folder =jyybioxx=, which is itself contained in =home=,
+  which is contained in =homeappl=, which is at the root of the file system
+  (=/=, there is no parent directory above).
 
 ** Adding options to a command
 
@@ -157,18 +186,42 @@ there is no parent directory above).
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-You can add options to a command with the dash sign =-=:
-: ls -l
-(this is -l, not -1)
+- You can add options to a command with the dash sign =-=:
+  : ls -l
+  (this is -l, not -1)
 
-This runs the =ls= command with the =-l= option, which produces a detailed
-output:
-#+BEGIN_EXAMPLE
-total 4
-drwx------ 2 jyybio20 jyybio 4096 Apr 15 12:15 appl_taito
-#+END_EXAMPLE
-Now you can see the date of last modification of the folders and some other
-information. We'll see later in more details what the other information means.
+- This runs the =ls= command with the =-l= option, which produces a detailed
+  output:
+  #+BEGIN_EXAMPLE
+  total 4
+  drwx------ 2 jyybio20 jyybio 4096 Apr 15 12:15 appl_taito
+  #+END_EXAMPLE
+  Now you can see the date of last modification of the folders and some other
+  information.
+
+** A word about rights
+
+*** The rights system                                             :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+- In a Unix system, every file has an *owner* and belongs to a *group*
+- Every file has rights for *reading*, *writing* and *execution*
+- Those rights are set for three categories of users: *owner*, *group* and
+  *others*
+
+*** =ls -l= output                                                :B_block:
+:PROPERTIES:
+:BEAMER_env: block
+:END:
+=drwx------ 2 jyybio20 jyybio 4096 Apr 15 12:15 appl_taito=
+- The three first letters are rights for the owner, the next three rights for
+  the group, and the last three rights for others.
+- If a letter is replaced by a dash, the right is not granted
+: -rwx------
+: -r--r--r--
+: -rwxr--r--
+: drwxr-xr-x
 
 ** Clone the Git repository for the practicals
 
@@ -176,18 +229,20 @@ information. We'll see later in more details what the other information means.
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-Before going further, you should clone a Git repository containing the data
-which was prepared for you (Git is installed on Taito). The repository is
-hosted on GitHub.
+- Before going further, you should clone a Git repository containing the data
+  which was prepared for you (Git is installed on Taito). The repository is
+  hosted on GitHub.
 
-Check that you are in your home folder with =pwd=. You should see:
-: /homeappl/home/jyybioxx
-If not, go back to your home folder by typing simply =cd= without any argument.
+- Check that you are in your home folder with =pwd=. You should see:
+  : /homeappl/home/jyybioxx
+  If not, go back to your home folder by typing simply =cd= without any
+  argument.
 
-Clone the Git repository with (all on one line):
+- Clone the Git repository with (all on one line):
 : git clone 
 : https://github.com/mdjbru-teaching-material/practicals.git
-and run =ls=. What happened?
+
+- Run =ls=. What happened?
 
 ** Data content and motivation
 
@@ -195,22 +250,20 @@ and run =ls=. What happened?
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-Each file corresponds to one /Escherichia coli/ strain for which a
-complete or draft genome sequence is available. The name of the strain
-is contained in the file name. Each file contains the peptide
-sequences from all translations resulting from Ensembl known or novel
-gene predictions for that given /E. coli/ strain.
+- Each *file* corresponds to *one /Escherichia coli/ strain* for which a
+  complete or draft genome sequence is available. Each file contains the
+  *peptide sequences* from all translations resulting from Ensembl known or
+  novel gene predictions for that strain.
 
-Files are in the FASTA format. The original address is
-ftp://ftp.ensemblgenomes.org/pub/current/bacteria/fasta/.
-
+- Files are in the FASTA format. The original address is
+  ftp://ftp.ensemblgenomes.org/pub/current/bacteria/fasta/.
 
 *** Motivation                                                    :B_block:
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-We want to determine the amino acid content of all proteins of each strain, and
-compare the results between strains. We already have a Python script ready
+We want to determine the *amino acid content* of *all proteins of each strain*,
+and compare the results between strains. We already have a Python script ready
 which can determine the amino-acid composition for protein sequences.
 
 ** Basic folder navigation
@@ -219,19 +272,18 @@ which can determine the amino-acid composition for protein sequences.
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-We can navigate from folder to folder using the =cd= command:
+- We can navigate from folder to folder using the =cd= command:
 : cd practicals
 : ls
 : cd ecoli-data
 : ls
-We could have go directly to the second subfolder with =cd
-practicals/ecoli-data=
+- We could have gone directly to the second subfolder with:
+: cd practicals/ecoli-data
 
-You can see there are already some files in this
-folder. Let's ask for more details:
-: ls -l
+- You can see there are already some files in this folder. Let's ask for more
+  details with =ls -l=
 
-How many files are there? How large are they?
+- How many files are there? How large are they?
 
 ** Basic folder navigation
 
@@ -239,11 +291,10 @@ How many files are there? How large are they?
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-We can ask for more human-readable sizes with:
+- We can ask for more human-readable sizes with:
 : ls -l -h
-Can you see the difference with =ls -l=? What does =ls -h= do?
-
-We could also combine both options to =ls=: =ls -lh=
+- Can you see the difference with =ls -l=? What does =ls -h= do?
+- We could also combine both options to =ls=: =ls -lh=
 
 ** Basic folder navigation
 
@@ -251,7 +302,7 @@ We could also combine both options to =ls=: =ls -lh=
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-We can go back through the parent folders using =cd ..=:
+- We can go back through the parent folders using =cd ..=
 : pwd    # Where are you at this point?
 : cd ..
 : pwd    # And now?
@@ -266,16 +317,17 @@ We can go back through the parent folders using =cd ..=:
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-A faster way to go back to your home directory, from any starting directory, is
-just to type =cd= without any argument.  Now go back to the =ecoli-data=
-subfolder and back again to your home directory using =cd=.
+- A faster way to go back to your home directory, from any starting directory,
+  is just to type =cd= without any argument.
+- Go back to the =ecoli-data= subfolder and back again to your home directory
+  using =cd=.
 
 *** Shortcut for the home folder                                  :B_block:
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-Another way to go to the home folder is to use the =~= character: this is
-automatically replaced by the path to your home folder by =bash=:
+- Another way to go to the home folder is to use the =~= character: this is
+  automatically replaced by the path to your home folder by =bash=.
 : cd     # Back to your home folder
 : cd practicals
 : cd ~   # Bash understands "~" as "/homeappl/home/jyybioxx"
@@ -288,7 +340,7 @@ automatically replaced by the path to your home folder by =bash=:
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-Go back to the =practicals= folder and create a new folder in it:
+- Go back to the =practicals= folder and create a new folder in it:
 : cd ~/practicals
 : mkdir results
 : cd results
@@ -298,9 +350,9 @@ Go back to the =practicals= folder and create a new folder in it:
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-Create the following directory structure:
+- Create the following directory structure:
 : ~/practicals/scripts/python/modules/seqAnalysis
-and go back to your home folder.
+- Go back to your home folder.
 
 ** Auto-completion
 
@@ -308,19 +360,19 @@ and go back to your home folder.
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-Let's go into =seqAnalysis= folder, but let's be lazy:
+- Let's go into =seqAnalysis= folder, but let's be lazy:
 : cd     # Start from your home folder
 : cd pr  # Press TAB at this point
-Do you understand what happened? Use this feature to quickly go to
-=seqAnalysis=. What is the minimum number of keystrokes you have to use to go
-there from your home folder?
+- Do you understand what happened? 
+- Use this feature to quickly go to =seqAnalysis=. What is the minimum number
+  of keystrokes you have to use to go there from your home folder?
 
 *** Remember!                                                       :B_block:
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-When you press =TAB=, the shell tries to complete what you just typed by
-itself. This auto-completion feature of the shell is very convenient and will
+When you press *=TAB=*, the shell tries to complete what you just typed by
+itself. This *auto-completion feature* of the shell is very convenient and will
 save you a lot of typing!
 
 ** Auto-completion
@@ -329,23 +381,23 @@ save you a lot of typing!
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-Now create a folder:
+- Now create a folder:
 : ~/practicals/scripts/python/modifiedSources
-Go back to your home folder, and go into =modifiedSources= using the =TAB=
-completion as much as you can. What do you notice?
+- Go back to your home folder, and go into =modifiedSources= using the =TAB=
+  completion as much as you can. What do you notice?
 
 ** Auto-completion
 *** Double =TAB=                                                  :B_block:
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-Now create the folder
+- Now create the folder
 : ~/practicals/scripts/python/modularComponents
-and type:
+- Type:
 : cd ~/practicals/scripts/python/mod # Press =TAB= twice here
 : # Type "ule" and press =TAB= again
-Do you understand how =TAB= completion works? This also works for command
-names.
+- Do you understand how =TAB= completion works? This also works for command
+  names.
 
 ** Copying, moving and removing files
 
@@ -353,19 +405,19 @@ names.
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-Go the the =seqAnalysis= folder and type:
+- Go the the =seqAnalysis= folder and type:
 : touch DNA-analysis.py
 : ls
-What happened?
+- What happened?
 
 *** Moving a file                                                 :B_block:
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-Now type:
+- Now type:
 : mv DNA-analysis.py ../modularComponents
-What happened? Did you use the =TAB= key? (you should!) Explore the directory
-structure to find =DNA-analysis.py= again.
+- What happened? Did you use the =TAB= key? (you should!) 
+- Explore the directory structure to find =DNA-analysis.py= again.
 
 ** Copying, moving and removing files
 
@@ -373,17 +425,17 @@ structure to find =DNA-analysis.py= again.
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-Go to the =modularComponents= subfolder and type:
+- Go to the =modularComponents= subfolder and type:
 : cp DNA-analysis.py ../modules
-What happened?
+- What happened?
 
 *** Removing a file                                               :B_block:
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-From =modularComponents= folder, type:
+- From =modularComponents= folder, type:
 : rm DNA-analysis.py
-What happened?
+- What happened?
 
 ** Creating a directory hierarchy
 
@@ -391,25 +443,25 @@ What happened?
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-From the =scripts= folder, move =modularComponents= into =modules=:
+- From the =scripts= folder, move =modularComponents= into =modules=:
 : mv modularComponents modules
 : tree
-What does =tree= do?
+- What does =tree= do?
 
 *** Copying a folder                                              :B_block:
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-Go to the =practicals= folder and make a copy of =scripts=:
+- Go to the =practicals= folder and make a copy of =scripts=:
 : cp -r scripts scripts-backup
-Note the =-r= option used for recursive copy inside the directories.
+- Note the =-r= option used for recursive copy inside the directories.
 
 ** Creating a directory hierarchy
 
 *** Removing a folder
-Remove the newly created folder with:
+- Remove the newly created folder with:
 : rm -r scripts-backup
-Again, note the =-r= option to work on folders.
+- Again, note the =-r= option to work on folders.
 
 ** Creating a directory hierarchy
 
@@ -417,10 +469,9 @@ Again, note the =-r= option to work on folders.
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-Now that you have experience, create the exact following directory structure
-(only folders shown):
+- Now that you have experience, create the exact following directory structure
+  (only folders shown):
 #+BEGIN_EXAMPLE
-.
 +-- appl_taito
 `-- practicals
     +-- ecoli-data
@@ -441,9 +492,9 @@ Now that you have experience, create the exact following directory structure
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-Go to the =ecoli-data= folder and type:
+- Go to the =ecoli-data= folder and type:
 : cat README
-Try also =cat= on one of the fasta files. What happened?
+- Try also =cat= on one of the fasta files. What happened?
 
 *** =head= and =tail= commands                                    :B_block:
 :PROPERTIES:
@@ -453,7 +504,7 @@ Try also =cat= on one of the fasta files. What happened?
 : tail Escherichia_coli_o5_k4_l_h4_str_atcc_23502.GCA_000333195.1.26.pep.all.fa
 : head -n 30 Escherichia_coli_o5_k4_l_h4_str_atcc_23502.GCA_000333195.1.26.pep.all.fa
 : tail -n 3 Escherichia_coli_o5_k4_l_h4_str_atcc_23502.GCA_000333195.1.26.pep.all.fa
-Do you understand what those commands do?
+- Do you understand what those commands do?
 
 ** Viewing a file
 
@@ -461,10 +512,9 @@ Do you understand what those commands do?
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-=less= is very useful to examine large file. You can navigate using the up and
-down arrows or =B= and =SPACE= keys, and you can exit with =Q=.
+- =less= is very useful to examine large file. You can navigate using the up
+  and down arrows or =B= and =SPACE= keys, and you can exit with =Q=.
 : less Escherichia_coli_o5_k4_l_h4_str_atcc_23502.GCA_000333195.1.26.pep.all.fa
-
 
 * Shell tools
 
@@ -474,19 +524,19 @@ down arrows or =B= and =SPACE= keys, and you can exit with =Q=.
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-Go to the =ecoli-data= folder and type:
+- Go to the =ecoli-data= folder and type:
 : wc Escherichia_coli_o55_h7_str_06_3555.GCA_000617385.1.26.pep.all.fa
 which produces:
 :   26318   51865 1824223 Esch...
-We can have only the number of lines with =wc -l= (try it).
+- We can have only the number of lines with =wc -l= (try it).
 
 *** Wildcards                                                     :B_block:
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-Try:
+- Try:
 : wc -l *.fa
-What happened?
+- What happened?
 
 ** Redirection
 
@@ -494,19 +544,19 @@ What happened?
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-When a command produces some output, it can be redirected to a file instead of
-to the terminal:
+- When a command produces some output, it can be redirected to a file instead
+  of to the terminal:
 : wc -l *.fa > lineCounts
 : cat lineCounts
-=>= is a *redirection* operator, and automatically creates a new file or erases
-an existing file.
+- =>= is a *redirection* operator, and automatically creates a new file or
+  erases an existing file.
 
 *** The =>>= operator                                             :B_block:
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-To redirect output and append it to an existing file, we can use the =>>=
-operator:
+- To redirect output and append it to an existing file, we can use the =>>=
+  operator:
 : wc -l README >> lineCounts
 : cat lineCounts
 
@@ -520,14 +570,14 @@ operator:
 : grep --color=always "flagellin" Escherichia_coli_o55_h7_str_06_3555.GCA_000617385.1.26.pep.all.fa
 : grep -n --color=always "flagellin" Escherichia_coli_o55_h7_str_06_3555.GCA_000617385.1.26.pep.all.fa
 : grep -c --color=always "flagellin" Escherichia_coli_o55_h7_str_06_3555.GCA_000617385.1.26.pep.all.fa
-Do you understand what each of the =grep= options do?
+- Do you understand what each of the =grep= options do?
 
 *** Exercise                                                      :B_block:
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-Use =grep= to extract all the sequence names from one of the fasta file and
-store them in a file called =proteinNames=.
+- Use =grep= to extract all the sequence names from one of the fasta file and
+  store them in a file called =proteinNames=.
 
 ** Useful tools: =grep=
 
@@ -537,13 +587,13 @@ store them in a file called =proteinNames=.
 :END:
 : grep -c flagellin *.fa
 : grep -c flagel *.fa
-Do you understand the output?
+- Do you understand the output?
 
 *** Exercise                                                      :B_block:
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-How would you count the number of proteins in each fasta file?
+- How would you count the number of proteins in each fasta file?
 
 ** Useful tools: =cut=
 
@@ -557,7 +607,7 @@ How would you count the number of proteins in each fasta file?
 : cut -d "_" -f 3 flagelCounts
 : cut -d "_" -f 3,5 flagelCounts
 : cut -d ":" -f 2 flagelCounts
-Do you understand what =cut= does and the roles of the =-d= and =-f= options?
+- Do you understand what =cut= does and the roles of the =-d= and =-f= options?
 
 ** Useful tools: =sort=
 
@@ -565,20 +615,20 @@ Do you understand what =cut= does and the roles of the =-d= and =-f= options?
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-Use =sort= to sort the line counts from =lineCounts=:
+- Use =sort= to sort the line counts from =lineCounts=:
 : sort lineCounts
-Is everything correct? What if you try =sort -n lineCounts=? Can you see a
-difference? Try also =sort -r lineCounts=
+- Is everything correct? What if you try =sort -n lineCounts=? Can you see a
+  difference?
+- Try also =sort -r lineCounts=. What is the difference?
 
 *** Exercise                                                      :B_block:
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-Using =grep= and =sort= and an intermediate files, sort the bacterial proteomes
-by decreasing number of proteins. Hint: =sort= supports two interesting
-options, =-t= to specify a field separator and =-k= to specify which field to
-use for sorting, so that =sort -t"_" -k2 myFileName= would sort the lines in
-=myFileName= using the second field using "_" to delimit the fields.
+- Using =grep= and =sort= and an intermediate files, sort the bacterial
+  proteomes by decreasing number of proteins. 
+- Hint: =sort= supports two interesting options, *=-t=* to specify a field
+  separator and *=-k=* to specify which field to use for sorting.
 
 ** Useful tools: =uniq=                                           :noexport:
 
@@ -586,15 +636,15 @@ use for sorting, so that =sort -t"_" -k2 myFileName= would sort the lines in
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-Let's look at the counts of "flagel" occurrences in the fasta files:
+- Let's look at the counts of "flagel" occurrences in the fasta files:
 : cat flagelCounts
 : cut -d: -f2 flagelCounts > rawFlagelCounts
 : sort -n rawFlagelCounts > sortedFlagelCounts
-Now try:
+- Now try:
 : cat sortedFlagelCounts
 : uniq sortedFlagelCounts
 : uniq -c sortedFlagelCounts
-What is =uniq= doing in each case?
+- What is =uniq= doing in each case?
 
 ** Combining tools with pipes
 
@@ -602,21 +652,22 @@ What is =uniq= doing in each case?
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-When we did =sort lineCounts=, we used =sort= of the output of =wc=, but we
-used an intermediate file.  The shell offers a powerful way to connect directly
-the output of a command to the input of another: the *pipe operator*:
+- When we did =sort lineCounts=, we used =sort= on the output of =wc=, but we
+  used an intermediate file. The shell offers a powerful way to connect
+  directly the output of a command to the input of another: the *pipe
+  operator*:
 : wc -l *.fa | sort -n
 
 *** Exercises                                                     :B_block:
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-The =w= output the list of connected users on the server:
-: w
+- The =w= output the list of connected users on the server. Try it and then
+  try:
 : w | head
 : w | less
-Use a pipe to find all the users whose login contains "jyy". Extend the same
-pipe to count how many there are.
+- Use a pipe to find all the users whose login contains "jyy". 
+- Extend the same pipe to count how many there are.
 
 ** Python script to determine amino acid composition
 
@@ -624,15 +675,15 @@ pipe to count how many there are.
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-The script =seqComposition.py= takes a fasta file and produces a table
-containing the amino-acid composition of each protein in the file.
-To run the script, type:
+- The script =seqComposition.py= takes a fasta file and produces a table
+  containing the amino-acid composition of each protein in the file.
+- To run the script, type:
 : module load python-env/3.4.1   
-: # This is specific to the server
+: # This module loading step is specific to the server
 : python3 seqComposition.py myFastaFile 
-: # Use the fasta file you wish
-The output is sent to the terminal. Propose at least two ways to have a look at
-this output.
+: # Use the fasta file you wish instead of "myFastaFile"
+The output is sent to the terminal.
+- Propose at least two practical ways to have a look at this output.
 
 ** Python script to determine amino acid composition
 
@@ -640,9 +691,11 @@ this output.
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-Using only the Unix tools you know, the Python script and pipes, determine the
-distribution of the number of histidines per protein in the proteome of the
-strain of your choice.
+- Using only the *Unix tools* you know, the *Python script* and *pipes*,
+  determine the distribution of the number of histidines per protein in the
+  proteome of the strain of your choice.
+- More clearly stated: for a given strain, determines how many proteins have
+  one histidine, how many have two, how many have three, ...
 
 * Automating tasks
 
@@ -652,18 +705,19 @@ strain of your choice.
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-Let's use =nano= to store your pipeline in a file:
+- Let's use =nano= to store your pipeline in a file:
 : nano getHistDistrib.sh
-(the usage of =nano= will be demonstrated live) The idea is to be able to
-produce the histidine distribution results just by typing:
+(the usage of =nano= will be demonstrated live) 
+- The idea is to be able to produce the histidine distribution results just by
+  typing:
 : bash getHistDistrib.sh myFastaFile
 
 *** Test your pipeline with a few files                           :B_block:
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-Test your pipeline for 5 strains. How would you feel about doing it for 2000
-strains?
+- Test your pipeline for 5 strains. How would you feel about doing it for 2000
+  strains?
 
 ** One step towards wizardry: shell scripts
 
@@ -671,7 +725,7 @@ strains?
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-Create a shell script (=testListing.sh=) with this content:
+- Create a shell script (=testListing.sh=) with this content:
 #+BEGIN_SRC bash
 listFiles=`ls *.fa`
 echo $listFiles
@@ -680,15 +734,15 @@ for myFile in $listFiles; do
     echo $myFile.results
 done
 #+END_SRC
-Run it with =bash=. What does this do?
+- Run it with =bash=. What does this do?
 
 *** Exercise: final script                                        :B_block:
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-Combine the script with your pipeline and the listing script into a single
-script to get the histidine distribution for all the fasta files in this
-folder.
+- Combine the script with your pipeline and the listing script into a single
+  script to get the histidine distribution for all the fasta files in this
+  folder.
 
 ** File rights                                                    :noexport:
 
@@ -738,6 +792,8 @@ folder.
 #+LaTeX_HEADER: \setbeamertemplate{itemize items}[circle]
 #+LaTeX_HEADER: \setbeamertemplate{enumerate items}[circle]
 #+LaTeX_HEADER: \setbeamertemplate{alert}{\textbf}
+#+LaTeX_HEADER: \setbeamertemplate{footline}[frame number]
+# http://tex.stackexchange.com/questions/137022/how-to-insert-page-number-in-beamer-navigation-bars
 # http://tex.stackexchange.com/questions/171705/changing-your-bullet-points-in-beamer-block-maybe-boadilla
 # http://tex.stackexchange.com/questions/68347/different-styles-of-bullets-of-enumerate
 # http://tex.stackexchange.com/questions/66995/modify-footer-of-slides

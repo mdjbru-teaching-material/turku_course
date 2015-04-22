@@ -26,6 +26,8 @@
 
 ** Prerequisites
 
+*** Libraries
+
 - On Windows, install biopython and cprofilev with:
   #+BEGIN_SRC bash
   pip install biopython
@@ -37,7 +39,26 @@
   sudo pip install cprofilev
   #+END_SRC
 
+*** Setup your working directory
+
+For example (do as you see fit, but keep your computer clean!):
+#+BEGIN_SRC bash
+mkdir day3
+cd day3
+pwd
+#+END_SRC
+
+*** Clone the material from the GitHub repository
+
+#+BEGIN_SRC bash
+git clone https://github.com/mdjbru-teaching-material/code-profiling-practicals.git
+ls
+cd code-profiling-practicals
+#+END_SRC
+
 ** Live coding
+
+We are now working in =seq_utils.py= and extending it with new functions.
 
 *** Create a function to validate a protein sequence
 
@@ -56,6 +77,8 @@
 
 ** Timing the code
 
+We prepare a simple analysis script, separated from the =seq_utils= module.
+
 *** Time the code execution on a few sequences
 
 - We will use the =timeit= library
@@ -70,9 +93,7 @@
 
 *** Using the cprofilev module
 
-- =[[http://ymichael.com/2014/03/08/profiling-python-with-cprofile.html][cprofilev]]= is a wrapper around =[[https://docs.python.org/2/library/profile.html#module-cProfile][cProfile]]=
-
-- We prepare a single analysis script, separated from the =seq_utils= module
+- [[http://ymichael.com/2014/03/08/profiling-python-with-cprofile.html][=cprofilev=]] is a wrapper around [[https://docs.python.org/2/library/profile.html#module-cProfile][=cProfile=]]
 
 - We can run it with =cprofile=:
   #+BEGIN_SRC 
@@ -80,7 +101,7 @@
   #+END_SRC
 
 - We have to see the output with a web browser at the address
-  http://localhost:4000.
+  =http://localhost:4000=
 
 - To understand the output, see
   [[https://docs.python.org/2/library/profile.html#instant-user-s-manual]]

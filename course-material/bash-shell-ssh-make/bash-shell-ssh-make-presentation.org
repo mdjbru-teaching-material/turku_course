@@ -166,7 +166,6 @@ output:
 #+BEGIN_EXAMPLE
 total 4
 drwx------ 2 jyybio20 jyybio 4096 Apr 15 12:15 appl_taito
-drwx------ 2 jyybio20 jyybio 4096 Apr 15 15:22 ecoli-data
 #+END_EXAMPLE
 Now you can see the date of last modification of the folders and some other
 information. We'll see later in more details what the other information means.
@@ -185,8 +184,9 @@ Check that you are in your home folder with =pwd=. You should see:
 : /homeappl/home/jyybioxx
 If not, go back to your home folder by typing simply =cd= without any argument.
 
-Clone the Git repository with:
-: git clone https://github.com/mdjbru-teaching-material/practicals.git
+Clone the Git repository with (all on one line):
+: git clone 
+: https://github.com/mdjbru-teaching-material/practicals.git
 and run =ls=. What happened?
 
 ** Data content and motivation
@@ -209,7 +209,7 @@ ftp://ftp.ensemblgenomes.org/pub/current/bacteria/fasta/.
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-We want to determine the amino acod content of all proteins of each strain, and
+We want to determine the amino acid content of all proteins of each strain, and
 compare the results between strains. We already have a Python script ready
 which can determine the amino-acid composition for protein sequences.
 
@@ -276,9 +276,9 @@ subfolder and back again to your home directory using =cd=.
 :END:
 Another way to go to the home folder is to use the =~= character: this is
 automatically replaced by the path to your home folder by =bash=:
-: cd
+: cd     # Back to your home folder
 : cd practicals
-: cd ~
+: cd ~   # Bash understands "~" as "/homeappl/home/jyybioxx"
 : cd appl_taito
 : cd ~/practicals
 
@@ -308,7 +308,7 @@ and go back to your home folder.
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-Let's go into =seqAnalysis= folder=, but let's be lazy:
+Let's go into =seqAnalysis= folder, but let's be lazy:
 : cd     # Start from your home folder
 : cd pr  # Press TAB at this point
 Do you understand what happened? Use this feature to quickly go to
@@ -342,8 +342,8 @@ completion as much as you can. What do you notice?
 Now create the folder
 : ~/practicals/scripts/python/modularComponents
 and type:
-: cd ~/practicals/scripts/python/mod  # Press =TAB= twice here
-:                           # Type "ule" and press =TAB= again
+: cd ~/practicals/scripts/python/mod # Press =TAB= twice here
+: # Type "ule" and press =TAB= again
 Do you understand how =TAB= completion works? This also works for command
 names.
 
@@ -394,6 +394,7 @@ What happened?
 From the =scripts= folder, move =modularComponents= into =modules=:
 : mv modularComponents modules
 : tree
+What does =tree= do?
 
 *** Copying a folder                                              :B_block:
 :PROPERTIES:
@@ -515,10 +516,10 @@ operator:
 :PROPERTIES:
 :BEAMER_env: block
 :END:
-:grep "flagellin" Escherichia_coli_o55_h7_str_06_3555.GCA_000617385.1.26.pep.all.fa
-:grep --color=always "flagellin" Escherichia_coli_o55_h7_str_06_3555.GCA_000617385.1.26.pep.all.fa
-:grep -n --color=always "flagellin" Escherichia_coli_o55_h7_str_06_3555.GCA_000617385.1.26.pep.all.fa
-:grep -c --color=always "flagellin" Escherichia_coli_o55_h7_str_06_3555.GCA_000617385.1.26.pep.all.fa
+: grep "flagellin" Escherichia_coli_o55_h7_str_06_3555.GCA_000617385.1.26.pep.all.fa
+: grep --color=always "flagellin" Escherichia_coli_o55_h7_str_06_3555.GCA_000617385.1.26.pep.all.fa
+: grep -n --color=always "flagellin" Escherichia_coli_o55_h7_str_06_3555.GCA_000617385.1.26.pep.all.fa
+: grep -c --color=always "flagellin" Escherichia_coli_o55_h7_str_06_3555.GCA_000617385.1.26.pep.all.fa
 Do you understand what each of the =grep= options do?
 
 *** Exercise                                                      :B_block:
@@ -626,8 +627,10 @@ pipe to count how many there are.
 The script =seqComposition.py= takes a fasta file and produces a table
 containing the amino-acid composition of each protein in the file.
 To run the script, type:
-: module load python-env/3.4.1   # This is specific to the server
-: python3 seqComposition.py myFastaFile # Use the fasta file you wish
+: module load python-env/3.4.1   
+: # This is specific to the server
+: python3 seqComposition.py myFastaFile 
+: # Use the fasta file you wish
 The output is sent to the terminal. Propose at least two ways to have a look at
 this output.
 

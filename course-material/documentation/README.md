@@ -158,4 +158,6 @@ This is how you can use my cool Python program ``PyDNA``:
 
 If you run your doctest, this should fail. Fix it and rerun.
 
-
+You can automate the generation of your documents by using the services
+of "read the docs". [Go to this page](https://read-the-docs.readthedocs.org/en/latest/getting_started.html#import-your-docs) 
+and follow the instructions to set up a read the docs account for your software.

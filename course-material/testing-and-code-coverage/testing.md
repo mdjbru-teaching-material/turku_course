@@ -68,7 +68,7 @@ We need to install the wonderful libraries ``nose`` and ``coverage``. Useful for
 unit testing.
 
 * Windows users: Put Python and scripts in your PATH. [Instructions](https://openhatch.org/wiki/Boston_Python_Workshop_6/Friday/Windows_set_up_Python).
-* Download [get-pip.py](https://bootstrap.pypa.io/get-pip.pyhttps://bootstrap.pypa.io/get-pip.py)
+* Download [get-pip.py](https://bootstrap.pypa.io/get-pip.py)
 * Install pip: ``python get-pip.py``
 ```shell
 pip install nose

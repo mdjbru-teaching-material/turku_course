@@ -11,9 +11,90 @@
 
 ** About improving code speed
 
-- Donlad Knuth:
+- Donald Knuth:
   #+BEGIN_QUOTE
   [...] premature optimization is the root of all evil (or at least most of it)
   #+END_QUOTE
 
-  [[file:img/wiki-KnuthAtOpenContentAlliance.jpg]]
+  [[file:img/wiki-KnuthAtOpenContentAlliance-small.jpg]]
+
+** Aims of the session
+
+- Show you a bit of *code profiling* (what is code profiling?)
+- Motivation :: Develop a function to *validate all the protein sequences* in a
+                fasta file before further processing.
+
+** Prerequisites
+
+- On Windows, install biopython and cprofilev with:
+  #+BEGIN_SRC bash
+  pip install biopython
+  pip install cprofilev
+  #+END_SRC
+- On Mac and GNU/Linux, use:
+  #+BEGIN_SRC bash
+  sudo pip install biopython
+  sudo pip install cprofilev
+  #+END_SRC
+
+** Live coding
+
+*** Create a function to validate a protein sequence
+
+- Input: any string
+- Return: True or False
+
+*** Explore the BioPython library with Ipython
+
+- Parse a fasta files into record objects
+- Get a sequence string from a record object
+
+*** Create a function to validate all the protein sequences in a fasta file
+
+- Input: a file name (as a string)
+- Return: True or False
+
+** Timing the code
+
+*** Time the code execution on a few sequences
+
+- We will use the =timeit= library
+- A word about run time scaling
+
+*** Worst case/best case scenario
+
+- A word about worst case and best case scenario
+- When will our code become limiting for your research?
+
+** Profiling
+
+*** Using the cprofilev module
+
+- =[[http://ymichael.com/2014/03/08/profiling-python-with-cprofile.html][cprofilev]]= is a wrapper around =[[https://docs.python.org/2/library/profile.html#module-cProfile][cProfile]]=
+
+- We prepare a single analysis script, separated from the =seq_utils= module
+
+- We can run it with =cprofile=:
+  #+BEGIN_SRC 
+  python -m cprofile analysisScript.py
+  #+END_SRC
+
+- We have to see the output with a web browser at the address
+  http://localhost:4000.
+
+- To understand the output, see
+  [[https://docs.python.org/2/library/profile.html#instant-user-s-manual]]
+
+** Improving the code
+
+*** Identifying the bottlenecks
+
+- What are the functions taking the most time?
+- Improve the code and profile it again
+
+*** Knowing when to stop
+
+- We can iterate the loop profile-identify bottleneck-improve code
+- When do we stop?
+
+*** Of the importance of tests

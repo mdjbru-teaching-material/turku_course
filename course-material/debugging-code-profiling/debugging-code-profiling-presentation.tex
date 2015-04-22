@@ -1,4 +1,4 @@
-% Created 2015-04-22 Wed 18:23
+% Created 2015-04-22 Wed 23:29
 \documentclass[big]{beamer}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
@@ -48,18 +48,71 @@
 \item 3rd: code should be \alert{fast (enough)}
 \end{itemize}
 \end{block}
+\begin{block}{}
+\begin{itemize}
+\item Priorities might varies from one programmer to another\ldots{}
+\item \url{https://xkcd.com/323/}
+\end{itemize}
+\end{block}
 \end{frame}
 \begin{frame}[label=sec-1-2]{About efficiency}
 \begin{columns}
 \begin{column}{0.7\textwidth}
+\begin{block}{Donald Knuth}
 \begin{quote}
-[P]remature optimization is the root of all evil (or at least most of it)
+[\ldots{}] premature optimization is the root of all evil (or at least most of it)
 \end{quote}
+\end{block}
 \end{column}
 \begin{column}{0.3\textwidth}
 \includegraphics[width=.9\linewidth]{img/wiki-KnuthAtOpenContentAlliance.jpg}
 \end{column}
 \end{columns}
+\end{frame}
+\begin{frame}[fragile,label=sec-1-3]{Timing the code}
+ \begin{block}{Prerequisites}
+\begin{itemize}
+\item On Windows, install biopython and cprofilev with:
+\end{itemize}
+\begin{verbatim}
+pip install biopython
+pip install cprofilev
+\end{verbatim}
+\begin{itemize}
+\item On Mac and GNU/Linux, use:
+\end{itemize}
+\begin{verbatim}
+sudo pip install biopython
+sudo pip install cprofilev
+\end{verbatim}
+\end{block}
+\end{frame}
+\begin{frame}[label=sec-1-4]{Timing the code}
+\begin{block}{Run time depends on input size}
+\begin{itemize}
+\item We'll make together one Python script that tests if a sequence can be DNA
+\item We'll time its execution on several input files of different size
+\end{itemize}
+\end{block}
+\begin{block}{Worst case/best case scenario}
+\end{block}
+\end{frame}
+\begin{frame}[fragile,label=sec-1-5]{Timing the code}
+ \begin{block}{Live coding}
+\begin{itemize}
+\item Using \texttt{BioPython} to parse fasta files
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[label=sec-1-6]{Scaling}
+linear dependence, exponential dependence
+\end{frame}
+\begin{frame}[label=sec-1-7]{Profiling}
+\url{https://docs.python.org/2/library/profile.html#instant-user-s-manual}
+\end{frame}
+\begin{frame}[label=sec-1-8]{Bottleneck}
+Is it the loading? Is it the loop?
 \end{frame}
 \section{Introduction to the shell}
 \label{sec-2}

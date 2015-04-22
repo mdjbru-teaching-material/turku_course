@@ -15,13 +15,13 @@ more interest. You can access our Etherpad
 
 - Day two
     + AM (3 hours): [Testing and code coverage](https://github.com/mdjbru-teaching-material/turku_course/blob/master/course-material/testing-and-code-coverage/testing.md) [*Carlos*]
-    + PM (1.5 hours): [Debugging and code profiling](https://github.com/mdjbru-teaching-material/turku_course/blob/master/course-material/debugging-code-profiling/debugging-code-profiling.md) [*Matthieu*]
-	  + PM (2.5 hours): [Bash shell, ssh, task automation](https://github.com/mdjbru-teaching-material/turku_course/raw/master/course-material/bash-shell-ssh-make/bash-shell-ssh-make-presentation.pdf) [*Matthieu*]
+    + PM (2.5 hours): [Bash shell, ssh, task automation](https://github.com/mdjbru-teaching-material/turku_course/raw/master/course-material/bash-shell-ssh-make/bash-shell-ssh-make-presentation.pdf) [*Matthieu*]
 
 - Day three
     + AM (2 hours): [Documentation and modules in Python]() [*Carlos*]
     + AM/PM (2 hours): [Virtual environments]() [*Carlos*]
-    + PM (rest of the day): [Developing an integrated project]() [*Matthieu*]
+	+ PM (2 hours): [Code profiling](https://github.com/mdjbru-teaching-material/turku_course/blob/master/course-material/debugging-code-profiling/debugging-code-profiling.org) [*Matthieu*]
+    + PM (if any time left): Developing an integrated project [*Matthieu*]
 
 # Final project (day three)
 

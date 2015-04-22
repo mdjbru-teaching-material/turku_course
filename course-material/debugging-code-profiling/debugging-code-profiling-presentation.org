@@ -32,10 +32,6 @@
 [...] premature optimization is the root of all evil (or at least most of it)
 #+END_QUOTE
 
-***                                                                  :BMCOL:
-:PROPERTIES:
-:BEAMER_col: 0.3
-:END:
 [[file:img/wiki-KnuthAtOpenContentAlliance.jpg]]
 
 ** Timing the code

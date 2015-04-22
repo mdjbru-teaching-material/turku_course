@@ -18,7 +18,7 @@ more interest. You can access our Etherpad
     + PM (2.5 hours): [Bash shell, ssh, task automation](https://github.com/mdjbru-teaching-material/turku_course/raw/master/course-material/bash-shell-ssh-make/bash-shell-ssh-make-presentation.pdf) [*Matthieu*]
 
 - Day three
-    + AM (2 hours): [Documentation and modules in Python]() [*Carlos*]
+    + AM (2 hours): [Documentation and modules in Python](https://github.com/mdjbru-teaching-material/turku_course/blob/master/course-material/documentation/README.md) [*Carlos*]
     + AM/PM (2 hours): [Virtual environments]() [*Carlos*]
 	+ PM (2 hours): [Code profiling](https://github.com/mdjbru-teaching-material/turku_course/blob/master/course-material/debugging-code-profiling/debugging-code-profiling.org) [*Matthieu*]
     + PM (if any time left): Developing an integrated project [*Matthieu*]

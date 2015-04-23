@@ -19,7 +19,7 @@ more interest. You can access our Etherpad
 
 - Day three
     + AM (2 hours): [Documentation and modules in Python](https://github.com/mdjbru-teaching-material/turku_course/blob/master/course-material/documentation/README.md) [*Carlos*]
-    + AM/PM (2 hours): [Virtual environments]() [*Carlos*]
+    + AM/PM (2 hours): [Virtual environments](https://github.com/mdjbru-teaching-material/turku_course/blob/master/course-material/virtual-environments/env.md) [*Carlos*]
 	+ PM (2 hours): [Code profiling](https://github.com/mdjbru-teaching-material/turku_course/blob/master/course-material/debugging-code-profiling/debugging-code-profiling.org) [*Matthieu*]
     + PM (if any time left): Developing an integrated project [*Matthieu*]
 

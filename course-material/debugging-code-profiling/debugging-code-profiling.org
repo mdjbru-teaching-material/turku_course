@@ -93,7 +93,7 @@ We prepare a simple analysis script, separated from the =seq_utils= module.
 
 *** Using the cprofilev module
 
-- [[http://ymichael.com/2014/03/08/profiling-python-with-cprofile.html][=cprofilev=]] is a wrapper around [[https://docs.python.org/2/library/profile.html#module-cProfile][=cProfile=]]
+- [[http://ymichael.com/2014/03/08/profiling-python-with-cprofile.html][cprofilev]] is a wrapper around [[https://docs.python.org/2/library/profile.html#module-cProfile][cProfile]]
 
 - We can run it with =cprofile=:
   #+BEGIN_SRC 
